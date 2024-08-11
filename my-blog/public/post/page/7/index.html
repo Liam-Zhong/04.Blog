@@ -127,7 +127,7 @@
   
   
   <meta itemprop="name" content="Posts">
-  <meta itemprop="dateModified" content="2024-07-22T08:50:32+08:00">
+  <meta itemprop="dateModified" content="2024-08-11T14:34:48+08:00">
   <meta itemprop="keywords" content="Index">
   
   <meta property="og:url" content="https://liam-zhong.github.io/post/">
@@ -285,82 +285,103 @@
     >
       
 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+<div id="profile-section">
   
-  <h2 class="!my-0 pb-1 font-bold !leading-none">吹牛系列</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月17日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/%E5%90%B9%E7%89%9B/">吹牛系列</a>
-</section>
+</div>
 
 
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Eudemonia - 海底的云和少女</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月16日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/eudemonia/">Eudemonia - 海底的云和少女</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">重庆市民钟先生遭歹猫袭击受伤 公众呼吁加强治安管理</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月15日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/funny-news/">重庆市民钟先生遭歹猫袭击受伤 公众呼吁加强治安管理</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">我的头发</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月13日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/my-hair/">我的头发</a>
-</section>
-
-
-
-
-<nav class="mt-16 flex">
-  
-  <a class="btn" href="/post/page/6/">← 上一页</a>
+<div id="dynamic-content">
   
   
-  <a class="btn ml-auto" href="/post/page/8/"
-    >下一页 →</a
-  >
+
   
-</nav>
+  
+  
+  
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">吹牛（2）</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月18日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/chuiniu-02/">吹牛（2）</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">吹牛系列</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月17日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/%E5%90%B9%E7%89%9B/">吹牛系列</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">Eudemonia - 海底的云和少女</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月16日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/eudemonia/">Eudemonia - 海底的云和少女</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">重庆市民钟先生遭歹猫袭击受伤 公众呼吁加强治安管理</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月15日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/funny-news/">重庆市民钟先生遭歹猫袭击受伤 公众呼吁加强治安管理</a>
+    </section>
+  
 
+  
+  
+    <nav class="mt-16 flex">
+      
+        <a class="btn" href="/post/page/6/" data-ajax-link>← 上一页</a>
+      
+      
+        <a class="btn ml-auto" href="/post/page/8/" data-ajax-link>下一页 →</a>
+      
+    </nav>
+  
+</div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var dynamicContent = document.getElementById('dynamic-content');
+  var profileSection = document.getElementById('profile-section');
+
+  document.body.addEventListener('click', function(e) {
+    var target = e.target;
+    if (target.tagName === 'A' && target.getAttribute('data-ajax-link') !== null) {
+      e.preventDefault();
+      var url = target.href;
+
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, 'text/html');
+          var newContent = doc.getElementById('dynamic-content').innerHTML;
+          dynamicContent.innerHTML = newContent;
+
+          
+          history.pushState(null, '', url);
+
+          
+          dynamicContent.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+  });
+
+  
+  window.addEventListener('popstate', function() {
+    fetch(window.location.href)
+      .then(response => response.text())
+      .then(html => {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var newContent = doc.getElementById('dynamic-content').innerHTML;
+        dynamicContent.innerHTML = newContent;
+      });
+  });
+});
+</script>
 
     </main>
 

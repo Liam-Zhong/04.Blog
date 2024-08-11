@@ -127,7 +127,7 @@
   
   
   <meta itemprop="name" content="承霖的部落格">
-  <meta itemprop="dateModified" content="2024-07-22T08:50:32+08:00">
+  <meta itemprop="dateModified" content="2024-08-11T14:34:48+08:00">
   
   <meta property="og:url" content="https://liam-zhong.github.io/">
   <meta property="og:site_name" content="承霖的部落格">
@@ -284,84 +284,105 @@
     >
       
 
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+<div id="profile-section">
   
-  <h2 class="!my-0 pb-1 font-bold !leading-none">答辩结束</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年7月10日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/happy-day/">答辩结束</a>
-</section>
+</div>
 
 
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">兄弟，愿为西南风</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年7月6日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/caozhi/">兄弟，愿为西南风</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">和丫头的信</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年7月5日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/letter-with-that-girl/">和丫头的信</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">怎么有人连人机验证都过不了</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年7月4日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/why-cant-some-people-even-pass-the-man-machine-certification/">怎么有人连人机验证都过不了</a>
-</section>
-
-
-
-
-<nav class="mt-16 flex">
-  
-  <a class="btn" href="/page/2/">← 上一页</a>
+<div id="dynamic-content">
   
   
-  <a class="btn ml-auto" href="/page/4/"
-    >下一页 →</a
-  >
+
   
-</nav>
+  
+  
+    
+  
+  
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">24年中-步立踌躇</h2>
+      <time class="text-sm antialiased opacity-60">2024年7月12日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/history-of-the-ages/">24年中-步立踌躇</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">答辩结束</h2>
+      <time class="text-sm antialiased opacity-60">2024年7月10日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/happy-day/">答辩结束</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">兄弟，愿为西南风</h2>
+      <time class="text-sm antialiased opacity-60">2024年7月6日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/caozhi/">兄弟，愿为西南风</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">和丫头的信</h2>
+      <time class="text-sm antialiased opacity-60">2024年7月5日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/letter-with-that-girl/">和丫头的信</a>
+    </section>
+  
 
+  
+  
+    <nav class="mt-16 flex">
+      
+        <a class="btn" href="/page/2/" data-ajax-link>← 上一页</a>
+      
+      
+        <a class="btn ml-auto" href="/page/4/" data-ajax-link>下一页 →</a>
+      
+    </nav>
+  
+</div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var dynamicContent = document.getElementById('dynamic-content');
+  var profileSection = document.getElementById('profile-section');
+
+  document.body.addEventListener('click', function(e) {
+    var target = e.target;
+    if (target.tagName === 'A' && target.getAttribute('data-ajax-link') !== null) {
+      e.preventDefault();
+      var url = target.href;
+
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, 'text/html');
+          var newContent = doc.getElementById('dynamic-content').innerHTML;
+          dynamicContent.innerHTML = newContent;
+
+          
+          history.pushState(null, '', url);
+
+          
+          dynamicContent.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+  });
+
+  
+  window.addEventListener('popstate', function() {
+    fetch(window.location.href)
+      .then(response => response.text())
+      .then(html => {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var newContent = doc.getElementById('dynamic-content').innerHTML;
+        dynamicContent.innerHTML = newContent;
+      });
+  });
+});
+</script>
 
     </main>
 

@@ -127,7 +127,7 @@
   
   
   <meta itemprop="name" content="承霖的部落格">
-  <meta itemprop="dateModified" content="2024-07-22T08:50:32+08:00">
+  <meta itemprop="dateModified" content="2024-08-11T14:34:48+08:00">
   
   <meta property="og:url" content="https://liam-zhong.github.io/">
   <meta property="og:site_name" content="承霖的部落格">
@@ -284,84 +284,105 @@
     >
       
 
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+<div id="profile-section">
   
-  <h2 class="!my-0 pb-1 font-bold !leading-none">谈情说爱</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月21日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/talk-about-love/">谈情说爱</a>
-</section>
+</div>
 
 
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">奶奶的</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月21日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/fxxk/">奶奶的</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">南山夜雨</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月20日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/simple-poem/">南山夜雨</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">吹牛（2）</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月18日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/chuiniu-02/">吹牛（2）</a>
-</section>
-
-
-
-
-<nav class="mt-16 flex">
-  
-  <a class="btn" href="/page/5/">← 上一页</a>
+<div id="dynamic-content">
   
   
-  <a class="btn ml-auto" href="/page/7/"
-    >下一页 →</a
-  >
+
   
-</nav>
+  
+  
+    
+  
+  
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">学习资料-应付考试版</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月22日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/study-materials-exam-preparation-version/">学习资料-应付考试版</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">谈情说爱</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月21日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/talk-about-love/">谈情说爱</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">奶奶的</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月21日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/fxxk/">奶奶的</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">南山夜雨</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月20日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/simple-poem/">南山夜雨</a>
+    </section>
+  
 
+  
+  
+    <nav class="mt-16 flex">
+      
+        <a class="btn" href="/page/5/" data-ajax-link>← 上一页</a>
+      
+      
+        <a class="btn ml-auto" href="/page/7/" data-ajax-link>下一页 →</a>
+      
+    </nav>
+  
+</div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var dynamicContent = document.getElementById('dynamic-content');
+  var profileSection = document.getElementById('profile-section');
+
+  document.body.addEventListener('click', function(e) {
+    var target = e.target;
+    if (target.tagName === 'A' && target.getAttribute('data-ajax-link') !== null) {
+      e.preventDefault();
+      var url = target.href;
+
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, 'text/html');
+          var newContent = doc.getElementById('dynamic-content').innerHTML;
+          dynamicContent.innerHTML = newContent;
+
+          
+          history.pushState(null, '', url);
+
+          
+          dynamicContent.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+  });
+
+  
+  window.addEventListener('popstate', function() {
+    fetch(window.location.href)
+      .then(response => response.text())
+      .then(html => {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var newContent = doc.getElementById('dynamic-content').innerHTML;
+        dynamicContent.innerHTML = newContent;
+      });
+  });
+});
+</script>
 
     </main>
 

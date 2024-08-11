@@ -127,7 +127,7 @@
   
   
   <meta itemprop="name" content="Posts">
-  <meta itemprop="dateModified" content="2024-07-22T08:50:32+08:00">
+  <meta itemprop="dateModified" content="2024-08-11T14:34:48+08:00">
   <meta itemprop="keywords" content="Index">
   
   <meta property="og:url" content="https://liam-zhong.github.io/post/">
@@ -285,82 +285,103 @@
     >
       
 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+<div id="profile-section">
   
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Minecraft</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月5日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/minecraft/">Minecraft</a>
-</section>
+</div>
 
 
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Soulsan</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月4日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/soulsan/">Soulsan</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">发电系列之图图呢</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月3日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/crazy-life_1/">发电系列之图图呢</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">报告未遂</h2>
-  <time class="text-sm antialiased opacity-60"
-    >2024年6月3日</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/attempted-work/">报告未遂</a>
-</section>
-
-
-
-
-<nav class="mt-16 flex">
-  
-  <a class="btn" href="/post/page/8/">← 上一页</a>
+<div id="dynamic-content">
   
   
-  <a class="btn ml-auto" href="/post/page/10/"
-    >下一页 →</a
-  >
+
   
-</nav>
+  
+  
+  
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">搯花</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月6日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/tao-flower/">搯花</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">Minecraft</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月5日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/minecraft/">Minecraft</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">Soulsan</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月4日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/soulsan/">Soulsan</a>
+    </section>
+  
+    <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+      
+      <h2 class="!my-0 pb-1 font-bold !leading-none">发电系列之图图呢</h2>
+      <time class="text-sm antialiased opacity-60">2024年6月3日</time>
+      <a class="absolute inset-0 text-[0]" href="https://liam-zhong.github.io/post/crazy-life_1/">发电系列之图图呢</a>
+    </section>
+  
 
+  
+  
+    <nav class="mt-16 flex">
+      
+        <a class="btn" href="/post/page/8/" data-ajax-link>← 上一页</a>
+      
+      
+        <a class="btn ml-auto" href="/post/page/10/" data-ajax-link>下一页 →</a>
+      
+    </nav>
+  
+</div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var dynamicContent = document.getElementById('dynamic-content');
+  var profileSection = document.getElementById('profile-section');
+
+  document.body.addEventListener('click', function(e) {
+    var target = e.target;
+    if (target.tagName === 'A' && target.getAttribute('data-ajax-link') !== null) {
+      e.preventDefault();
+      var url = target.href;
+
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, 'text/html');
+          var newContent = doc.getElementById('dynamic-content').innerHTML;
+          dynamicContent.innerHTML = newContent;
+
+          
+          history.pushState(null, '', url);
+
+          
+          dynamicContent.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+  });
+
+  
+  window.addEventListener('popstate', function() {
+    fetch(window.location.href)
+      .then(response => response.text())
+      .then(html => {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var newContent = doc.getElementById('dynamic-content').innerHTML;
+        dynamicContent.innerHTML = newContent;
+      });
+  });
+});
+</script>
 
     </main>
 

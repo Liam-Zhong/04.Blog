@@ -32,8 +32,6 @@ comments = false
 
 - [刘星](https://b23.tv/mz9muoW)：引路人,Powerful
 
-- XX:对爱情的祛魅
-
 - 赵姜涵：好哥哥！
 
 - 赵连硕：三国杀玩家里笛子吹得最好的一位
