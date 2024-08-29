@@ -1,5 +1,5 @@
 +++
-title = '吹牛之”兴“'
+title = '吹牛之“兴”'
 date = 2024-08-27T08:17:14+08:00
 math = true 
 draft = false
