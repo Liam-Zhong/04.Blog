@@ -43,7 +43,7 @@ comments = true
 
 
 
-5. #### [Waterman](https://www.waterman.com)
+5. #### [Waterman](https://www.waterman-zh.cn/)
 
 梦中情笔，入坑起源。
 
@@ -73,19 +73,23 @@ comments = true
 
 9. #### 中国钢笔
 
-[三文堂](https://www.twsbi.com/) 台湾产，丑，不买
+[三文堂](https://www.twsbi.com/) 台湾产，**丑**，品牌名字没有我悠久 不买
 
 [劳彭](https://laban.com/) 台湾产，贵。
 
 [英雄](https://hero.com.cn/) 616和100做得不错
 
-[毕加索](https://www.sh-picasso.com/) 笔尖刻字不错 贵
+[毕加索](https://www.sh-picasso.com/) 笔尖印花不错 贵
 
 [公爵](https://dukebg.pw666.cn/) 假洋鬼子，不买
 
 [萧伯纳](http://www.bernardshaw.vip/) 假洋鬼子，不买
 
-永生、弘典、金豪、末匠、半句 ：还得是金豪
+[弘典](http://www.winwinsky.com/index.asp) 不厚道 不买
+
+[坛笔](http://penbbs.com/forum.php) 没玩过
+
+永生、金豪、末匠、半句 ：还得是金豪
 
 
 
