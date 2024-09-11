@@ -61,7 +61,7 @@ comments = true
 
 7. #### [Faber-Castell](https://www.faber-castell.cn/)
 
-没玩过。
+国内约等于没有官网（算上伯爵），不买。
 
 
 
@@ -91,17 +91,17 @@ comments = true
 
 10. #### 日本钢笔
 
-[百乐](https://www.pilotpen.com.cn/) 丑
+[百乐](https://www.pilotpen.com.cn/) 笔夹丑
 
-[并木](https://www.pilot-namiki.com/en/) 国内没有官网
+[并木](https://www.pilot-namiki.com/en/) 国内没有官网 不喜欢莳绘 不买
 
 [白金](https://www.platinum-pen.co.jp/) 国内没有官网 心型孔和教堂蓝好看
 
-[中屋](https://www.nakaya.org/) 国内没有官网
+[中屋](https://www.nakaya.org/) 国内没有官网 背鳍和十角好看
 
 [写乐](https://cn.sailor.co.jp/) 别买，快跑
 
-[凌美](http://www.lamy.hk/) 丑
+[凌美](http://www.lamy.hk/) 丑 不买
 
 
 
@@ -109,6 +109,6 @@ comments = true
 
 [Montegrappa](https://www.montegrappa.com/) 国内没有官网 奢侈品，不买
 
-[Visconti](https://www.visconti.it/) 国内没有官网 好看的台独钢笔
+[Visconti](https://www.visconti.it/) 国内没有官网 好看的台独钢笔 不买
 
-[Aurora](https://www.aurorapen.it/) 国内没有官网 
+[Aurora](https://www.aurorapen.it/) 国内没有官网 不买
