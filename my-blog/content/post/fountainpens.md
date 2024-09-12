@@ -75,7 +75,7 @@ comments = true
 
 [三文堂](https://www.twsbi.com/) 台湾产，**丑**，品牌名字没有我悠久 不买
 
-[劳彭](https://laban.com/) 台湾产，贵。
+[劳彭](https://laban.com/) 台湾产，贵
 
 [英雄](https://hero.com.cn/) 616和100做得不错
 
@@ -89,7 +89,7 @@ comments = true
 
 [坛笔](http://penbbs.com/forum.php) 没玩过
 
-永生、金豪、末匠、半句 ：还得是金豪
+永生、金豪、末匠、半句、采墨 ：还得是金豪
 
 
 
@@ -97,22 +97,22 @@ comments = true
 
 [百乐](https://www.pilotpen.com.cn/) 笔夹丑
 
-[并木](https://www.pilot-namiki.com/en/) 国内没有官网 不喜欢莳绘 不买
+[并木](https://www.pilot-namiki.com/en/) 国内没有官网 不喜欢莳绘 **不买**
 
-[白金](https://www.platinum-pen.co.jp/) 国内没有官网 心型孔和教堂蓝好看
+[白金](https://www.platinum-pen.co.jp/) 国内没有官网 老3776丑得别致 鱼雷造型乏善可陈 **不买**
 
-[中屋](https://www.nakaya.org/) 国内没有官网 背鳍和十角好看
+[中屋](https://www.nakaya.org/) 国内没有官网 背鳍和十角好看 笔尖3776同款 **不买**
 
-[写乐](https://cn.sailor.co.jp/) 别买，快跑
+[写乐](https://cn.sailor.co.jp/) **别买，快跑**
 
-[凌美](http://www.lamy.hk/) 丑 不买
+[凌美](http://www.lamy.hk/) 丑 **不买**
 
 
 
 11. #### 意大利钢笔
 
-[Montegrappa](https://www.montegrappa.com/) 国内没有官网 奢侈品，不买
+[Montegrappa](https://www.montegrappa.com/) 国内没有官网 奢侈品 **不买**
 
-[Visconti](https://www.visconti.it/) 国内没有官网 好看的台独钢笔 不买
+[Visconti](https://www.visconti.it/) 国内没有官网 好看的台独钢笔 **不买**
 
-[Aurora](https://www.aurorapen.it/) 国内没有官网 不买
+[Aurora](https://www.aurorapen.it/) 国内没有官网 **不买**
