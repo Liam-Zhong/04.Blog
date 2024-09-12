@@ -111,8 +111,10 @@ comments = true
 
 11. #### 意大利钢笔
 
-[Montegrappa](https://www.montegrappa.com/) 国内没有官网 奢侈品 **不买**
+[Montegrappa](https://www.montegrappa.com/) 国内没有官网  **不买**
 
 [Visconti](https://www.visconti.it/) 国内没有官网 好看的台独钢笔 **不买**
 
 [Aurora](https://www.aurorapen.it/) 国内没有官网 **不买**
+
+[OMAS](https://omasofficial.com/) 国内没有官网 台湾有店大陆没有 **不买**
