@@ -9,7 +9,7 @@ comments = true
 
 1. #### [Montblanc](https://www.montblanc.cn/cn/zh-cn/home.html)
 
-奢侈品，不买。
+奢侈品，**不买**。
 
 [145](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132464-meisterstueck-gold-coated-classique-fountain-pen-m.html)
 
@@ -21,13 +21,13 @@ comments = true
 
 2. #### [Pelikan](https://www.pelikan.com/)
 
-国内没有官网，不买。
+国内没有官网，**不买**。
 
 
 
 3. #### [Parker](https://www.parkerpen.cn/)
 
-吃相难看，不买。
+吃相难看，**不买**。
 
 [世纪经典](https://www.parkerpen.cn/duofold-pens-cn.html)
 
@@ -39,7 +39,7 @@ comments = true
 
 4. #### [Sheaffer](https://sheaffer.com/)
 
-国内没有官网，祖上风光的印度钢笔，不买。
+国内没有官网，祖上风光的印度钢笔，**不买**。
 
 
 
@@ -61,7 +61,7 @@ comments = true
 
 7. #### [Faber-Castell](https://www.faber-castell.cn/)
 
-国内约等于没有官网（算上伯爵），不买。
+国内约等于没有官网（算上伯爵），**不买**。
 
 
 
@@ -73,7 +73,7 @@ comments = true
 
 9. #### 中国钢笔
 
-[三文堂](https://www.twsbi.com/) 台湾产，**丑**，品牌名字没有我悠久 不买
+[三文堂](https://www.twsbi.com/) 台湾产，**丑**，品牌名字没有我悠久 **不买**
 
 [劳彭](https://laban.com/) 台湾产，贵
 
@@ -81,11 +81,11 @@ comments = true
 
 [毕加索](https://www.sh-picasso.com/) 笔尖印花不错 贵
 
-[公爵](https://dukebg.pw666.cn/) 假洋鬼子，不买
+[公爵](https://dukebg.pw666.cn/) 假洋鬼子，**不买**
 
-[萧伯纳](http://www.bernardshaw.vip/) 假洋鬼子，不买
+[萧伯纳](http://www.bernardshaw.vip/) 假洋鬼子，**不买**
 
-[弘典](http://www.winwinsky.com/index.asp) 不厚道 不买
+[弘典](http://www.winwinsky.com/index.asp) 不厚道 **不买**
 
 [坛笔](http://penbbs.com/forum.php) 没玩过
 
