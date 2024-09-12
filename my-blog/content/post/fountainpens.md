@@ -75,7 +75,7 @@ comments = true
 
 [三文堂](https://www.twsbi.com/) 台湾产，**丑**，品牌名字没有我悠久 **不买**
 
-[劳彭](https://laban.com/) 台湾产，贵
+[劳彭](https://laban.com/) 台湾产，台独钢笔 **不买**
 
 [英雄](https://hero.com.cn/) 616和100做得不错
 
