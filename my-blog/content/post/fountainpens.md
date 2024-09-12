@@ -67,7 +67,7 @@ comments = true
 
 8. #### [Kaweco](https://www.kaweco-pen.com/)
 
-国内没有官网。短钢做得好看。
+国内没有官网。短钢做得好看，但是旋帽 ，**不买**
 
 
 
