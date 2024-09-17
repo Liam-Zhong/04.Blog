@@ -4,7 +4,7 @@ date = 2024-08-27T08:17:14+08:00
 math = true 
 draft = false
 comments = true
-
+description = "{{ .Summary }}"
 +++
 
 思而不学之作

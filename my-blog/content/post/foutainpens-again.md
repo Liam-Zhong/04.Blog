@@ -4,7 +4,7 @@ date = 2024-09-13T13:28:39+08:00
 math = true 
 draft = false
 comments = true
-
+description = "{{ .Summary }}"
 +++
 
 > 从前的日色变得慢<br>
@@ -91,7 +91,7 @@ comments = true
     <img src="/images/暗尖.jpeg" alt="暗尖们" class="img-apple" style="max-width: 100%; height: auto;">
     <small>暗尖们</small>
   </div>
-  
+
   <div style="text-align: center;">
     <img src="/images/明尖.jpeg" alt="明尖们" class="img-apple" style="max-width: 100%; height: auto;">
     <small>明尖们</small>
