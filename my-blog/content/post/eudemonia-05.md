@@ -29,7 +29,7 @@ description = "{{ .Summary }}"
 <br>
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/中秋之开车.png" alt=caringclass="img-apple">
+  <img src="/images/中秋之开车.png" alt="caringclass"="img-apple">
   <small style="text-align: center;">caring</small>
 </div>
 
