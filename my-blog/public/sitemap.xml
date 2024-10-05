@@ -3,22 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://liam-zhong.github.io/</loc>
-    <lastmod>2024-09-29T10:00:05+08:00</lastmod>
+    <lastmod>2024-09-30T16:33:11+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://liam-zhong.github.io/tags/index/</loc>
-    <lastmod>2024-09-29T10:00:05+08:00</lastmod>
+    <lastmod>2024-09-30T16:33:11+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://liam-zhong.github.io/post/ml/</loc>
+    <lastmod>2024-09-30T16:33:11+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://liam-zhong.github.io/post/</loc>
-    <lastmod>2024-09-29T10:00:05+08:00</lastmod>
+    <lastmod>2024-09-30T16:33:11+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://liam-zhong.github.io/tags/</loc>
-    <lastmod>2024-09-29T10:00:05+08:00</lastmod>
+    <lastmod>2024-09-30T16:33:11+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://liam-zhong.github.io/post/the-shame-of-moving-the-body/</loc>
+    <lastmod>2024-09-30T16:06:14+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://liam-zhong.github.io/post/rainday/</loc>
+    <lastmod>2024-09-30T16:05:16+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
