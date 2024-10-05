@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index | 承霖的部落格</title>
+    <link>https://liam-zhong.github.io/tags/index/</link>
+      <atom:link href="https://liam-zhong.github.io/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <description>Index</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh</language><copyright>Copyright © 2024, Liam-ZHong; all rights reserved.</copyright><lastBuildDate>Sun, 29 Sep 2024 10:00:05 +0800</lastBuildDate>
+  </channel>
+</rss>

@@ -1,0 +1,435 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="zh"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>我们到底学到了什么？ - 承霖的部落格</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="上图是妓院开设的课程表，落实的话我已经是一个熟练掌握高数线代概率论的讨厌花海的学生了。可事实上除了花海符合实际其余都只知名字怎么写而已。到底是怪老师没有讲清楚知识呢？还是怪我们自己没有好好学？还是怪这么课本身就不适合在我们学院开？其实学到机器学习还是可以知道这些知识运用很广泛，还是挺有用、挺有意思的，但是我们的课程根本不可能讲到那里去，课时太少，练习不够。由此我又想到本科阶段到底该学些什么；以我跟老师们的接触，他们大多都说该打好基础，我也赞同，但是我们开的这些课有没有达到这种目的呢？哪些课能显著体现计算机的基础？都是值得大家一起思考的问题。比如现在看机器学习就严重感觉到线代中矩阵的知识忘得差不多了，那才能让人感觉到什么叫基础，像我们所开过的数电、大物等课程有基础作用吗？似乎感觉有些偏了…… 反倒是语言课、数据结构这些课要好好深入学习学习，但是这些课我们又上好了吗？似乎也没有…… 我们的课程安排似乎是想让学生尽量多学些东西，但是顾了广度肯定会顾不上深度，这永远是一对矛盾，又是一个权重的问题。
+拚命狂赶了两年（？），但是一点也不值得高兴……" />
+  <meta name="author" content="Liam" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://liam-zhong.github.io/main.min.css" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://liam-zhong.github.io/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="https://liam-zhong.github.io/github.svg" />
+  
+  <link rel="preload" as="image" href="https://liam-zhong.github.io/rss.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://liam-zhong.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://liam-zhong.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://liam-zhong.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.126.1">
+
+  
+  
+  
+  
+  
+
+
+  
+  
+  <meta itemprop="name" content="我们到底学到了什么？">
+  <meta itemprop="description" content="{{ .Summary }}">
+  <meta itemprop="datePublished" content="2024-05-30T11:39:25+08:00">
+  <meta itemprop="dateModified" content="2024-05-30T11:39:25+08:00">
+  <meta itemprop="wordCount" content="4">
+  
+  <meta property="og:url" content="https://liam-zhong.github.io/post/what-on-earth-have-we-learned/">
+  <meta property="og:site_name" content="承霖的部落格">
+  <meta property="og:title" content="我们到底学到了什么？">
+  <meta property="og:description" content="{{ .Summary }}">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-05-30T11:39:25+08:00">
+    <meta property="article:modified_time" content="2024-05-30T11:39:25+08:00">
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="我们到底学到了什么？">
+  <meta name="twitter:description" content="{{ .Summary }}">
+
+  
+  
+  
+  <link rel="canonical" href="https://liam-zhong.github.io/post/what-on-earth-have-we-learned/" />
+  
+  
+</head>
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://liam-zhong.github.io/"
+      >承霖的部落格</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/archives/"
+        >Archives</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Liam-Zhong"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="https://liam-zhong.github.io/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article class="post special-page">
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">我们到底学到了什么？</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>2024年5月30日</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p><img src="https://pic3.zhimg.com/80/v2-8ebe5f7b265b9066904fc8d63ca75b8e_1440w.webp" alt="课表"></p>
+<p>上图是妓院开设的课程表，落实的话我已经是一个熟练掌握高数线代概率论的讨厌花海的学生了。可事实上除了花海符合实际其余都只知名字怎么写而已。到底是怪老师没有讲清楚知识呢？还是怪我们自己没有好好学？还是怪这么课本身就不适合在我们学院开？其实学到机器学习还是可以知道这些知识运用很广泛，还是挺有用、挺有意思的，但是我们的课程根本不可能讲到那里去，课时太少，练习不够。由此我又想到本科阶段到底该学些什么；以我跟老师们的接触，他们大多都说该打好基础，我也赞同，但是我们开的这些课有没有达到这种目的呢？哪些课能显著体现计算机的基础？都是值得大家一起思考的问题。比如现在看机器学习就严重感觉到线代中矩阵的知识忘得差不多了，那才能让人感觉到什么叫基础，像我们所开过的数电、大物等课程有基础作用吗？似乎感觉有些偏了…… 反倒是语言课、数据结构这些课要好好深入学习学习，但是这些课我们又上好了吗？似乎也没有…… 我们的课程安排似乎是想让学生尽量多学些东西，但是顾了广度肯定会顾不上深度，这永远是一对矛盾，又是一个权重的问题。</p>
+<p>拚命狂赶了两年（？），但是一点也不值得高兴……</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://liam-zhong.github.io/post/fox-and-cat/"
+      ><span class="mr-1.5">←</span><span>狐狸和猫</span></a
+    >
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://liam-zhong.github.io/post/jiangjiang/"
+      ><span>江阿姨</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+  <div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
+  data-page-id="/post/what-on-earth-have-we-learned/"
+  data-page-url="/post/what-on-earth-have-we-learned/"
+  data-page-title="我们到底学到了什么？"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+  window.CUSDIS_LOCALE = {
+    "powered_by": "评论由 Cusdis 提供",
+    "post_comment": "发送",
+    "loading": "加载中",
+    "email": "邮箱地址 (可选)",
+    "nickname": "昵称",
+    "reply_placeholder": "回复内容...",
+    "reply_btn": "回复",
+    "sending": "发送中...",
+    "mod_badge": "管理员",
+    "content_is_required": "内容不能为空",
+    "nickname_is_required": "昵称不能为空",
+    "comment_has_been_sent": "评论已发送，赵连硕审核通过后会展示"
+  }
+</script>
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://liam-zhong.github.io/">承霖的部落格</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
