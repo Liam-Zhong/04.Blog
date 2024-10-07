@@ -334,5 +334,9 @@
     <loc>https://liam-zhong.github.io/series/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url><url>
+    <loc>https://liam-zhong.github.io/share/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
