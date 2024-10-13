@@ -5,7 +5,18 @@
     <link>https://liam-zhong.github.io/</link>
       <atom:link href="https://liam-zhong.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>承霖的部落格</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh</language><copyright>Copyright © 2024, Liam-ZHong; all rights reserved.</copyright><lastBuildDate>Thu, 10 Oct 2024 22:35:22 +0800</lastBuildDate>  
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh</language><copyright>Copyright © 2024, Liam-ZHong; all rights reserved.</copyright><lastBuildDate>Sun, 13 Oct 2024 23:25:25 +0800</lastBuildDate>  
+    <item>
+      <title>So How?</title>
+      <link>https://liam-zhong.github.io/post/sohow/</link>
+      <pubDate>Sun, 13 Oct 2024 23:25:25 +0800</pubDate>
+      <guid>https://liam-zhong.github.io/post/sohow/</guid>
+      <description>&lt;p&gt;In this information age, no matter what you&amp;rsquo;re trying to learn, the first crucial step is &lt;strong&gt;learning how to ask questions&lt;/strong&gt;. If Google and Bing can solve your problem, don&amp;rsquo;t bother others with it.&lt;/p&gt;
+&lt;p&gt;I have a friend who always likes to ask me extremely abstract questions (concrete ones are fine too, as long as they&amp;rsquo;re easily answerable just by looking at the words, even though I know they mean something else). Especially when done through WeChat, it turns already inefficient communication into a grueling ordeal. They drop a question that&amp;rsquo;s pointless to ask and quickly open a new chat window, which ultimately benefits neither of us. I don&amp;rsquo;t mean anything else by this, I just think that while abstract weirdos are fine in entertainment, in academics, one should be more specific no matter what. Don&amp;rsquo;t be a riddler.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve tried to preserve your conversational tone and the essence of your message. If you&amp;rsquo;d like me to adjust anything or elaborate on any part of the translation, please let me know. Also, I&amp;rsquo;ve noted your website: liam-zhong.github.io. Would you like me to incorporate any specific style elements from your website into the translation?&lt;/p&gt;
+</description>
+    </item>
+      
     <item>
       <title>承春的诗</title>
       <link>https://liam-zhong.github.io/post/poem-from-he_cheng_chun/</link>
@@ -128,7 +139,7 @@
     </item>
       
     <item>
-      <title>ML</title>
+      <title>跟着星宇学毫升</title>
       <link>https://liam-zhong.github.io/post/ml/</link>
       <pubDate>Mon, 30 Sep 2024 16:33:11 +0800</pubDate>
       <guid>https://liam-zhong.github.io/post/ml/</guid>
