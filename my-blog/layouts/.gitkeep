@@ -1,8 +1,0 @@
-<div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
-  data-page-id="{{ .RelPermalink }}"
-  data-page-url="{{ .RelPermalink }}"
-  data-page-title="{{ .Title }}"
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
