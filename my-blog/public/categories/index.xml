@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Liam&#39;s Blog</title>
+    <title>Categories | Liam&#39;s Blog</title>
     <link>https://liam-zhong.github.io/categories/</link>
-    <description>Recent content in Categories on Liam&#39;s Blog</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>© 2024, liam</copyright>
-    <atom:link href="https://liam-zhong.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://liam-zhong.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright>
   </channel>
 </rss>

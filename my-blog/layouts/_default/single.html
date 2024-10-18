@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<article>
+<article class="post {{ if or (eq .File.BaseFileName "about") (eq .File.BaseFileName "contact") (eq .Type "post") }}special-page{{ end }}">
   <header class="mb-14">
     <h1 class="!my-0 pb-2.5">{{ .Title }}</h1>
 
@@ -33,20 +33,20 @@
   {{ end }}
 
   <!-- Post Nav -->
-  {{ if not site.Params.disablePostNavigation }}<!---->
-  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
+  {{ if not site.Params.disablePostNavigation }}
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
   {{ if and (gt (len $pages) 1) (in $pages . ) }}
   <nav
-    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
   >
     {{ with $pages.Next . }}
-    <a class="ltr:pr-3 rtl:pl-3" href="{{ .Permalink }}"><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>{{ .Name }}</span></a>
-    {{ end }}<!---->
+    <a class="ltr:pr-3 rtl:pl-3 no-special-link" href="{{ .Permalink }}"><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>{{ .Name }}</span></a>
+    {{ end }}
     {{ with $pages.Prev . }}
-    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="{{ .Permalink }}"><span>{{ .Name }}</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a>
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3 no-special-link" href="{{ .Permalink }}"><span>{{ .Name }}</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a>
     {{ end }}
   </nav>
-  {{ end }}<!---->
+  {{ end }}
   {{ end }}
 
   <!-- Disqus -->
