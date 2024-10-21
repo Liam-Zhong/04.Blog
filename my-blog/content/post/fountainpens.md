@@ -55,7 +55,7 @@ description = "{{ .Summary }}"
 
 6. #### [ Cross](https://cross.com/)
 
-国内没有官网。颜值很高。 
+国内没有官网。颜值很高。 **不买**。
 
 
 
@@ -105,7 +105,7 @@ description = "{{ .Summary }}"
 
 [写乐](https://cn.sailor.co.jp/) **别买，快跑**
 
-[凌美](http://www.lamy.hk/) 丑 **不买**
+[凌美](http://www.lamy.hk/) 丑，ROC纪念但是没有PRC纪念 **不买**
 
 
 
