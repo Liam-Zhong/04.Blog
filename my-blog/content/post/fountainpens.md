@@ -21,7 +21,7 @@ description = "{{ .Summary }}"
 
 2. #### [Pelikan](https://www.pelikan.com/)
 
-国内没有官网，且发邮件不回，**不买**。
+国内没有官网，且发邮件回太慢，**不买**。
 
 
 
@@ -77,7 +77,7 @@ description = "{{ .Summary }}"
 
 [劳彭](https://laban.com/) 台湾产，台独钢笔 **不买**
 
-[英雄](https://hero.com.cn/) 616和100做得不错 淘宝京东都非官网 **不买**
+[英雄](https://hero.com.cn/) 616和100做得不错 
 
 [毕加索](https://www.sh-picasso.com/) 笔尖印花不错 贵 2003年成立没啥历史 **不买**
 
@@ -87,7 +87,7 @@ description = "{{ .Summary }}"
 
 [弘典](http://www.winwinsky.com/index.asp) 不厚道 **不买**
 
-[坛笔](http://penbbs.com/forum.php) 没玩过 听说态度不行 **不买**
+[坛笔](http://penbbs.com/forum.php) 没玩过 听说态度不行且没啥历史 **不买**
 
 永生、金豪、末匠、半句、采墨 ：官网都没有 **不买**
 
