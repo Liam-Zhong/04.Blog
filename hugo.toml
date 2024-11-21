@@ -1,7 +1,7 @@
 baseURL = "https://chlzhong.org/"
 # title = "Hugo Themes"
 author = "Steve Francia"
-copyright = "© 2024, lee.so"
+copyright = "© 2024, liam"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -20,6 +20,9 @@ title = "Chlzhong"
 # twitter = 'nanxiaobei'
   github = 'Liam-Zhong'
 # instagram = 'nan.xiaobei'
+  rss = true 
+  monoDarkIcon = true
+  favicon = "favicon.ico" 
 
 avatar = 'https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c'
   name = 'Liam'
@@ -45,6 +48,11 @@ avatar = 'https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?sourc
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
+    weight = 10
+   [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
     weight = 10
 
 [taxonomies]
@@ -78,3 +86,9 @@ series = "series"
 
   [services.twitter]
     disableInlineCSS = true
+
+[params.cusdis]
+  enable = true
+  app_id = "6c8fd496-b686-4bb1-aac6-8276c867aa7a"
+  host = "https://cusdis.com"
+  lang = "en-us"

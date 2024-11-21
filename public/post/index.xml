@@ -2,487 +2,487 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Chlzhong</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://chlzhong.org/post/</link>
     <description>Recent content in Posts on Chlzhong</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© 2024, lee.so</copyright>
+    <copyright>© 2024, liam</copyright>
     <lastBuildDate>Tue, 19 Nov 2024 12:04:29 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chlzhong.org/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>无外乎叹息</title>
-      <link>http://localhost:1313/post/nothing-but-sighs/</link>
+      <link>https://chlzhong.org/post/nothing-but-sighs/</link>
       <pubDate>Tue, 19 Nov 2024 12:04:29 +0800</pubDate>
-      <guid>http://localhost:1313/post/nothing-but-sighs/</guid>
+      <guid>https://chlzhong.org/post/nothing-but-sighs/</guid>
       <description>心事听起来没那么精致，无外乎叹息。&#xA;铃声是上课时响起来的。他的疲倦了的知觉，又好像被有丧事人家的啼哭所惊醒，解锁之后那三个字却惊人更厉害。J 君比时就在图书馆，一时间纯和而又聪明的她，就来到 2115 除灯光外便是黑暗的教室里。心里的话很多虽然都听见，除了嗯是没有清晰的回复的。人还活着就颇有知交零落感。</description>
     </item>
     <item>
       <title>头发二辑</title>
-      <link>http://localhost:1313/post/my-hair_2/</link>
+      <link>https://chlzhong.org/post/my-hair_2/</link>
       <pubDate>Sun, 03 Nov 2024 23:23:19 +0800</pubDate>
-      <guid>http://localhost:1313/post/my-hair_2/</guid>
+      <guid>https://chlzhong.org/post/my-hair_2/</guid>
       <description> 白无常 我跟你说!栀子花的花瓣真的是一瓣一瓣打开的，每瓣花打开的时候，都会有很轻微的‘啪’的一声，‘啪’的一声打开一瓣，‘啪’的一声再打开一瓣。那天黄昏我就在那儿坐了两三个小时，等它一瓣瓣绽开。外边的花店最爱写三个词语：陌上花开，橘子花开，栀子花开，还有首歌叫《栀子花开》，可有多少人听到过栀子花开的声音？&#xA;黑无常 林庚写落花真是写得神，尤其说最后的仿佛落了满地的后悔，寻不见一处回避的地方与水面的不自然，可以说是前无古人，在古人的诗与文里都没有的。落花落在地上真是仿佛落了满地的后悔。落花真是寻不见一处回避的地方。落花与水面也真是没有一点不自然的地方，所谓落花流水也。&#xA;学校里怎么有乞丐 </description>
     </item>
     <item>
       <title>计算机网络习题</title>
-      <link>http://localhost:1313/post/computer-network-train/</link>
+      <link>https://chlzhong.org/post/computer-network-train/</link>
       <pubDate>Thu, 31 Oct 2024 22:43:43 +0800</pubDate>
-      <guid>http://localhost:1313/post/computer-network-train/</guid>
+      <guid>https://chlzhong.org/post/computer-network-train/</guid>
       <description>第一次作业 一、使用电路交换，要传送的报文共 10000 bit。从源点到终点共经过 5 段链路，每段链路的传播时延为 0.1 s，数据率为 10 kbit/s。在电路交换时电路的建立时间为 0.2 s。在分组交换时分组长度为 4000 bit，且各结点的排队等待时间可忽略不计。试比较分组交换与电路交换的时延大小。若报文长度为 $10^9$ bit，结果如何？&#xA;求解分组交换的时延 t分组交换 t分组时延 = t发送时延 + t排队时延 + t处理时延 + t传播时延&#xA;时延的分类&#xA;发送时延 含义: 主机或路由器发送数据帧所需要的时间 t发送时延 = $\frac{数据帧长度}{数据率}$ 排队时延 含义: 数据包在路由器的输出队列中等待处理所耗费的时间 处理时延 含义: 路由器处理数据包所花费的时间。 举例: 比如说，路由器要解包，进行差错校验、查找下一条合适的路由；还有重新封装 传播时延 含义: 数据包走在路上花费的时间(在信道中传输所耗费的时间) 具体求解 值得注意的是,由题意可知，处理、排队所花费的时间不计。&#xA;不难理解，只有当 Host B 接收到 Host A 所发送的最后一个Bit时，传输才算结束！那我们不妨跟着最后一个 Bit 来进行一场旅行。&#xA;首先，主机 A 将一个 x (bit) 大小的报文发送到信道上，所花费的时间是 $\frac{x}{b}$。此时最后一个Bit刚刚上路~ 虽然最后一个Bit出发的很晚，但是，它依然需要走 k 段链路，每段花费的时间都是 d，所以在路上就花费了 $k \cdot d$ 这么多的时间 不光在路上要花费时间,最后一个 Bit 还要过 k-1 道安检(路由器)。每次安检(路由器存储转发)，要花费 $\frac{p}{b}$ 这么多的时间(存储转发的时间，不计排队和处理的时间)) 算下来的话，一共需要花费 $\frac{x}{b} + k c\cdot d + (k-1) \cdot \frac{p}{b}$ 这么多的时间 求解电路交换的时延 t电路交换 电路交换，传输报文的延时主要在于建立电路花费的时间、将报文发送到信道上花费的时间、以及报文走在路上花费的时间(传播时延)</description>
     </item>
     <item>
       <title>Its OK , Its OK</title>
-      <link>http://localhost:1313/post/its-ok-its-ok/</link>
+      <link>https://chlzhong.org/post/its-ok-its-ok/</link>
       <pubDate>Mon, 28 Oct 2024 22:08:24 +0800</pubDate>
-      <guid>http://localhost:1313/post/its-ok-its-ok/</guid>
+      <guid>https://chlzhong.org/post/its-ok-its-ok/</guid>
       <description>Today, a student who goes by &amp;ldquo;Orange Jam&amp;rdquo; messaged me on QQ, asking if I&amp;rsquo;d be willing to speak as an &amp;ldquo;outstanding class monitor&amp;rdquo; at Thursday&amp;rsquo;s meeting. My first reaction was a mental &amp;ldquo;Me?!&amp;rdquo; filled with disbelief. Throughout my three years as a class monitor, I only bothered showing up at a few &amp;ldquo;academic atmosphere improvement&amp;rdquo; meetings during the first year. After that, I mostly coasted by, relying on volunteers to handle things.</description>
     </item>
     <item>
       <title>Denso Internship</title>
-      <link>http://localhost:1313/post/denso-internship/</link>
+      <link>https://chlzhong.org/post/denso-internship/</link>
       <pubDate>Mon, 21 Oct 2024 11:54:14 +0800</pubDate>
-      <guid>http://localhost:1313/post/denso-internship/</guid>
+      <guid>https://chlzhong.org/post/denso-internship/</guid>
       <description>I won&amp;rsquo;t update this post anymore.</description>
     </item>
     <item>
       <title>Eudemonia - 烟波山上使人愁</title>
-      <link>http://localhost:1313/post/eudemonia-06/</link>
+      <link>https://chlzhong.org/post/eudemonia-06/</link>
       <pubDate>Fri, 18 Oct 2024 22:45:53 +0800</pubDate>
-      <guid>http://localhost:1313/post/eudemonia-06/</guid>
+      <guid>https://chlzhong.org/post/eudemonia-06/</guid>
       <description>既秋又夜且雨，&#xA;我却一事无成，&#xA;所喜一诗无成。 登舟的登舟，&#xA;弃岸的弃岸，&#xA;冷落清秋节。</description>
     </item>
     <item>
       <title>EsterBrook Yes !</title>
-      <link>http://localhost:1313/post/esterbrook-yes/</link>
+      <link>https://chlzhong.org/post/esterbrook-yes/</link>
       <pubDate>Wed, 16 Oct 2024 22:57:16 +0800</pubDate>
-      <guid>http://localhost:1313/post/esterbrook-yes/</guid>
+      <guid>https://chlzhong.org/post/esterbrook-yes/</guid>
       <description>Dear Esterbrook Team,&#xA;I hope this email finds you well. My name is 赵连硕 (Zhao Lianshuo), and I am writing to you as an enthusiastic pen collector from China.&#xA;I have two inquiries that I hope you can assist me with:&#xA;I am interested in purchasing Esterbrook pens and would like to know if there are any official retailers or authorized dealers in China. This could be either physical stores or online platforms.</description>
     </item>
     <item>
       <title>So How?</title>
-      <link>http://localhost:1313/post/sohow/</link>
+      <link>https://chlzhong.org/post/sohow/</link>
       <pubDate>Sun, 13 Oct 2024 23:25:25 +0800</pubDate>
-      <guid>http://localhost:1313/post/sohow/</guid>
+      <guid>https://chlzhong.org/post/sohow/</guid>
       <description>In this information age, no matter what you&amp;rsquo;re trying to learn, the first crucial step is learning how to ask questions. If Google and Bing can solve your problem, don&amp;rsquo;t bother others with it.&#xA;I have a friend who always likes to ask me extremely abstract questions (concrete ones are fine too, as long as they&amp;rsquo;re easily answerable just by looking at the words, even though I know they mean something else).</description>
     </item>
     <item>
       <title>承春的诗</title>
-      <link>http://localhost:1313/post/poem-from-he_cheng_chun/</link>
+      <link>https://chlzhong.org/post/poem-from-he_cheng_chun/</link>
       <pubDate>Thu, 10 Oct 2024 22:35:22 +0800</pubDate>
-      <guid>http://localhost:1313/post/poem-from-he_cheng_chun/</guid>
+      <guid>https://chlzhong.org/post/poem-from-he_cheng_chun/</guid>
       <description>《岁月》&#xA;​&#x9;——何承春&#xA;一年一度花相似， 岁岁月月人不同！ 人生易老天难老， 南山山水依旧青， 夕阳落霞几度红！ 新冠病毒快亡了， 世界明天无限好！ </description>
     </item>
     <item>
       <title>你需要多大「内存」的手机？</title>
-      <link>http://localhost:1313/post/how-much-storage-do-you-need-on-your-phone/</link>
+      <link>https://chlzhong.org/post/how-much-storage-do-you-need-on-your-phone/</link>
       <pubDate>Tue, 08 Oct 2024 14:32:47 +0800</pubDate>
-      <guid>http://localhost:1313/post/how-much-storage-do-you-need-on-your-phone/</guid>
+      <guid>https://chlzhong.org/post/how-much-storage-do-you-need-on-your-phone/</guid>
       <description>刷知乎时偶然看到这个提问：&#xA;128g的内存在大学够吗？ - 知乎 https://www.zhihu.com/question/659436513&#xA;顺手看了下问题日志：&#xA;看样子是一个搞错了 RAM 和 Storage 的大学生提出的问题，正好最近与根哥聊天时很有吐槽意思，那不妨来看看这些「计算机术语」&#xA;查阅常见手机官网可知：大部分国内厂商习惯将 RAM 称为运行内存，也就是题主所理解的内存，将 Storage 称为机身存储。值得注意的是 Apple 并未提供任何与 RAM 有关的信息1。将目光投向 PC 厂商呢？基本是内存＋硬盘的组合。&#xA;那么哪种名称比较好呢？先来看看英语原名。在冯诺依曼体系下，运算器、控制器、存储器、输入设备和输出设备共同构成了现代计算机，单看存储器又有：&#xA;存储器 (Memory) 主存储器 (Main Memory) RAM（随机存取存储器）(Random Access Memory) ROM（只读存储器）(Read-Only Memory) 辅助存储器 (Secondary Storage) 磁存储器 (Magnetic Storage) 光存储器 (Optical Storage) 固态存储器 (Solid-State Storage) 固态硬盘（SSD）(Solid-State Drive) U盘 (USB Flash Drive) 存储卡 (Memory Card) 高速缓冲存储器（Cache） 寄存器 (Registers) 通用寄存器 (General-Purpose Registers) 专用寄存器 (Special-Purpose Registers) 其实内存 Memory 相对应的是外存 Storage ，即外部存储，它不参与2运算流程，所以叫外部。一切程序和数据都是先进内存，然后CPU来计算，CPU只跟内存打交道，不跟硬盘打交道：即外部存不属于核心部件的一部分。所以内存有且仅有一个，跟CPU打交道的那个存储数据和程序的东西就叫内存。&#xA;那么在我这里「运行内存」就是一个很烂的翻译，大可不必留着前两个字，和电脑统一就是很好的叫法。&#xA;现在回到问题，你需要多大「内存」的手机？</description>
     </item>
     <item>
       <title>【转】国庆日之朝</title>
-      <link>http://localhost:1313/post/china-day/</link>
+      <link>https://chlzhong.org/post/china-day/</link>
       <pubDate>Mon, 07 Oct 2024 21:30:30 +0800</pubDate>
-      <guid>http://localhost:1313/post/china-day/</guid>
+      <guid>https://chlzhong.org/post/china-day/</guid>
       <description>一年一度，双十节终又来到。不管是意识的或是不意识的，这天的街头总有一种特殊的热闹。回想过去若干年以来我一直在北京，每逢国庆日大概要到街上去走走的。每到这一天总觉得比别的日子不同，比之“新年”在我还有更生的气概。这是说自己在那天有种反省的机会罢了。至说对国庆本身决没有什么多大的没我的欢欣。今年国庆日从早醒时起就听见冷风刮着落叶在院子的砖瓦上起出一种干枯之声。“桂花香里”，在北方真是迅速的三二天罢了，这早已是过去完了。“丛菊纷披”，这尚属未来。走到枯败的院子里益深萧索之感了。我在这种时候就大不满意于北方生活。要在南方正是黄金的成熟时期，离严冬的寒威尚远不可来的样子。特别的今年今日有这种感想。上午在家。也不能静心。十时有来客。因为中午有人设宴称庆，就带早出门与来客到外面顺便走走。街头照例点缀了些旗彩之类。殊属单调之至。车过天安门，往年常开国民大会的天安门也是一样。听说本年奉有命令要隆重庆祝的，但实际可说不如从前。可见强颜作笑是不可能的。见到“普天同庆”，“薄海腾观”的彩牌楼，心弦上起出异样的难受。这难受只是异样罢了，并无多大的厉害。所以只说“难受”而已。这两字实在已足够表明那种比较复杂的情绪了罢。在那种难受之中，同行的来客忽又握别了。于是只好再坐车去赴C家之晏。其实也只同瞻仰彩牌楼一样而已。不过以为D老可到，一领他的謦欬大足解颐。谁知在C家满堂宾客中未见此公。竟其连启翁也不见来到，不然在陌生居多的人中有一熟人随便谈谈省得去尊姓大名了。他们二人竟终席未见。所以回家来极早。而启翁来信早在我的案头等候了。国庆日尚只过一半，下午晚上本亦有可记处。但是题目标明“但是题目标明只限朝晨的感想所以本刊补白栏只有照抄一段启翁来书或能填满一栏余乎。书中有曰C公赐晏想必有盛大举动，唯佞懒于出门一半由于刮大风恐未必能去领赐耳。日前往北海访友，顺便在小骨董店中买一石印，文曰“以酒为衣”，边款五行云“有酒曾歌雅无衣漫咏豳一樽凭泛蚁百结抵悬鹑但学刘伶醉浑忘范叔贫瓮头谋卒岁缸面暖回春戊戌秋七月朔日冯敏昌”虽系赋得上文四字，亦颇可玩耳。匆匆。云云。重读启翁书罢感到我之赋得国庆亦大可休矣云尔。&#xA;Excerpt From&#xA;废名集&#xA;王风</description>
     </item>
     <item>
       <title>融创小镇：渝西南游乐行</title>
-      <link>http://localhost:1313/post/rong-chuang-town-day/</link>
+      <link>https://chlzhong.org/post/rong-chuang-town-day/</link>
       <pubDate>Sat, 05 Oct 2024 21:36:45 +0800</pubDate>
-      <guid>http://localhost:1313/post/rong-chuang-town-day/</guid>
+      <guid>https://chlzhong.org/post/rong-chuang-town-day/</guid>
       <description>西方的格言，“不自由，毋宁死！”我要笑他一无是处。世界的意义根本就是坐牢，大家都是来受苦的，你从哪里去接受自由呢？谁又能给你以自由呢？否则为何游乐园里为何都是受苦项目呢？&#xA;融创文旅城去南山二十里路，地铁不可直达，其地无高岩弯道，近大学城而又平，且逢假日，故人声鼎沸，无日无之。门多摊贩，初极香，愈深愈浓，至门口时堪称臭味熏人。入至，左一排为所谓特色商贩，行至底可换票。右则见一小瀑，声若惊雷，所见如连环、如带、如佩环、色则无可记。行不久为碰碰车，大人小孩莫不连臂而至，情侣则靓妆丽服，望之若神肤。此项与后所叙皆约一刻：排排队时摩肩接踵，为何为欢只几何？&#xA;巨摆锤者，未排而不知其感觉尽失，游尽而顿首挂笑者，所见唯数十人而已。器械不高，入座则似公交。人未察，已而明月浮空，宇宙摇摆，称霸比基尼海滩，雷击电掣，此时形无可状只有惊声不绝。然后吃饭，小面味不佳，不记。山城之光者，其实无聊。徒有摩天之名，参次错落，颇有次第，蓝牙连疯，原神可爱。海盗船最可肾客，不堪久坐。五人一排，四座屏息，栏杆响，声破天，每旋一圈，几近垂空，龟言此地之寒，鹤讶飞绝之险，游者呼，观者惧，壮士下泪，鱼虾徘徊。而后则激流飘荡，水波飘摇者不若浮萍，此时最喜派大星。&#xA;甲辰九月，同游者一舍友，一舍友友。趣归衍记。</description>
     </item>
     <item>
       <title>跟着星宇学毫升</title>
-      <link>http://localhost:1313/post/ml/</link>
+      <link>https://chlzhong.org/post/ml/</link>
       <pubDate>Mon, 30 Sep 2024 16:33:11 +0800</pubDate>
-      <guid>http://localhost:1313/post/ml/</guid>
+      <guid>https://chlzhong.org/post/ml/</guid>
       <description>st=&amp;gt;start: 开始 op1=&amp;gt;operation: 载入数据集 op2=&amp;gt;operation: 生成单词列表 op3=&amp;gt;operation: 构建词向量矩阵 op4=&amp;gt;operation: 训练朴素贝叶斯分类器 op5=&amp;gt;operation: 对测试数据进行分类 op6=&amp;gt;operation: 输出分类结果 e=&amp;gt;end: 结束 st-&amp;gt;op1-&amp;gt;op2-&amp;gt;op3-&amp;gt;op4-&amp;gt;op5-&amp;gt;op6-&amp;gt;e </description>
     </item>
     <item>
       <title>舞动身体的羞耻感</title>
-      <link>http://localhost:1313/post/the-shame-of-moving-the-body/</link>
+      <link>https://chlzhong.org/post/the-shame-of-moving-the-body/</link>
       <pubDate>Mon, 30 Sep 2024 16:06:14 +0800</pubDate>
-      <guid>http://localhost:1313/post/the-shame-of-moving-the-body/</guid>
+      <guid>https://chlzhong.org/post/the-shame-of-moving-the-body/</guid>
       <description>或许十年后还是这样子 听到hip-hop会想跟着点头 希望你听到现在 头早就跟着点&#xA;—— 史诗 - 蛋堡&#xA;总觉着舞动自己的身体有一种羞耻感。&#xA;读书时的舞蹈算是寝室里的欢乐时刻，可一旦要在班上表演只会感觉是公式做题，机械挥动身体而已，囧到极点还会觉得十分难堪，几乎是要叫老爷去。我不知道这种心理是如何产生的，因为小学上台表演还是会有主动的兴奋，并且我相信这算是人类的天性——非洲舞曲与少数民族们的能歌善舞可见一斑，然而上了高中确实就会有奇怪的羞耻感了。一股脑把责任抛给安军和秀英显然有失偏颇，弥天朗朗在目，千顷浓深立影，光阴不可一风吹。那么锅就交给青春期。</description>
     </item>
     <item>
       <title>今天下雨</title>
-      <link>http://localhost:1313/post/rainday/</link>
+      <link>https://chlzhong.org/post/rainday/</link>
       <pubDate>Mon, 30 Sep 2024 16:05:16 +0800</pubDate>
-      <guid>http://localhost:1313/post/rainday/</guid>
+      <guid>https://chlzhong.org/post/rainday/</guid>
       <description>前天（9/28/2024）晚上在和伊人儿通讯时意外撞见一位故人1预与他聊天，便自觉盖上手指。不巧的是旧疾偶发，疼痛难忍，只好移开手指,总之是瞥见了他们的内容：&#xA;XXX是不是喜欢男生呢？&#xA;或者说他是不是双性恋呀？&#xA;霎时头脑新鲜：&#xA;为什么她会这么想？ 我到底是不是呢？ 为什么不问我呢？ 幸好，她很快解释了第一个问题。原来是朋友圈分享的书里有我的回应，于是惊讶于我的看过，继而引其怀疑。&#xA;事起朋友圈 | 已获小姐姐授权 虽然我没有数据研究同性恋看这类小说的比例，但主观上是觉得很奇怪的。（这里先不谈好不好看的问题，我现在更爱看死人的东西）看一部小说而已，怎么能推断我的性取向呢？按照这个逻辑推断岂不是酒后我成牛头人？其实这时候讲讲“可持续性发展”就很好，倘若我有连续性地阅读带有同性标签作品的习惯，她起这个怀疑我是可以理解的。在我当然只是画一个涉猎广泛。&#xA;第二个问题其实比较难回答。我想我不会喜欢抽象的性别，而是选择具体的人。这一点其实看我的QQ也能发现。&#xA;当然，写下这个回答的时候是在抄阿植诗句的，聚焦于身体这个范围的话我想名单会加长：正常人的男主也是喜欢的款式。&#xA;由于这部剧尺度颇大，得以瞥见许多🔞画面。而且导演并不避讳这些场景，甚至有频繁的出镜和很好的打光，这些镜头里男主暴露出来的温存是要比女主来得多的。他生得浑厚健壮，叫人心猿意马。肚子与平常人不同，哀莫哀兮生别离乎！然而只在好龙，因为在教室在公交被壮汉撞到只会觉得讨厌……&#xA;所以我到底是不是呢？没做过不知道&#xA;第三个问题在写这篇博客时还耿耿于怀，然而再动笔时已然觉得无所谓：&#xA;只是偶然地插肩而过，又何必相问相识？&#xA;2024年10月5号&#xA;她的名字，第一次为我所知可算在初二。托了刘洋聪的微信昵称，即这位瑕不掩瑜者。初见是在一九年的五月五，不过在这之前，也在根哥那里知道一点的。写到这里就没什么大的印象了，不过说到底，应该是一次读书时的代入。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>麻将集（一）：我独何人，能不靖乱</title>
-      <link>http://localhost:1313/post/useless-prosper/</link>
+      <link>https://chlzhong.org/post/useless-prosper/</link>
       <pubDate>Sun, 29 Sep 2024 10:00:05 +0800</pubDate>
-      <guid>http://localhost:1313/post/useless-prosper/</guid>
+      <guid>https://chlzhong.org/post/useless-prosper/</guid>
       <description>浏览器标签栏越来越长，typora里的文件数量却不见长。于是把一闪而过的想法记录于此，聊以清净。又高中清秋述胡适之逸事予我极深印象，遂名为麻将。&#xA;对好哥哥的作品越来越喜欢。人生如寄，多忧何为？今我不乐，岁月如驰。很难想象东汉的作品在如今还有这么通俗易懂，近乎陶先生去。至少作品上一点不像之前在阿植那里瞥见的“巧诈”，反倒是有种沉吟又自然的“拙诚”。只是篡了汉做皇帝在我实在太减分。并且还有“我独何人，能不靖乱”的惆怅，强说愁警告哈。&#xA;讨厌日寄写不出，已经是我自己的形状。讨厌刚上床睡觉就想去尿尿，讨厌我的衣服洗完皱巴巴像不新鲜牛肉干，讨厌那莫名的新闻还总爱给我推，讨厌吃饭时候东西还在嘴里就要开始喷，讨厌下雨天，讨厌大太阳，我讨厌 讨厌有好多讨厌的事都说不完 。讨厌电话总是给我推销这个那个，也讨厌新宿舍都没有信号 我讨厌见信如唔 也讨厌一整天的微信如误 。最讨厌人家喜欢做我讨厌的事 但就算是喜欢的人还是会做 讨厌的事 。讨厌熬夜 睡得不够白天只好变猪咪，我讨厌谜语人 更讨厌不能直接摆臭脸。 讨厌放个假还要调休，也讨厌打个车司机跟我聊政治……&#xA;我还是喜欢死人。&#xA;酒店偷拍，河北又减分。围堵警察局，难以置信这是21世纪的事，车停警察局门口，四个轮胎都被扎破了俩：不禁怀疑总书记的扫黑除恶都做了些啥？唐山大哥今犹在，至今已觉不新鲜。博主的道歉是整件事最好玩的一点：解决不了问题还解决不了你？.jpg&#xA;陈宁学校麻辣烫也小火了一把。老实说我自己刚开始看到这个词也觉得不太好，先入脑者是诸如上海媛、佛媛、爬山媛等等奇怪的没有定义的印象，在饼上搜索了一下基本含义是&amp;quot;美女&amp;quot;，又是一个我有偏见的词汇。但是黑话说了一大堆，到底是什么印象？&#xA;事起帖子 | 图源：小红书 这段话对我来说信息密度有点低，带有一些调侃和讽刺的意味，我是这样理解的：&#xA;说话者在提到西南大学天生丽街二楼的一家麻辣烫店时，觉得这家店的名字可能有点奇怪或搞笑，并且推测店主可能认为自己的店名很有创意或幽默。 “都能想象到麻辣烫老板意淫的样子” 这句话则是进一步讽刺，暗指店主可能在自我满足或自以为是地认为店名很独特，甚至有些过度沉浸在自己的想法中。 整体上这段话带有不太严肃的语气，表达了这位用户对这家麻辣烫店名字的嘲讽与不屑。&#xA;我很讨厌嘲讽的语气。我完全支持对一些事实或现象的批评，也认同这些批评是由有必要的,但是从这个用户的帖子里除了嘲讽几乎是没有什么别的。为什么不阐明你的观点呢？哪怕是戾气重一点我都觉得没有关系，因为这还算的上是平等的交流，只是话不太好听。而嘲讽就像自绝圈外，居高临下，到底是立场与情绪主宰了帖子：她在意淫“老板意淫的样子”，就不幽默了吗&#xA;“桧”是一个人人都知道，但没有人用的纯名用字。它不被人用难道是因为桧树不够高大挺拔无美姿吗？互联网社区总归是一个以黑话和认同建立起来的圈子，人人都是抽象怪。&#xA;又读遗书，思绪要到天上飞。2024年学生里有多少美美呢？或者说老师、同学、家长能不能提前甄别并帮助她呢？&#xA;这个世界还有好多事我还没做，但我已经没有力气去做了，我还想去看王楚钦打球呢&#xA;酸唧唧的夜晚看不得这样的句子，尽管我不喜欢妳的楚钦哥哥，但是祝福妳如愿。</description>
     </item>
     <item>
       <title>日寄</title>
-      <link>http://localhost:1313/post/dieary/</link>
+      <link>https://chlzhong.org/post/dieary/</link>
       <pubDate>Sat, 28 Sep 2024 22:15:32 +0800</pubDate>
-      <guid>http://localhost:1313/post/dieary/</guid>
+      <guid>https://chlzhong.org/post/dieary/</guid>
       <description>“以后不管遇到什么困难， 不管遇到什么伤心的事情，&#xA;还有没有办法得到的事情，&#xA;我都要用很正向的心情去面对它，&#xA;因为这个阳光太美好了。”&#xA;水哥就边摊饼边这么说着，&#xA;我说我没食欲吃不下这张饼。&#xA;伤心极了不知为什么的水哥振起精神出口气：&#xA;“要不给你加个蛋？”&#xA;摆摆手后是声长叹，&#xA;你还真是不食人间烟火！&#xA;说完就把月光端上来了，&#xA;我照见月光觉得很舒服：&#xA;“是的 多点辣”&#xA;水哥的天下事就大定了。</description>
     </item>
     <item>
       <title>你所不知道的明志苑之内部装修</title>
-      <link>http://localhost:1313/post/the-unknown-mingzhi-garden-442/</link>
+      <link>https://chlzhong.org/post/the-unknown-mingzhi-garden-442/</link>
       <pubDate>Thu, 19 Sep 2024 20:11:23 +0800</pubDate>
-      <guid>http://localhost:1313/post/the-unknown-mingzhi-garden-442/</guid>
+      <guid>https://chlzhong.org/post/the-unknown-mingzhi-garden-442/</guid>
       <description>山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。苔痕上阶绿，草色入帘青。谈笑有鸿儒，往来无白丁。可以调素琴，阅金经。无丝竹之乱耳，无案牍之劳形。南阳诸葛庐，西蜀子云亭。孔子云：“何陋之有？”</description>
     </item>
     <item>
       <title>中秋记忆</title>
-      <link>http://localhost:1313/post/eudemonia-05/</link>
+      <link>https://chlzhong.org/post/eudemonia-05/</link>
       <pubDate>Wed, 18 Sep 2024 16:43:43 +0800</pubDate>
-      <guid>http://localhost:1313/post/eudemonia-05/</guid>
+      <guid>https://chlzhong.org/post/eudemonia-05/</guid>
       <description> 晨起动征铎 褪色午后街 秋夕 </description>
     </item>
     <item>
       <title>【转】过中秋</title>
-      <link>http://localhost:1313/post/mid-autumn-festivial/</link>
+      <link>https://chlzhong.org/post/mid-autumn-festivial/</link>
       <pubDate>Tue, 17 Sep 2024 22:47:10 +0800</pubDate>
-      <guid>http://localhost:1313/post/mid-autumn-festivial/</guid>
+      <guid>https://chlzhong.org/post/mid-autumn-festivial/</guid>
       <description>中秋，那必然是有个诗思罢，然而我没有。我向来就没有诗思，而且以此著名，曾蒙见笑于姐姐妹妹之林，说我不喜欢花，不喜欢听鸟叫，“奇怪，你这个人不喜欢看花！”我这个人大概有什么标记应该是喜欢着花的了。小姐们不小心的地方我倒喜欢留意，岂是留意，常常不幸而注意到了罢了，有一回雨打梨花之夜五龙亭上我看见一个人儿喝柠檬水喝得太不好看。&#xA;今年的中秋又特别没有诗思，简直杀风景得很，不说别的，此刻拿起笔来忽而写下这么一个题目，不禁有一点儿慌张，怕人家要打倒我了，说我有什么趣味了。如今国历之下，这个废历之节，连邮政局里拿了汇票都可以去取钱。于是又很有点儿怏怏然，我也有一张汇票前一个礼拜已经取回来了。这又为什么怏怏然？我说话总是喜欢这样胡里胡涂的。&#xA;我总是打算盘，打算怎样的过一天，过一月。然而中秋的前一日，黎明即起，揩一揩眼矢，知道明天就是佳节，盥漱甫毕，人不知鬼不觉，出城下乡去玩了。倘若不是跑得快，也许没有去成。然而终于是在乡下走路了。实在自己也不知道为什么。坐在车上很快乐的。记得有一回有一人问我，那时我也是为什么下了一趟乡回来，他不知为什么以为我一定是骑驴的，说，“你是骑驴子罢。”其实我是坐人力车。路上也总是想大大小小的事，关于自己，关于自己以外。碰见拉车的，或是他的年纪大，或是他的气力小，拉得费气力的令人难过，也是不能安然的。今天格外的不能安然，想，我如果到了这地步，那我一定要败于自然罢，决不败于人。这就是说我可以跳到大海里去，或者禁食而死。这就是说我知道我敌不过自然之律，水可以把我湮没，不营养生命就要灭亡。我决没有一个为人所屈服的意思。这都是见笑的话。这都是实话。我如果为得做文章，那一定说得大方多了，可以找不出毛病来。那也不就是假话。这几日恐怕是因为受了一些刺激，所以心绪颇不宁，乱思想。好比前日在一位友人处听到一位青年的谈话，他刚从警备司令部释放了回来，备谈那里面的情形，恐怕都是中国所特有。别的不必说了，有一件令我注意。他说那施刑的是一个老头子，他的老婆，他的儿子，他的儿媳妇，都在里面做同样的事。我想，他的父亲，他的父亲的父亲，恐怕也是子孙相传的。这是很可怕的一件事。&#xA;可耻的是中国的文人。他们自己不意识，其实他们都是自居于俳优之列，总仿佛有一个什么应该养活他们。我走在路上我颇凛凛然，我找不出一个合理的生活。在这个不合理的社会里，什么是我的合理的生活呢？我想那应该是自己耕种。说实话，我是赞美和尚生活的，但那也应该在合理的社会里才为合理，物质文明发达，大家的工作都是大家的快乐，不是牛马，那可以让他在那里修行了，否则八股的鼻祖韩昌黎公所骂他们的也不无是处。在这个不合理的社会里我想我还是应该做一点什么工才对，求以自给。至于艺术，那只能算是你自己还能够游戏。你自己明白道理，能够心安，然后不妨自足，人家责备你，笑骂你，你自然能够原谅他，如果他实在是粗暴，卑鄙，你也可以耻笑他。可恨我从小就没有养成一个操作的习惯。&#xA;我在这些思想之下到了香山，这个地方我很熟，所以一点也不觉得新鲜，到处都感到干燥极了。我本不是有意来玩的，干燥也就干燥而已。太阳落山时，我走到卧佛寺去“看我的一位朋友，我打听得他昨天或是前天也下乡来了。不巧他到外面游逛去了。我怅惘。去年也是这时节，我也在西山小住，他也在卧佛寺，我去访他，他则已进城矣，我曾写了几行字寄他，有云：“抚诸松而徘徊，忆君君不知。”回头一个人沿马路走，望见山上红叶，也因为看熟了，不见怎样了不得，确也还好看。回头打个电话进城，受话者责备我为什么跑了，催我还是回来过中秋，并说他们已经关了一月饷，有酒有肴哩。盛意不可却，中秋之日，正午，我又进城来了。真是何所闻而来，何所见而去。 归途，过海甸，车夫走的是小道，天气热燥，我又是一阵一阵的乱想。道旁看见一座坟，碑刻“大清庚子之变殉难烈女陈四姑之墓”，我烦燥得难堪，恨不得一脚踢翻了牠。我在我的故乡，“节孝牌坊”是看得很多的，还没有看见“烈女”！这个该咒诅的什么！一路上一阵一阵的土，干燥已极，把我闷死了。进西直门，又看见两个不是人的女人，小脚，满脸胭脂粉，真是白日见鬼，我一看她们的服装我知道这都是住在万牲园往南有名叫黄土坑地方卖淫的！&#xA;Excerpt From&#xA;废名集(套装全6册)&#xA;王风</description>
     </item>
     <item>
       <title>山水桃柳一女子撑花伞题字曰百无禁忌甲辰中秋</title>
-      <link>http://localhost:1313/post/landscape-peach-and-willow-a-woman-with-a-flower-umbrella-inscribed-that-there-is-no-taboo-in-the-mid-autumn-festival/</link>
+      <link>https://chlzhong.org/post/landscape-peach-and-willow-a-woman-with-a-flower-umbrella-inscribed-that-there-is-no-taboo-in-the-mid-autumn-festival/</link>
       <pubDate>Tue, 17 Sep 2024 10:20:49 +0800</pubDate>
-      <guid>http://localhost:1313/post/landscape-peach-and-willow-a-woman-with-a-flower-umbrella-inscribed-that-there-is-no-taboo-in-the-mid-autumn-festival/</guid>
+      <guid>https://chlzhong.org/post/landscape-peach-and-willow-a-woman-with-a-flower-umbrella-inscribed-that-there-is-no-taboo-in-the-mid-autumn-festival/</guid>
       <description>月桂争辉夜，轻舟泛玉轮。&#xA;赏菊归来晚，应是惜良辰。</description>
     </item>
     <item>
       <title>又说钢笔</title>
-      <link>http://localhost:1313/post/foutainpens-again/</link>
+      <link>https://chlzhong.org/post/foutainpens-again/</link>
       <pubDate>Fri, 13 Sep 2024 13:28:39 +0800</pubDate>
-      <guid>http://localhost:1313/post/foutainpens-again/</guid>
+      <guid>https://chlzhong.org/post/foutainpens-again/</guid>
       <description> 从前的日色变得慢&#xA;车，马，邮件都慢&#xA;一生只够爱一个人&#xA;父亲用衬衫口袋上别的那支英雄100&#xA;给母亲写了一封情书&#xA;长情的告白，陪伴至今&#xA;在那个一切物资都匮乏的时代，钢笔自然十分金贵，同时也算是一种身份的象征&#xA;钢笔插在衬衫口袋 | 图源：搜狐 1883 年 当年因为墨水笔漏水丢了一笔大生意之后，销售员 Lewis Edson Waterman 发明了“三隙供水”系统。这个系统首次解决了笔在使用过程中出水过多的问题。L.E. Waterman 在纽约为首款性能可靠的墨水笔注册了专利：The Regular。&#xA;同年，爱迪生设置世界上第一座使用露天电线的电照明系统。电力系统至今已是现代社会的基石，而前者已然式微。&#xA;1931年 周荆庭先生于1931年创立华孚金笔厂，即英雄金笔厂的前身。&#xA;1950年 法国公司Société Bic生产出一种廉价一次性圆珠笔Bic Cristal，并在后面的时间里开始慢慢替代钢笔成为主力书写工具。&#xA;同年，中华人民共和国成立1周年。英国承认中华人民共和国为代表中国的唯一合法政府，朝鲜战争爆发。&#xA;2001年 中国于2001年12月11日正式加入世界贸易组织。值得注意的是石广生先生使用的便是英雄钢笔。&#xA;石广生签署《中国加入世界贸易组织议定书》 | 图源：新华社 很明显，在有中华人民共和国一朝，钢笔就注定不会是主流书写工具。&#xA;经历了20年的日用圆珠笔，消费者发现每天用这种笔签字太跌份了，有些场合还是要用上档次的笔签字。这个上档次的笔不能是圆珠笔，圆珠笔做得再华丽，总能让人联想起便利店的廉价货，必须用钢笔，而且这个钢笔要越不像圆珠笔越好。&#xA;于是各大笔厂纷纷回去翻家谱，找出那些已经停产的、富丽华贵的、最不像圆珠笔的古董钢笔。他们要让这些老家伙迎来生命第二春。&#xA;这就是钢笔的复古风潮。这个风潮一直持续至今，现在各大笔厂在钢笔行业的地位，完全是在这次风潮中奠定的。&#xA;作者：马乙&#xA;链接：https://zhuanlan.zhihu.com/p/369999219&#xA;来源：知乎&#xA;于是，或许是享受一种基于等级的身份牛犇感，或许是单纯复古地尝试钢笔用于写字，又或许是倒腾商品赚点钱，钢笔圈子便逐渐诞生了。其在网络上也有一个从无到有的过程，谁越早开始玩钢笔，就越早买到稀有的钢笔、越早发现和掌握钢笔的资料，谁越早利用自己获取的钢笔资料在网上发帖，就越早掌握关于钢笔的话语权甚至是定价权。&#xA;从爱好者们的角度来看，现产与老笔几乎是两种产业了：&#xA;一是经过几十年的演变，几乎所有知名钢笔品牌的生产商、销售商早已不是原厂。这已经不是像中学课本说的全球化那么简单，仅仅是一支笔的零件由不同厂商生产后组装。而是，很多厂牌早已几经易手，厂牌的所有者与生产商完全剥离；有的产品像可口可乐一样，直接在销售地就近生产；为了产品系列的完整性，可能会引入部分非本厂原产的产品贴牌销售；生产出来后，要通过复杂、多层的代理体系才能投放市场。&#xA;二是现在已经看不到在钢笔的技术上有什么重大革新。钢笔技术本身已经非常完善。派克51创建暗尖之后，几乎没有什么令人眼前一亮的，使用或是功能上的亮点。现在不管笔尖还是供墨系统，都已经非常成熟，对应任何需要重新调整自来水笔外形和结构的产品，都可以直接挑选其中一种合适的笔尖、吸墨器甚至笔套。因此，钢笔爱好者不可能再去现产钢笔身上琢磨潜艇吸墨、活塞吸墨，也不可能在现产钢笔身上发现什么更复杂而稀奇的吸墨方式。至于其他一些结构和装饰，就更不可能有什么值得把玩之处了。&#xA;三是一些钢笔产品与奢侈品品牌捆绑，书写属性不断弱化，品牌溢价的成分过度膨胀。钢笔作为一种仔细到吸墨系统的物理结构和铱粒、笔杆的化学成分都值得认真考究的产品，徒有其表自然是不行的。&#xA;四是在捆绑奢侈品的基础上，大量使用&amp;quot;纪念&amp;quot;元素进行营销。向前的车轮与轮回的时尚都该是引领着人们去创新，而现在这些钢笔产品，却反过来直接使用几十年、几百年前的具象和符号，美其名曰“纪念”，实际上是一种堕落。&#xA;对我来说，每只笔都有自己的故事。哪怕是垃圾如写乐的断杆，也是开学时候里不能磨灭的记忆。用百乐78G写下第一封情书，用英雄100作了两个月的练字，在不断的使用过程中她们好像是不同性格的女孩子，有源源不绝的可爱。&#xA;暗尖们 明尖们 </description>
     </item>
     <item>
       <title>印象中的钢笔们</title>
-      <link>http://localhost:1313/post/fountainpens/</link>
+      <link>https://chlzhong.org/post/fountainpens/</link>
       <pubDate>Tue, 10 Sep 2024 21:15:28 +0800</pubDate>
-      <guid>http://localhost:1313/post/fountainpens/</guid>
+      <guid>https://chlzhong.org/post/fountainpens/</guid>
       <description>1883 Waterman 梦中情笔，入坑起源。 整天吹嘘法产的美国品牌，不买&#xA;智尊&#xA;海韵&#xA;1913 Sheaffer 国内没有官网，祖上风光的印度钢笔，不买。&#xA;1906 Montblanc 奢侈品，不买。&#xA;145&#xA;146&#xA;149&#xA;1838 Pelikan 国内没有官网，且发邮件回太慢，不买。&#xA;400&#xA;800&#xA;600&#xA;1000&#xA;1888 Parker 吃相难看，不买。&#xA;世纪经典&#xA;卓尔(有钢尖版本)&#xA;51(有刚尖版本)&#xA;1846 Cross 国内没有官网，颜值很高。 不买。&#xA;1761 Faber-Castell 国内约等于没有官网（算上1993 伯爵），不买。&#xA;1883 Kaweco 国内没有官网。短钢做得好看，但是旋帽 。不买&#xA;中国钢笔 1959 三文堂 台湾产，丑，品牌名字没有我悠久 不买&#xA;1981 劳彭 台湾产，台独钢笔 不买&#xA;1931 英雄 616和100做得不错 别的纪念太重且贵 不买&#xA;1997 弘典 不厚道 不买&#xA;2003 毕加索 笔尖印花不错 贵 没啥历史 不买&#xA;2001 公爵 假洋鬼子，不买&#xA;2018 萧伯纳 假洋鬼子，不买</description>
     </item>
     <item>
       <title>Eudemonia - 韶光真似浮云</title>
-      <link>http://localhost:1313/post/eudemonia-04/</link>
+      <link>https://chlzhong.org/post/eudemonia-04/</link>
       <pubDate>Thu, 29 Aug 2024 20:10:39 +0800</pubDate>
-      <guid>http://localhost:1313/post/eudemonia-04/</guid>
+      <guid>https://chlzhong.org/post/eudemonia-04/</guid>
       <description> 海星粉 饿肚海星粉 谢阿金 海上花 比基尼海滩 </description>
     </item>
     <item>
       <title>吹牛之“兴”</title>
-      <link>http://localhost:1313/post/imagery/</link>
+      <link>https://chlzhong.org/post/imagery/</link>
       <pubDate>Tue, 27 Aug 2024 08:17:14 +0800</pubDate>
-      <guid>http://localhost:1313/post/imagery/</guid>
+      <guid>https://chlzhong.org/post/imagery/</guid>
       <description>思而不学之作&#xA;大师：掌六律、六同，以合阴阳之声。阳声：黄钟、大蔟、姑洗、蕤宾、夷则、无射。阴声：大吕、应钟、南吕、函钟、小吕、夹钟。皆文之以五声：宫、商、角、徵、羽。皆播之以八音：金、石、土、革、丝、木、匏、竹。教六诗，曰风，曰赋，曰比，曰兴，曰雅，曰颂；以六德为之本，以六律为之音。大祭祀：帅瞽登歌，令奏击拊；下管，播乐器，令奏鼓朄。大飨，亦如之。大射，帅瞽而歌射节。大师，执同律以听军声而诏吉凶。大丧，帅瞽而廞；作柩谥。凡国之瞽蒙，正焉。&#xA;自从周礼的作者记录下六诗，它不那么鲜明的诠释，便一直影响此后历代的人们，许多为今人所尊的评议正是从这里开始的“兴&amp;rsquo;&amp;rsquo;。如挚虞认为：“赋者，敷陈之称也；比者，喻类之言也；兴者，有感之辞也。刘勰又说:“比者，附也；兴者，起也”。传至后世则越来越复杂了。&#xA;在我这里则一直是眼见的叙述。所以举头望明月，低头思故乡、仰面贪看鸟，低头错应人都实实在在有线索可循。拿过来用在生活里也就是叙述的转变：实践了。&#xA;王子猷（王徽之）居山阴，夜大雪，眠觉，开室命酌酒，四望皎然。因起彷徨。咏左思《招隐诗]》，忽忆戴安道（戴逵）。时戴在剡，即便夜乘小船就之。经宿方至，造门不前而返。人问其故，王曰：“吾本乘兴而行，兴尽而返，何必见戴！”&#xA;王徽之住在山阴的时候，一天夜里下大雪，他睡觉醒来，打开房门，叫左右备酒，环顾四周，一片洁白。他就起身徘徊，吟诵左思的《招隐诗》，忽然想起戴逵。当时戴逵在剡县，王徽之就连夜乘了小船去拜访他。船行了一夜才到，到了门口却不进去，又返回山阴了。有人问他缘故，他说：我本来是乘兴而去的，现在兴尽而回，何必一定要见到戴逵呢？&#xA;没记错的话这个故事在前几年还因为“一场说走就走的旅行&amp;quot;而火过，也有许多考据家认真分析说走就走，说明他随时有待命的下人和交通工具；花了单程一夜的时间去远方见一个朋友，说明他根本不介意第二天上班会不会迟到，因此可能根本不是需要准点打卡的工薪族；到了朋友的门口突然掉头而去，说明那一夜的时间和交通成本，他根本没放在心上，而不是“来都来了，起码要住两天回本”。——无疑是没看到这故事的出处。作为东晋名士，要的就是这种随性，不然你何以看到这没有目击者的一人故事呢？&#xA;又&#xA;王子猷出都，尚在渚下。旧闻桓子野善吹笛，而不相识。遇桓于岸上过，王在船中，客有识之者，云是桓子野，王便令人与相闻，云：“闻君善吹笛，试为我一奏。”桓时已贵显，素闻王名，即便回下车，踞胡床，为作三调。弄毕，便上车去。客主不交一言。&#xA;王徽之奉召赴京都，船还停泊在青溪渚下。他曾经听说桓伊擅长吹笛，但是不相识。这次正好遇上桓伊从岸上经过，王徽之在船中，门客中有人认识桓伊，说那是桓伊，王徽之就派人去传话，说：“听说您善于吹笛，请为我演奏一段。”桓伊当时已经做官显贵了，但他素来知道王徽之的大名，就回头下车，靠着胡床，为他演奏了三个曲子，演奏完毕，就上车离开了。客人和主人间没有交谈过一句话。&#xA;这里的兴几乎可以说是现在的兴，不扫兴的那个兴了。前一则长夜漫漫，无心睡眠，突然想起戴安道所居不远，不如前往秉烛夜谈。途径所处，见白雪皑皑，清风明月，小桥流水，觉天地美景取之无尽，用之不竭，神清气爽，灿灿然若有所得，他的兴本就在闲，于是寻人未遂；后一则显著区分于江州司马和琵琶女的同是天涯沦落人，王无意寻恒，恒偶然过青溪，没有诧异与刻意，有人起兴有人纳的自然。&#xA;不扫兴是真慷慨。&#xA;落在我头上就不太如愿。出游大多是闲日里的无趣，或者是一场蓄谋的出逃或者是被动当“纯路人”；后者式的故事里则是王递过来的薯片我都会忙忙摆手道声谢谢的。让人去也不去，让人玩也不玩，让人吃也不吃，全沉浸在呆着的乐意里。虽说这世间的一拍即合寥如晨星，但是兴的存在总是会让还没“有效碰撞”的个体有更进一步的机会。就像是沾满锈迹绷紧的琴弦一崩立断之际突然松动了调音弦钮，终于在疲惫的木质吉他上演出了动听的旋律。</description>
     </item>
     <item>
       <title>青色魇</title>
-      <link>http://localhost:1313/post/something-about-verta/</link>
+      <link>https://chlzhong.org/post/something-about-verta/</link>
       <pubDate>Sun, 11 Aug 2024 14:34:48 +0800</pubDate>
-      <guid>http://localhost:1313/post/something-about-verta/</guid>
+      <guid>https://chlzhong.org/post/something-about-verta/</guid>
       <description>七夕猛雨，十个传统习俗便破了两个。于是观影。&#xA;一鸣草又生，草木青青不过一百数十日，到头来又是樵夫担上薪； 一鸣虫又生，百虫生来不过一百数十日，到头来又要纷纷扑红灯。 我常得着男子送给我的东西，总没有当它们做宝贝看。我的小朋友却不如此，因为她从不曾受过男子的赠与。说是小，其实已经是二十岁，但这样称呼才令我放心：吐一口热气可以把她吞进去似的。&#xA;自烟花闪过七十几次以后，入土的事情就完了。她照例是要过来看我的。&#xA;“那边有一个男学生跟着我们走，他的名字我忘记了，我只记得人家都叫他做偢仁。他手里拿着一枝荼，且行且嗅。”我靠着她写字的桌子，向着她，同她听话，然而先入脑者想着荼蘼本不是香花，他嗅着，不过是一种无聊举动罢了。&#xA;“姑娘，这枝荼蘼送给妳。”她的话在之后就是盈盈多谢随即从西边的山径转回家去。&#xA;“他给我这个，是什么意思？”&#xA;“你想他有什么意思，他就有什么意思。”&#xA;我这样回答她。走不多远，我们也分途各自家去。&#xA;她自下午到晚上不歇把弄那枝荼蘼。那花像有极大的魔力，不让她撒手一样。她要放下时，每觉得花儿对她说：“为什么离夺我？我不是偢仁之手里递给你，交你照管的吗？”她有意看花，我却还是在今天。&#xA;呀，偢仁的眼、鼻、口、齿、手、足、动作，没有一件不在花心跳跃着，没有一件不在她眼前的花枝显现出来！她心里说：“你这美男子，为甚缘故送给我这花儿？”她又想起窗边纸上的夜莺，就自己回答说：“因为他顾念她的欢喜，无论如何要令我称心万代。”&#xA;这是她爱荼蘼，还是偢仁爱她呢？我也说不清，只记得有一天我出门去，大树之下人山人海，声音的嘈杂要到天上才听不见——&#xA;“一定是居心叵测！”&#xA;“或许是她不识？起了玩心也未知”&#xA;“自然要办清，才二十岁……”&#xA;小小的棺材上有只荼蘼。&#xA;正吵着，见人潮又开始涌动，踌躇几下后我看到了偢仁，皱一皱他那副冷静的脸庞，跟着来人于此面识。&#xA;“对呀，可不是给了她一朵荼！可是我哪里叫她吃了呢？”他很直接地说：“我并没有什么意思，不过随手摘下，随手送给别人就是了。我平素送了许多东西给人，也没有什么事；怎么一朵小小的荼就可使她着了魔？”&#xA;我说：“蚌蛤何尝立志要生珠子呢？也不过是外间的沙粒偶然渗入它的壳里，它就不得不用尽工夫分泌些黏液把那小沙裹起来罢了。你虽无心，可是你的花一到她手里，管保她不因花而爱起你来吗？你敢保她不把那花当做你所赐给爱的标识，就纳入她的怀中，用心里无限的情思把它围绕得非常严密吗？也许她本无心，但因你那美意的沙无意中掉在她爱的贝壳里，使她不得不如此。是不是？”&#xA;“啊，啊，啊……”&#xA;后来听说她的爸爸给立了块土坟，旁边种满荼蘼，那刻着生平的小小墓碑直指天上去了，仿佛送她宽敞的青空，褪了色的红纸挂坟前顿时也鲜明不少。</description>
     </item>
     <item>
       <title>淘音咩</title>
-      <link>http://localhost:1313/post/short-video-that-needs-to-be-said/</link>
+      <link>https://chlzhong.org/post/short-video-that-needs-to-be-said/</link>
       <pubDate>Mon, 22 Jul 2024 08:50:32 +0800</pubDate>
-      <guid>http://localhost:1313/post/short-video-that-needs-to-be-said/</guid>
+      <guid>https://chlzhong.org/post/short-video-that-needs-to-be-said/</guid>
       <description>纵观我手机里还有的三个购物软件（拼多多、京东、淘宝），前二者只京东带有小红书样式的低质量广告图文，唯独淘宝这个毒瘤，做个短视频在里面。其实我购物流程一般是直奔商品页，复制链接查看历史最低价，根据想要程度判定拿下时间……可谓极典型正常用户。我真的很好奇到底是谁会去淘宝里刷短视频？开发人员自己会刷吗？？？&#xA;讲到这个事情又想到了带货直播。我也无法理解这种事情:它和反智的电视直销“前50打进电话”有什么区别，难道区别就是一个利用网络，一个利用电视台？看电视、追剧的时候我们都会很主动的想避开广告、很讨厌广告，为什么却会主动去看广告，主动接受商家的洗脑？？我愿称之为人间迷惑行为 。&#xA;看来广告不是原罪，烂广告才是。&#xA;还是希望在这个物欲横流的世界，大家不要把时间浪费在这种东西上吧。当然，如果像上译搞大降价（三四十的书统统￥10一本），那我是举双手欢迎的。</description>
     </item>
     <item>
       <title>听歌系列之少年</title>
-      <link>http://localhost:1313/post/songs_02/</link>
+      <link>https://chlzhong.org/post/songs_02/</link>
       <pubDate>Sat, 20 Jul 2024 20:51:57 +0800</pubDate>
-      <guid>http://localhost:1313/post/songs_02/</guid>
+      <guid>https://chlzhong.org/post/songs_02/</guid>
       <description>我读书时很讨厌这两个字，因为他们出现的时候大概是这样子：&#xA;鲜衣怒马少年时，不负韶华行且知&#xA;搭配语文作文食用更佳&#xA;但我对曹植黄雀行那样的少年感很向往，大概是封狼居胥那种中二存粹的浪漫，所以听歌时候还是不排斥这个题材。&#xA;首先想起来的是MIYA的《少年》，说实话整首歌写得很“抽象”，没有具体有关年龄场景的细节描写，但好在我听歌不太关注歌词，于是被听了三年（学校铃声）。歌词用来鼓励高中生好好坐牢其实也挺不错的，只是很多同学都吐槽那段“miyamiya~”，我想他们如果听得多周杰伦，自会理解这种写法，看来现在网友还是不够宽容啊。&#xA;两周前随机听到郑宜农的《不再是少年》，在《人类如何学会语言》的加持下算是一听钟情，然后单曲循环了三十来遍。说实话郑的声音不算很好听，但是副歌的爆发还是很有感染力的。&#xA;已经不再是少年 而你还不愿妥协&#xA;那请让我陪你度过漫长黑夜&#xA;让我守护你的骄傲 安抚你的脆弱&#xA;不需要害怕弄痛我 也不需要感到抱歉&#xA;总有种动画男主拯救世界时呼唤友情正义的味道。&#xA;因为我的哀愁和欢喜也还是少年的：落日西山，总无改野花芳草的我的道上，我总是一个强空谈。所以听这样的歌还是有美趣。&#xA;听着听着又想到鲁迅先生的絮语：&#xA;愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光，就令萤火一般，也可以在黑暗里发一点光，不必等候炬火，此后如竟没有炬火：我便是唯一的光。&#xA;尽管已经不再是少年，看见这样的字眼还是会觉得有道金黄色的光，下面有棉絮飞舞。&#xA;说到鲁迅今天的月夜的确是深蓝色的，记录一下不是少年的我在尴尬期的头发：</description>
     </item>
     <item>
       <title>😒</title>
-      <link>http://localhost:1313/post/funny-day/</link>
+      <link>https://chlzhong.org/post/funny-day/</link>
       <pubDate>Tue, 16 Jul 2024 18:44:03 +0800</pubDate>
-      <guid>http://localhost:1313/post/funny-day/</guid>
+      <guid>https://chlzhong.org/post/funny-day/</guid>
       <description>“是这样的大姨，你连了我家的网所以可以用微信，回家要自己连自个家的。”&#xA;“不不不，我去你家也不能让别人同意你的微信好友申请。”&#xA;“对对对，这个乱七八糟的头像就是我。”</description>
     </item>
     <item>
       <title>从表情包开始</title>
-      <link>http://localhost:1313/post/stickers/</link>
+      <link>https://chlzhong.org/post/stickers/</link>
       <pubDate>Tue, 16 Jul 2024 08:48:21 +0800</pubDate>
-      <guid>http://localhost:1313/post/stickers/</guid>
+      <guid>https://chlzhong.org/post/stickers/</guid>
       <description>很久以前，我在使用Hello Talk的时候遇到了一位急切的女士（简直是女色狼）。她的热情让我有些不知所措，我急于脱身，于是对她说我们的聊天是“毫无意义的”。谁知她因此大发雷霆，向我倾泻了一大堆11号单词，然后就把我拉黑了。&#xA;现在回想起来，我意识到当时我的英语水平有限，没有能够恰当地表达我的意思。我想解释的是，其实大部分日常聊天都是“毫无意义的”——它们只是一些简单的交流，不必过于认真对待。我并不是想冒犯她，而只是希望她明白，我对这种过于热烈的互动有些不适应。&#xA;这种无意义倒不是追求个人价值实现云云的说法，我没有那么高尚，看一下我和笔友三万词的词云便知。其实本篇的起意只是来源于我输出一堆绿色后收获的一个表情包。&#xA;在大家都还只会说话的时候，没人关心文字可以怎么写，文字就是“历史”：忠实记录发生的事情。因此先秦时代的诗经语言是非常生活化的，所谓赋比兴倒是把它神圣化了——以关雎为例，你看见了关关雎鸠，也看见了窈窕淑女，于是你写&#xA;关关雎鸠，在河之洲&#xA;窈窕淑女，君子好逑&#xA;可见这些所谓的技法其实都是纯粹的叙述。眼面前的事情本来是没有逻辑的，但眼面前的都是生活了，所以讲落花水面皆文章的浪漫主义也是建立在生活之上的，决不是没有生活的底子，没有话想出话来说的。没有话想出话来说，可见你没有生活，所以后代的诗多半是无病呻吟了。《诗经》里的诗则都是生活，故都是诗。例子不在多目的也不在此。&#xA;到曹植那个时候，人们是惊讶地发现文章可以这样写？！其实也就是我一直喜欢的华美之美，即发掘文字本身的美。这个趋势从汉开始一直到延续到初唐，中间各种作品犹如核桃绣船，精致玲珑又不好玩。于是在唐诗，文字又开始为记录而服务了，李白作品尤为明显。往后宋明清就是无聊地重复这个历程，这里复古，那里求新——跟现在钢笔圈一样。到近现代，电影作为新的媒介才改变了怎么说的问题，这一点从blog到vlog也是如此。&#xA;总之都是把事情描述出来，让别人感受到你想让人感受的情绪。&#xA;到现代人们习惯把情绪用表情包表达出来，我想这才是第九艺术。</description>
     </item>
     <item>
       <title>谢谢叔叔</title>
-      <link>http://localhost:1313/post/about-titles/</link>
+      <link>https://chlzhong.org/post/about-titles/</link>
       <pubDate>Sat, 13 Jul 2024 19:19:57 +0800</pubDate>
-      <guid>http://localhost:1313/post/about-titles/</guid>
+      <guid>https://chlzhong.org/post/about-titles/</guid>
       <description>或许是很久没有称呼过女生，或许是小脑发育异于常人，前段时间我总觉得“阿姨”是一个非常亲切的称谓：不像“小姐”、“美女”那样轻浮，也不是“女士”、“先生‘那样正式。轻声起一个阿又落在上扬形象状的嘴唇，总之是有温柔有亲切的词语。&#xA;直到今天帮小女孩拾掇一个扇子，她欣然接过瞬间奶奶高声呵斥&#xA;——还不谢谢叔叔！&#xA;（幸好还没有因头发认我为女。）&#xA;于是乃知阿姨之冒犯。</description>
     </item>
     <item>
       <title>二十</title>
-      <link>http://localhost:1313/post/20-years-old/</link>
+      <link>https://chlzhong.org/post/20-years-old/</link>
       <pubDate>Sat, 13 Jul 2024 07:28:23 +0800</pubDate>
-      <guid>http://localhost:1313/post/20-years-old/</guid>
+      <guid>https://chlzhong.org/post/20-years-old/</guid>
       <description>人生的意义本来不在它的故事，&#xA;在于渲染这故事的手法。&#xA;——废名《桥•故事》&#xA;对于人生我动心的不过是它的表现。&#xA;——何其芳&#xA;我1以前总觉得自己能成为一忒好的人。我从很小就看很好的动画片，和很好的人做朋友。我会有一个很好的故事。&#xA;我一直等待这个故事，有跌宕起伏，有悲，有喜，有冲突，有激情，有流浪，有悲愤，有幸福。我以为随着我成长我会遇到这个故事。我等战火，如果等不到战火，我等妻离子散，如果等不到妻离子散，我等沧桑变化，如果等不到沧桑变化，我等浪迹天涯，如果等不到浪迹天涯，我等平淡里的悲剧，如果等不到平淡里的悲剧，我等油盐酱醋茶的苦痛。&#xA;结果我一直等啊等，终于等到这个时候。无论如何也写不出遇不到了。只知道作为结果的记忆，汤汤水水，零零碎碎，纠纠缠缠，像一团乱麻，怎么梳理也不对。等到一潭水摆静了，也没什么好说了。后来又明白了，这些记忆，是要磨成粉，融进骨，流入血，就变成我的笔，变成我的话，变成我。&#xA;十年前念书，像我吃饭一样看书。囫囵吞下去，不嚼。仗着自己记忆力好，硬生生地塞下好多书。现在不看书了，饭却照吃，只是四体不勤五谷不分，年轻可以倒头睡。十年的时间喜欢的作家也慢慢都是死人了，喜欢的故事也慢慢变了，喜欢的口气也变了。总想明白些事情，总不明白的事情也越来越多。以前不明白才会等故事，现在明白了才会写不出来。&#xA;十年来所有的故事都没有章法、结构和布局，都是不经意的开端和结束。十年间冲突都缺席，所有的激荡都失踪。只知道在风雨飘摇不是很好的世界上，有这湾小小的生活。平淡得像随意摆放的语句，比如在这里画一个句号。&#xA;十年又十年的，不过是花落闲庭，看孤鸿明灭。遇见的人，做过的事，经历过的遭遇，作为浮萍，声嘶力竭地呐喊，都挺无谓的。毕竟现在的我已经不知道十年前的自己什么样子了。希望下个十年我能看到祖国统一，看到影视化的桥，实现海韵自由。&#xA;长沟流月去无声，杏花疏影里，吹笛2到天明。&#xA;今年的生日可同往年不一样，在一个人的一生应该是做一个记号的日子，所以我忽然想起就在这里写一笔作为日记，其实我很想做一个弱冠式的浪漫，只是按照虚岁算已经是二十一了。&amp;#160;&amp;#x21a9;&amp;#xfe0e;&#xA;其实现在我很苦恼怎么把这根笛子带回家。另外夔哥的字是真好。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>王大令楷书保母砖题跋卷</title>
-      <link>http://localhost:1313/post/jiang-kui-post/</link>
+      <link>https://chlzhong.org/post/jiang-kui-post/</link>
       <pubDate>Fri, 12 Jul 2024 11:04:58 +0800</pubDate>
-      <guid>http://localhost:1313/post/jiang-kui-post/</guid>
+      <guid>https://chlzhong.org/post/jiang-kui-post/</guid>
       <description>将他的帖1，弃置于此：&#xA;嘉泰壬戌六月六日，□□钱清三槐王畿字千里，得晋大令《保母志》并小砚于稽山樵人周，二物予皆亲见之。志以砖刻，砖四垂，其三为钱文，皆隐起，已断为四。归王氏，又断为五。凡十行。末行缺二字，不可知。第六行缺十二字，犹可考，曰：&amp;ldquo;中冬既望，葬会稽山阴之黄閍。&amp;ldquo;砚背刻&amp;quot;晋献之&amp;rdquo;，字上近右，复有&amp;quot;永和&amp;quot;字，乃划成，甚浅瘦。&amp;ldquo;永&amp;quot;字亡其磔，&amp;ldquo;和&amp;quot;字亡其口。砚石绝类灵璧，又似凤咮，甚细而宜墨，微洼其中。或以为王氏旧物，用故洼，非也。按米氏《书史》，晋、唐砚制皆如此，点笔易圆也。自兴宁距今八百三十载八，异哉！物之隐显，抑有定数，而古之贤达，皆前能知之欤？又按《画记》，大令以晋孝武太元十一年，年四十三乃终，上推至乙丑岁，年廿二，其神悟已如此，言语翰墨之妙，固不论也。此字与《兰亭叙》不少异，真大令之名迹。不经重摹，笔意具在，犹胜定武刻也。梁虞和云：&amp;ldquo;羲之为会稽，献之为吴郡。故三吴之地，偏多遗迹。&amp;ldquo;盖右军自去官后，便家山阴，今蕺山戒珠寺乃其故宅，而云门寺乃大令故宅，去黄閍皆不远，宜有是物也。&#xA;《保母志》有七美，非他帖所及。一者右军与怀祖同家越，右军郎邪族，怀祖太原族，故大令首言郎邪，所以自别。古人之重氏族如此。二者世传大令书，除《洛神赋》是小楷，余多行草。此乃正行，备尽楷则，笔法劲正，与《兰亭叙》、《乐毅论》合，已外虽《东方赞》、《黄庭经》亦不合也。三者《兰亭叙》世无古本，共宝定武本。定武本刻于数百年之后，宁不失真？此乃大令在时刻，笔意都在，求二王法，莫信于此。四者不惟书似《兰亭》，文势简秀，亦类其父。又与叔夜、伯伦、渊明、远公所作，同一标置。五者定武《兰亭》乃前代巧工所刻，尝以他古本较之，方知太媚。此刻甚深，惟取笔力，不求圆美。&amp;ldquo;双&amp;quot;字之掠，&amp;ldquo;夫&amp;quot;字之磔，&amp;ldquo;载&amp;quot;字之戈，&amp;ldquo;志&amp;quot;字之心，再三刻削，乃成妙画。盖古之能书者多自刻，钟元常刻《受禅表》，李北海之寓名黄仙鹤、伏令芝之类。此砖亦恐是大令自刻，不然何其妙也？六者意如妇人，而能文善书入元，乃知当时文风之盛，妇人可称者不独杨皇后、魏夫人、卫茂猗、谢道蕴辈。又知古人教子，既使之外从师友，退居于内，亦使之妇人之能文艺、知道理者与之处。宜乎子敬为晋名臣也。七者预知八百年余，事虽近于异，然古之贤达如此者众，伊川之为戎，樗里之知葬，此出于神明虚旷，自然前知，岂必运式持筹而后得之哉？但此字较之《兰亭》，则结体小疏，当是年少故尔。右军书《兰亭》，时年五十一，多大令卅年工夫也。数日与诸名公极论，因备著之。&#xA;《保母志》与《兰亭》同者廿四字：之、年、在、文、能、老、趣、兴、岁、丑、日、终、以、曲、水、于、悲、夫、后、者；与右军他帖同者十八字：行、秀、王、勤、书、善、七、十、三、二、月、六、无、小、冥、贞、而；其尝见于大令杂帖者三字：献、宁；而见于《兰亭叙》、右军帖者，大令帖中亦多有之。此刻大都百五字，其可以他帖验者凡四十五字，余六十字，如：保、归、柔、恭、属、解、释、交、螭、墓、志等字，尤精妙绝伦，晋、宋以来，书家所未有也。壬戌十月，余故人了洪法师携墨本自钱清来示余，且言六月六日过王君，有野人自外至，出小砚以馈王君之子，云春时斸山得之。洪取视，见砚背有&amp;quot;永和&amp;quot;及&amp;quot;晋献之&amp;quot;字，知是圹中物。问：&amp;ldquo;有碑否？&amp;ldquo;野人云：&amp;ldquo;一砖上有字，已碎矣。&amp;ldquo;亟使致之。明日持前五行来，是时犹未断也，验是大令《保母墓志》，而文未具，又使寻之。旬日乃以后五行来，断为三矣。一以支床，上有&amp;quot;交螭&amp;quot;字者是也；一为小儿垒塔，上有&amp;quot;曲水&amp;quot;字者是也；一弃之他处，碎而复合，似有神助。野人周姓，居越之稽山门外，去钱清六十里，不致之他人而致之王君，亦异矣。王君携砖砚入都，余得借观累日。或以为王君赝作以欺世，亦有数人刻别本以乱真者。然余观此志，断非今人所能为。予学书卅年，晚得笔法于单丙文，世无知者。谛观此刻，若合一契，而谓王君能为之欤？诚使今人能为之，则别刻本便当并驾，何乃拙恶如彼也？或谓大令晋人，不应于研背自称&amp;quot;晋献之&amp;rdquo;，此见其伪。亦非也。大令刻砚背以殉葬，知八百年后且出，故先书晋以自见。又案历代印文皆不称代，惟魏、晋率善令则曰：&amp;ldquo;魏率善某官&amp;rdquo;，&amp;ldquo;晋率善某官&amp;rdquo;，生人用印犹得称晋，殉葬之研不得称晋乎？或谓又蜀为李氏所据，久非晋有，安得广汉人而为王氏之保母？此亦非也。献之之称郎耶，是时晋岂有郎耶哉？亦本其世之所自焉耳。今西北人子孙多矣，然亦各从其父祖言之。按意如以惠帝元康六年生，尔后蜀虽乱，而晋遣使罗尚在蜀甚久，不可谓蜀非晋有也。永兴元年李雄克成都，军大饥，蜀人流散，东下江阳。意如之出蜀，或在此时矣。或又谓佛之徒称释，起于道安，大令时未应有释老之称。此又不稽古之甚者。《阿含经》云：&amp;ldquo;四河入海，与海同流；咸四姓出家，与佛同姓。&amp;ldquo;释，佛姓也，此土谓佛为释久矣。志称释老，以佛对老，非谓佛之徒也。《晋史》云：&amp;ldquo;何充性好释典，崇修佛寺&amp;quot;是也。然道安以前，比邱各称其姓。道安欲令皆从佛姓，初不之信，后得《阿含经》，始信之。尔后此土比邱皆姓释，如释惠远是也。案何充是中兴初人，道安、习凿齿皆依桓温于荆州，正与大令同时，亦非异代事也。或谓此字多似《兰亭》，疑后人集《兰亭》字为之，此又不然。大令宇与《兰亭》同者，何止《保母志》而已？然大令平生行草多，正行少，试以《官帖》第九卷中行书帖较之，《相过》一帖同者十八字：相、终、无、日、在、未、暂、坐、感、感、得、古、尽、痛、此、所、不、流；《思恋》一帖同者九字：事、既、将、视、左、右、无、喻、尽；十二月二十七日一帖同者十一字：日、操、之、岁、尽、感、怀、不、亦、情、得；《静息》一帖同者四字：静、是、极、无；《发吴兴》一贴同者八字：吴、兴、感、喻、不、静、兄、情。其他三两字同者，不可胜纪。右军、大令既是父子，不应疑其书迹之同，今人父子书迹同者众矣。大抵大令字与《兰亭》合，纵是他字，偏旁亦合，如：兄、况、吴、娱、掺、参，是也。纵是行草，下笔亦合，如：无参、，是也。又案唐人集右军书碑，率多俗恶，此则高妙，如：老、夫、水三字，又似跳灶矣，决非集字也。或又谓降自南朝，始有铭志埋之墓中，大令时未应有之。此又不然。汉谢君墓砖云：&amp;ldquo;元和三年五月甲戌朔，谢君造此墓砖。&amp;ldquo;又武阳城东彭亡山之巅，石窟中有汉章帝建初二年张氏题识三所，洪氏《隶释》云。此亦埋铭之椎轮也，其不始于南朝明矣。或谓东坡《金蝉墓铭》云&amp;quot;百世之后，陵谷易位。知其为苏子之保母，尚勿毁也。&amp;ldquo;此末章似之为可疑。予谓东坡意其理之或然，大令知其数之必然，作者之言自应相迩近。越人于地中得一石，有诗云：&amp;ldquo;笑椎画鼓过江东，身到蓬莱第一峰。坐看海云迎日出，千山浑在中。&amp;ldquo;末章又与东坡《潮》诗合矣。东坡固是文宗，然以两《保母志》较之，高识者自能定其优劣也。或又谓保母王氏之妾，不当言归王氏，《金蝉碑》谓之隶苏氏为当。予谓既曰母矣，称归何嫌？且东坡铭其弟之保母，故称隶。使子由自铭，则不忍称隶矣。此以见古人之忠厚也。&#xA;世人好妄议如此，令人短气。予恐流俗相传，诬毁至宝，故不得不力辨。虽然，妄议可以惑庸人，博雅之士一见自了，不待予之喋喋也。砖既入土八百余年，已腐坏，恐不能久。近所摹本，比初出土时已觉昏钝，摹之不已，日就磨灭，得墨本者宜葆之哉！&#xA;予既作此跋，将书以赠千里，以疾见妨，自四月至于九月乃竟。既致诸千里，后月余，过钱清，与元卿、千里同观，聊记其后。番易姜夔尧章。&#xA;国家艺术档.com|数字艺术馆 :王大令楷书保母砖题跋卷(全卷)纸本&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>24年中-步立踌躇</title>
-      <link>http://localhost:1313/post/history-of-the-ages/</link>
+      <link>https://chlzhong.org/post/history-of-the-ages/</link>
       <pubDate>Fri, 12 Jul 2024 09:46:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/history-of-the-ages/</guid>
+      <guid>https://chlzhong.org/post/history-of-the-ages/</guid>
       <description>1月 23年最后一天和学长出去吃了个螺蛳粉回来肚皮痛。 新年第一周，看见四教门前小三花在太阳下打滚，被我发现乃停止。 这周的落日都很好看。 期末考试。 2024年一月21号动身前往山东。出学校路上又看见那只眼神犀利的黑猫。 泰安没什么意思，但坐落在泰山脚下就有种特别的浪漫；济南很好，甚至有老死在此之感；聊城东阿是精神故乡。 《繁花》这个电视剧很火，只是我许久不看电视剧。王家卫的阿飞正传好看。 开卷有得之威廉退尔。 《繁花》这部剧真的好看，既在提醒我们时代浪潮面前要有像汪明珠一样的韧劲，争的就是一口气，找到自己的码头；也是在警醒在股市沉浮的大小玩家们，不要用杠杆，杠杆最后只有一个爆仓的结局。这部剧的音乐好，叙事手法也好，腔调十足。 重庆这两天是全年最冷的时候了，海棠花也要开了。 2月 第一天出去吃席，新郎居然有31岁。路上的枯荷我猜林妹妹一定喜欢。 新的一年里，希望我们都可以长命百岁。 情人姐去以前爷爷住的地方放炮，这时的石桥就很性感。 第一次去看川戏，包公照镜的女主好看。 3月 ChatGPT越来越火了。&#xA;学校组织去看船，得见溥仪登基诏书——简直蠢得可以。&#xA;歌乐山，和刘姐一起。以后不会和女生出去玩。&#xA;一直以为重庆的人民大礼堂是白色建筑，没想到是建国后的产物。怪不得文革时候没拆，挺出片，下次一定去逛逛三峡博物馆。&#xA;很想买相机，然而钱包之奉不若他人，未遂。&#xA;学校十公里的马拉松很轻松，洒洒水啦。&#xA;鹅岭公园。说实话这个AAA级景区比南山上这堆所谓的AAAA景区好看多了，山水给我一种江南之感，可惜就是太玲珑而没有自然（我猜大概是因为我独自前往）&#xA;小米造车。&#xA;电动车已经变成一个大号的电子设备。&#xA;小米从手机到汽车，蔚来从汽车到手机，贾跃亭当年的“为梦想窒息”变成了现实。&#xA;小米比华为在造车这件事情上，在软件和系统方面做得好的地方就是，有自家的车机系统，小小的区别是背后战略的巨大差距。&#xA;SU7卖21.59万，还可以。&#xA;保时米确实很好看。&#xA;认识数模队友。晚上学校组织了灯会，场面小但是很热闹。&#xA;花神今年走特别早。我还没好好看实验楼那边的樱花就谢了春红太匆匆。&#xA;三月的落日也好看。忽悠了舍友也去天台。&#xA;最后一天去校门口买了六块￥8的臭豆腐，吃完肚皮痛。我这肠胃真的得看看医生了。当晚独自一人上了学校后山，19岁再一次体验到9岁的怕黑，一度让我的隐居计划搁置。&#xA;4月 清明节，出门塌青。和好哥哥一起。从学校后山出发直达植物园，一小时的行程我走了三个小时，四舍五入也算是掌握时间魔法🪄。后山有只小猫很可爱，等我毕业了必定将它解救出来。植物园三号门很适合拍恐怖片，下午一点升早上七点的雾。金鹰公园体验吊打一棵树，600米的风我尝不出来到底悲不悲。 忙数模上的一些事情，颇有坐牢之感。 换了微信号，同时注销了许多互联网账号。我要多体会人与人间的真实与美。 第二次去看川戏，原来我还是更喜欢看男的。 五一节假日打算和初中同学去南昌。 5月 Hello王勃！不过说实话我一点不喜欢现在的滕王阁：花花绿绿未免太俗。武当山比重庆的山要好，见云海，也见大雨。在南昌给张鑫和江阿姨带了礼物，萍乡的时候寄了张明信片给舍友。插一句真的不太理解同行的那位，拍照打卡式的旅行和电脑上逛Google Map有什么区别呢？我觉出游要么是逃离什么，要么是逛逛精神故乡，下次计划去湖北黄梅。 书包不见了，怎么有人偷我衣服呢？我寻思我也不香。 感觉脑子越来越锈，怎么办？ CSA那个消费券其实挺好做的。 莎士比亚的译文还是喜欢朱生豪的。 入了钢笔坑。我对德笔总有种坏印象，高中舍友的笔尖掉落了大概是伊始。很心水waterman的海韵，一度认为它的曲线优美于所谓女性的S。金笔的英雄100确实很不错，写乐1911配极黑墨水真的太臭了。另外高仕的钢尖虽然贵，造型和颜色却很合我心意。关于心跳尖，书写的时候注意力没在它上面，也就那样。攒钱买海韵！ 胖猫事件在网上很火，没想到最终女主得胜，我也是歌谭市民了🤡，这事告诉我们少上网，少看新闻，T0也不是女性。 学校的音乐会没有去看，除了心仪的对象别人唱的歌我觉得都不如原唱。 悦伴山书屋进不去，重庆南山最大的皇帝新图书馆。 建了自己的博客，决心淡出微信。常态化关闭朋友圈。 6月 电脑怎么贬值这么快？&#xA;数模寄了，数据库却还不错，不知道怎么说了。&#xA;以色列这个国家，或者犹太人这个群体，没什么会总是“流浪”呢？&#xA;出埃及、出、出德国，为啥这么不受欢迎？ 现代化进程开始后，宗教都被世俗化了，神权让位于王权。但是以色列似乎还是一个神权国家，因为它进行战争的理由竟来自经书，应许之地这类宗教词语。 你给它说不能屠杀平民，它给你说天选之子；你给它说人道主义救助，它给你说应许之地。自己曾经受过苦难，但是为什么不反思？现在还变本加厉对更加弱小的民族施加暴力？实在搞不懂为何如此发疯… 我觉得以色列可能是需要一场宗教改革，宗教到底是为人服务的，还是奴役人类的。不严谨地讲虽然中国人没有什么宗教信仰，但是这在现代社会，是一种优势，也或许是几千年前强大的封建帝制已经改造了中国人初始的图腾崇拜和神仙崇拜。 地球是人类的家园，国家是民族的集合，和平是全体利益的最优解。霸权是不稳定状态，很可能会被反噬。 法环出了DLC，打不过。&#xA;看江阿姨在朋友圈坐牢。我的考试周也是狠狠破防。&#xA;必须重新拾起阅读的习惯，不然真感觉脑子要锈住了。不管什么主题的书籍，先看起来再说。</description>
     </item>
     <item>
       <title>答辩结束</title>
-      <link>http://localhost:1313/post/happy-day/</link>
+      <link>https://chlzhong.org/post/happy-day/</link>
       <pubDate>Wed, 10 Jul 2024 23:17:27 +0800</pubDate>
-      <guid>http://localhost:1313/post/happy-day/</guid>
+      <guid>https://chlzhong.org/post/happy-day/</guid>
       <description>说谢谢海彬，另外准备回家了。&#xA;（这个地方留着写一些收获）&#xA;倒是写啊&#xA;算了开个环先😊😊😊&#xA;放个粗略PPT</description>
     </item>
     <item>
       <title>兄弟，愿为西南风</title>
-      <link>http://localhost:1313/post/caozhi/</link>
+      <link>https://chlzhong.org/post/caozhi/</link>
       <pubDate>Sat, 06 Jul 2024 13:36:16 +0800</pubDate>
-      <guid>http://localhost:1313/post/caozhi/</guid>
+      <guid>https://chlzhong.org/post/caozhi/</guid>
       <description>别日何易会日难，山川悠远路漫漫。 展诗清歌仰自宽，乐往哀来摧肺肝。 ——真 好哥哥 曹丕&#xA;你坐的是从济南到聊城的高铁，架在黄河上的铁路外，一马的平川，从上车到这里只半小时的行程。&#xA;从车上下来的，男的是大包小包，女的则看着孩子，偶尔有几位年轻人低头玩着三国杀。你们都来到了旁边的汽车站。你不大记得陆陆续续上了几个人，第一位妇女带着女儿，弯着腰，左脚上车，第二位妇女独自一人，弯着腰，右脚上车，第三位妇女玩手机，弯着腰，左脚上车，第四位……都弯着腰上了车。&#xA;她们看起来都差不多，都嘿嘿笑着，也没发现你是外地人，并不同你聊天。所以你就只记得那辆公交不要钱，总共6个人那辆司机就开了。只不过一路上你后边的那两位妇女一个叽叽喳喳吹着天天要来坐这辆不要钱的车，另一个说女儿最近考试考了多少多少分。听声音她们说得很开心，如果话题能够对起来的话。&#xA;你是在这辆车的终点站遇到他的。&#xA;“上哪去？”&#xA;“东阿。”&#xA;“我也去东阿，你跟着我吧”&#xA;“好。”&#xA;就这样，并不知道这里的公交是自己挥手叫停的你，跟着他上了坐，又开始了不知道开多久的公交之旅。&#xA;他问你从哪儿来，你答重庆。他说重庆他没有去过，但自己自驾去过广西。就从这里出发，走走停停游山玩水，一个人。说走高速最怕的是晚上没人的时候，不是怕撞见鬼，是怕女朋友问在干嘛。你们都笑了。他说这里到东阿还很远，要先打个游戏，看你没有抽烟给你拿根烟抽，你忙摆摆手说不用，你们笑得就更开心。他于是点起一根烟，说自己没有念大学，讲起有关打工的种种惊奇，随后又应你的要求，给你讲起了你要去的终点。说真是不懂你怎么想。你心想真实只存在于经验之中，而且得是自身的经验，然而，哪怕是自身的经验，一经转述，依然成了故事。真实是无法论证的，也毋须去论证，让所谓生活的真实的辩士去辩论就得了，要紧的是生活。真实的只是你坐在这个公交上，在这被老人占领的车厢里，看到的他眼睛里跳动的火光，真实的只是我自己，真实的只是这瞬间的感受，你无法向他人转述。那门外烟雾笼罩下，鱼山隐约，什么地方那湍急的溪流哗哗水声在你心里作响，这就够了。&#xA;他说这里离那里还很远，你吃不吃得辣。你又说你从重庆来，这一次他笑得更厉害。说要引你去那家螺蛳粉吃东西，正说着突然兴奋起来，指着你背后说这个学校就是他念的职高。讲起这个，笑声突然就停止1。忙问你借个手机，打开地图骂你为啥要用英文的，又用自己的手机搜了那家螺蛳粉店。“你进去就说要最辣的，我爸要来接我吃饭哩，你自己去说要最辣的哈。还有不要听导航那里下……”于是和你一起坐了半个小时的大哥下车去了。十分钟后你坐在他给你介绍的那家店里，庆幸着你走的是他说的小路，又可惜没能和这位热心的大哥一起娑葛芬。&#xA;北方，这季节，已经是初冬，太阳耷在那烟囱的斜后面漏出来的光还在慢悠悠地追路过的汽车，离中午还有一会。你背着书包在路上晃荡，发现这个小镇和你的家乡似乎没有区别，只是路上的人操着你听不懂的山东话。不免有几分独属外地人的隔阂——怎么大哥不告诉你去那里的车四十分钟一班。于是你只好打了个车&#xA;——这次又是半个小时。&#xA;她就站在门边上，像你一样，望着对面那张有点苍茫的面孔，而你又止不住去望她。这山乡小镇上，她那么出众，那身影，那姿态，那份茫然的神情，都非本地人所有。你想走远开去，心里却惦记着，等你再转回到门前，她已经不在了，天色渐冷，窗户里亮着两点烟火，明明暗暗，有人在轻声刷抖音。&#xA;“好姐姐，我专门从重庆来……”&#xA;于是你就免除了那二十块钱的门票，进入了这据说要修缮两年的你的鱼山。&#xA;你终于明白什么叫一眼万年，只是黄河旁边的那些泥屋，不免又让你心头生些我这时写不出来的想法，所以我不写这个。&#xA;一千八百年前我们没有见过，一千八百年后，我自会创造重逢。&#xA;你问有没有一合酥，我说请你为我写篇赋，这次没有爹地怒。&#xA;践远游之文履，曳雾绡之轻裾。微幽兰之芳蔼兮，步踟蹰于山隅&#xA;你绝对想不到你会在这个山上想到这个句子。&#xA;伴着石梯下去的路上你顺手葬了只自挂子建枝的鸟，一抬头便瞥见了他。&#xA;是一种说不分明的期待，一种隐约的愿望，一次邂逅，一次奇遇2。&#xA;……（删）&#xA;回去的路上你连车都打不着。下午四点半车上的大爷大娘同你这位四川人高谈“阿胶”的作用，只是他们不知道，嘴里保健品的东西你把它当周边看。&#xA;再回高铁站的时候已是晚十点，你在车上刷着抖音留恋最后几小时的山东IP，评论中能不能回家过年的文字惹你注意。&#xA;东阿，有人在在长眠，有人为此魂牵，还有人嫌它车短。&#xA;送君千里，与此告别。你实在想不到人生碌碌，刚相遇不久，又马上分手了。&#xA;十八年之秋，两千里之遥，黄河万里，我再取一眼波光粼粼，收回来太和六年你心灰意冷的目光。&#xA;兄弟，愿为西南风，我逝入君怀。&#xA;看官不知道是他爸爸打了个电话。&amp;#160;&amp;#x21a9;&amp;#xfe0e;&#xA;于是在今天引哥哥的句子。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>和丫头的信</title>
-      <link>http://localhost:1313/post/letter-with-that-girl/</link>
+      <link>https://chlzhong.org/post/letter-with-that-girl/</link>
       <pubDate>Fri, 05 Jul 2024 15:38:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/letter-with-that-girl/</guid>
+      <guid>https://chlzhong.org/post/letter-with-that-girl/</guid>
       <description>markdown保持书信格式真难。&#xA;亲爱的丫头：&#xA;我自觉很冒昧给你写信。&#xA;我想我是一个三分钟热度的人，21年下载这个软件之后到23年才写下第一封信。&#xA;不过好歹是开始了。今天是2023年10月6号星期五，我这里在下雨，苦雨。无边丝雨细如愁是也。愁国庆的结束，愁天气的越来越冷，愁想找一笔友又担心自己的懒，嗳，反正是愁得不行。&#xA;（删）&#xA;总之这封信是想要找一位笔友的。&#xA;知识的缺乏和语言的不足让我的思想也破碎化，流于表面去了。所以我想我并不是那么那么想要可爱的你同我做个笔友，我大概只是有娇没处撒吧。好啦好啦如果不嫌弃我啰嗦如此还给我回信，我一定会认认真真端坐案头给你回信的！&#xA;祝你好！&#xA;植&#xA;2023年10月6日&#xA;亲爱的植：&#xA;见字如面！&#xA;三分钟热度也会有三分钟的收获，并不是什么不好的事情吧，我个人认为，因为我也可以算是三分钟热度人群中的一员（哈哈），打开了很久没登录的这个软件，然后就收到了你的来信，也觉得是有些机缘在的。&#xA;今天我们这边天气也是有些奇怪，下午狂风暴雨，晚上又和风徐徐了，天气已经慢慢转冷了，我倒不反感吧，相反，我很喜欢秋天冷冽的空气，又感觉秋天的一切都刚刚好，认为秋天是最适合见面的季节。冷风扑面，在人很多的路上散漫的走着，有一丝丝的落寞，在这个第二故乡，我似乎还是没有很开心，天天迷茫受挫，或许这就是生活的迷人之处吧，并不一帆风顺，不可捉摸，不知道未来的路在哪，又期待又担忧，会想自己一年后会在哪里，在做些什么，有没有超开心⋯&#xA;最近在复习，我总认为自己没有学习的天赋，学习能力较之别人，也差很多，我妈经常和我讲还是没悟到，说到底还是悟力没到家，复习越来越乱，干脆给自己放了一天的假，其实说是放假，也是刷了一些题，每周都会有一天烦的要命，题不会做。还有两件事，我实在是太担忧了，一个是周日的汇报，还有个是10月中旬的体测，我真的会疯掉，一整个紧张到爆！！&#xA;还有，你要开心点，你们假比我们长，平日也别太紧绷了，适当放松，松弛感！！很重要，虽然这种东西我没有，但是希望你会松弛些！&#xA;祝君安！&#xA;丫头&#xA;2023年10月6日&#xA;亲爱的丫头：&#xA;祝你好，感谢你的回复！&#xA;机缘这个东西我向来不大相信，不过既然巧合发生了，也不失为一件值得注意的事情。收到妳的回信（丫头应该是位姑娘吧哈哈哈），我很开心，谢谢你。&#xA;妳讲秋天的一切都刚刚好，出于私人的原因我并不如此认同，不过我希望在这个秋天妳能好好地看到第二故乡的景：不要迷茫。一年后的所在离现在毕竟还有一岁之秋，不论几里之遥妳要好好吃饭，好好学习（虽然我一点办不到但是真的超重要！）&#xA;妳又讲到复习，我猜大概是要高考啦？没关系的，虽然我自己的高中也充满不小的遗憾，但是作为过来人，妳好好刷题就好啦，多注重总结和归纳，我想不论什么考试都不会太差的！至于汇报和体测，妳也不要太紧张啦，我能讲的不多，不要临时抱佛脚就好啦，如果不顺心就听听喜欢的歌吧（jay的歌超棒的！）&#xA;最后，松弛感…嚯嚯，我想我也很难有啦，最近不是很开心，今天晚上和同学出去玩还摔跤啦，真像个小孩一样了。好了好了我去写作业啦⋯送妳最近看到的一段话吧：&#xA;&amp;ldquo;暴风雨结束后，你不会记得自己是怎样活下来的，你甚至不确定暴风雨真的结束了。但有一件事是确定的：当你穿过了暴风雨，你早已不再是原来那个人。&amp;rdquo;&#xA;每个人都会经历一段低谷期，在迷茫中无助的徘徊，但无论如何，都不要放弃前进的步伐，要相信，日升月落，总有黎明。&#xA;再次祝妳好！&#xA;植&#xA;2023年10月6日&#xA;亲爱的植：&#xA;你好！&#xA;没想到你回复的这么快，意料之外的事情，我还小小期待了一下，你说你知识缺乏，语言不足，当我读到回信时，我感觉你在谦虚。（丫头当然是姑娘辣，对这个名字我是寄予了希望在的，不知道你看过老九门没有，如果是看过的话，我猜你对丫头这个名字有印象，如果没看过，建议你去看，超好看！！）&#xA;第二故乡的秋景我已经看了三年，我总觉得不如我老家的秋天，气温慢慢转凉，满地落叶，一片金黄，我想我对于秋天的喜爱，完全是出于对家乡秋天喜爱的延伸，因为之前吃饭不规律，然后去医院查出了胃炎，就不太敢不好好吃饭了，除了昨天睡过头了，一天三顿都吃的，之前心情不好，就不吃饭，想转移痛苦，现在想来，我也是不理解当时的自己了。&#xA;高考对于我来说，也是遥远的事情了，我想或许每个人都有些遗憾留在了高中，留在了那段青葱岁月里。&#xA;总结和归纳就是我最不会的事情！！但是，没关系啦，慢慢来，汇报的ppt我已经做好了，汇报的稿子也有，应该也不算是临时抱佛脚吧，但是我在很多人前汇报就是会紧张，今天准备找个教室排练排练吧，不知道你看过那个抖音没有，&amp;ldquo;大学生真的很容易噶&amp;rdquo;，体测这东西我是真没办法准备啊，临时抱佛脚我都不知道怎么抱，身体太弱了，也不爱运动。&#xA;松弛感有最好，没有也无伤大雅吧，从你的文字来看，感觉你确实挺孩子气的？最近为什么不开心？不开心要适当发泄，不能积压在心里，容易出问题，我也经常平地摔，平地就不知道咋的，就被绊一下，然后踉跄。我猜，你是不是怕冷？哈哈哈，我现在的难题是早起，一个接一个的难题！！！;体测的具体通知已经出了，一阵恐惧感席卷而来，压的我有些喘不过气，我觉得我就是对自己的标准没那么松，我在心里潜意识可能不允许自己走下来，可是跑下来，且一直追随别人，我身体会不舒服，也就是太较真了吧，因为一直给我们灌输的就是体测不合格会影响毕业！我每次都认为自己坚持不下来，可是每次我又坚持了下来，我倍受煎熬，有些老师，也是很较真，不及格可能会让补，一天测完所有的项目我真的会谢！！！稍微吐槽了下，希望不会影响到你的心情！&#xA;祝君安！&#xA;丫头&#xA;2023年10月7日&#xA;亲爱的丫头&#xA;感谢妳的回信。&#xA;妳讲到丫头，嗳呀，真个是应到这个&amp;quot;时光机&amp;quot;了！暴露年龄的话我是小学毕业才知道老九门这个剧，已经忘了为什么当时没有看完，但是对于二月红总有种特殊的感情，以至于对这&amp;quot;丫头&amp;quot;，妳一提到我就想起来了。但是，过了太久我也忘记她的具体的故事啦，我只希望妳好好的，别像丫头一样得肺病才是。至于我么，嘿嘿，单纯是因为喜欢陈思王曹植！&#xA;咳咳，扯远了。&#xA;对家乡的秋天的留恋，于是喜欢上这里的秋天，我觉得是很不错且正常的。只不过多事之秋在我这里总是发生些遗憾的事情，因此我总不大喜欢这个季节。当然，别人的秋天我是很喜欢的，很漂亮。然而人生有所好恶也极正常，只合着自己的哲学便好。于是说到谦虚⋯作为三分钟热度主义的集大成者（哈哈哈这是可以说的吗），期末突击小队集大成者，深感知识于我的庞大。只是用&amp;quot;吾生也有涯，而知也无涯。以有涯随无涯，殆已&amp;quot;的鬼话聊以自慰。不过静下心来想想学习确实是一件很浪漫的事情：慢慢汲取前人的结果，用一辈子的时间去呵护，我希望我也能开出一朵小小的花儿。&#xA;胃炎没有经历过，但一个小感冒我就能山崩地裂，所以一定一定地要好好吃饭🍚！&#xA;真是不好意思妄加揣测妳的年岁去了，我要深深的自责（才不会）。青葱岁月么⋯其实回想一下不过是一年以前的事情，然而在我这里已经是好久好久的一个分别。这段时光有机会再慢慢讲吧，我还没到&amp;quot;夜深忽梦少年事&amp;quot;的感觉。&#xA;然后是很生硬一个转折。&#xA;汇报就好好水一下咯，我的汇报都挺水的，不知道妳的这个重要性如何，不怕笑话的话我是很相信妳的！加油，丫头！&#xA;至于运动&amp;hellip;我也不喜欢啦，或许妳可以尝试一下这几天在操场跑一下步什么的，还能缓解复习压力。妳讲妳对自己的标准不松，其实这是一件很棒的事儿，我自己的哲学肯定不是&amp;quot;60分万岁&amp;quot;的，不过身体确实太遭，使劲跑一定会很难受这是真真的，请妳量力而行，如果有好朋友投喂葡萄糖什么的当然更好，没有的话还是要结合最近的身体状况判断一下哦，（所以提前操场自己锻炼锻炼真的很有必要嘛）&#xA;（好啦好啦我是真的不会给别人做建议）不过我并不在意妳的吐槽，人都是立体的，如果妳讲出来心情会稍微好一点点，哪怕是一点点，妳也可以直接说出来的。&#xA;孩子气么？不，我偏要说是情绪化/shy。好吧⋯我也不大懂写信的艺术，尤其是在这几寸的屏幕上，想到什么就说什么去了。不开心么…这个不大方便讲，总之就是很多&amp;quot;不顺我心&amp;quot;的事情一齐发生，嗳，人生的担子每每在一个安静的时候就一下上来了，现在是晚上九点钟，写下这些东西的时候就有点小小的emo了，我想妳大概在写题？噢对了，今天我这里的雨终于停了，有很好看的一个晚霞，落日熔金，暮云合璧之景。&#xA;最近学业的压力⋯比较的紧，我以为我的回信是蜷缩于壳于角落的一个慢蜗牛呢，不过，出于自己学习的安排和书信本身的时效性（其实是没有积分换即时邮票🥺），我觉得慢一点也挺不错的，哈哈，当然也不至于&amp;quot;不知有汉&amp;quot;。总之这封信妳看到啦也可以不必在意，安顿好复习和即将到来的体测才是妳最近重要的事情。&#xA;今天晚上有好看的月亮，然而赶作业的我没有多少闲心静静地观赏，于是敷衍了以上的大段水话，希望丫头不要责怪。&#xA;最近入秋，（我怕冷…），多保重，祝福妳好！&#xA;PS：即将发送的时候预览页似乎会丢内容，如若言语不通，可自行想象。&#xA;植&#xA;2023年10月7日&#xA;亲爱的丫头：&#xA;刚刚突然很难过，写了很多字也删掉了。不知道妳那里冷不冷呢？祝妳好。&#xA;植&#xA;2023年10月7日&#xA;亲爱的植：&#xA;是不是想找人倾诉下，却发现无从说起，或者说对一个陌生人说这些觉得不合适，又或许是真的不方便，这些都不重要，晚上不要熬夜，越熬越难过，脑子里会浮现一幕幕自己放不下的过去，你晚上给我写回信写emo了，那就不要晚上写了，晚上的情绪容易延续到后半夜，如果你的抖音和我的一样，11点左右就开始推那种emo文案，我觉得你最好关掉，或者直接卸载，我也是已经直接卸载了，太影响自己的情绪了。我这边已经挺冷了，你肯定不喜欢，我猜你不单只是问我这冷不冷，你想有个人说说话是嘛？&#xA;其实关于汇报我可能深知我的问题在哪，就是我把别人的评价当作自己价值的一部分，我其实意识到了，我想改变，但是我确实可能有心无力，我习惯于在别人否定我之前，自己否定自己，“这个是不是跑题了&amp;quot;“这么突出会不会不太好”&amp;hellip;，好像我自己先否定自己，别人再来否定我，我就不会那么受挫了，或者说也觉得是意料之中的事情了，总喜欢将事情往不好的方向去想，但是其实得到的结果，没有我自己想的那么差，说到底就是我的注意力很容易被别人分散。&#xA;汇报完毕了，我对自己的表现不满意，同一组的说我不紧张，声音没有异常（我不信，我去听我的录音，我声音确实没有异常，但是我停顿和语气词较多），我拿着稿子，全程没有抬头，我深知自己自卑，可没想到了这种程度，老师也做了点评，说比较权威，佐证比较多，我甚至于还头晕，与我所想完全不同，我希望自己能进步，希望自己能有所提升，我也是思绪到哪就写到哪里，我总是和别人比，我总是觉得我做的没有他们好，总觉得自己是失败的，我不知我什么时候才能走出这泥潭，下一封信再好好回复你吧，这封信稍微有些敷衍了！&#xA;祝君安！&#xA;ps：没有邮票了，可能回的会比较慢（哭），那就慢慢来吧，你也没邮票了吧（狗头.jpg），不着急回，啥时候有空了、有邮票了，啥时候回吧，慢慢来也是一种诚意，你觉得呢（我觉得你好像还好，不算懒的回我）&#xA;丫头</description>
     </item>
     <item>
       <title>怎么有人连人机验证都过不了</title>
-      <link>http://localhost:1313/post/why-cant-some-people-even-pass-the-man-machine-certification/</link>
+      <link>https://chlzhong.org/post/why-cant-some-people-even-pass-the-man-machine-certification/</link>
       <pubDate>Thu, 04 Jul 2024 22:38:02 +0800</pubDate>
-      <guid>http://localhost:1313/post/why-cant-some-people-even-pass-the-man-machine-certification/</guid>
+      <guid>https://chlzhong.org/post/why-cant-some-people-even-pass-the-man-machine-certification/</guid>
       <description>忍了又忍，实在想发一句牢骚，刘姐的问题让人真是哭笑不得。甚至找不到刷新和保存，人机验证都不能通过。我没有任何笑话的意思，但我实在觉得这种问题凡是会用计算机的人都应该明白。</description>
     </item>
     <item>
       <title>Eudemonia - 夏晚</title>
-      <link>http://localhost:1313/post/eudemonia-03/</link>
+      <link>https://chlzhong.org/post/eudemonia-03/</link>
       <pubDate>Wed, 03 Jul 2024 23:10:30 +0800</pubDate>
-      <guid>http://localhost:1313/post/eudemonia-03/</guid>
+      <guid>https://chlzhong.org/post/eudemonia-03/</guid>
       <description>即使引导破碎...算了送你一个天使的礼物 月亮湖，会有玉兔姐姐吗 治一下你的颈椎 一首小诗 金鹰 “我立在池岸 望那一朵好花 亭亭玉立 出水妙善，—— “我将永不爱海了！” 荷花微笑道： “善男子， 花将长在你的海里。” ——废名《海》</description>
     </item>
     <item>
       <title>也谈才子佳人</title>
-      <link>http://localhost:1313/post/talented-and-beautiful/</link>
+      <link>https://chlzhong.org/post/talented-and-beautiful/</link>
       <pubDate>Wed, 03 Jul 2024 09:09:45 +0800</pubDate>
-      <guid>http://localhost:1313/post/talented-and-beautiful/</guid>
+      <guid>https://chlzhong.org/post/talented-and-beautiful/</guid>
       <description>这篇博客的一个起意来自考试周的电视剧，只是我没想到它的服化道我实在受不了1，便不再看下去。&#xA;那么这篇博客也就不再更新，钉在耻辱柱上去。&#xA;发个大愿暑假把这些“不检点”的剧本都看一遍。&#xA;权谋和”月中桂子“也减分&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>Eudemonia - 来自天空的蓝翎鸟儿是我的爱人</title>
-      <link>http://localhost:1313/post/eudemonia-02/</link>
+      <link>https://chlzhong.org/post/eudemonia-02/</link>
       <pubDate>Sun, 30 Jun 2024 21:07:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/eudemonia-02/</guid>
+      <guid>https://chlzhong.org/post/eudemonia-02/</guid>
       <description> 久雨后的路口 蓝鸟出现的湖 草色青青 仰天打滚 飘扬的红旗 “盖世英雄！” </description>
     </item>
     <item>
       <title>DM💣</title>
-      <link>http://localhost:1313/post/joker/</link>
+      <link>https://chlzhong.org/post/joker/</link>
       <pubDate>Thu, 27 Jun 2024 22:04:33 +0800</pubDate>
-      <guid>http://localhost:1313/post/joker/</guid>
+      <guid>https://chlzhong.org/post/joker/</guid>
       <description>当你试图两天学完DM并且期间还要应付其他两门考试：&#xA;最近越来越水了，希望考完好好更新。</description>
     </item>
     <item>
       <title>同一片蓝天</title>
-      <link>http://localhost:1313/post/new-world/</link>
+      <link>https://chlzhong.org/post/new-world/</link>
       <pubDate>Wed, 26 Jun 2024 21:05:05 +0800</pubDate>
-      <guid>http://localhost:1313/post/new-world/</guid>
+      <guid>https://chlzhong.org/post/new-world/</guid>
       <description> 从明天起不睡懒觉了|不能尽力推动社会进步，不使自己的寝室富强，枉为青年。 </description>
     </item>
     <item>
       <title>此情可待成追忆</title>
-      <link>http://localhost:1313/post/a-new-old-play/</link>
+      <link>https://chlzhong.org/post/a-new-old-play/</link>
       <pubDate>Mon, 24 Jun 2024 22:11:28 +0800</pubDate>
-      <guid>http://localhost:1313/post/a-new-old-play/</guid>
+      <guid>https://chlzhong.org/post/a-new-old-play/</guid>
       <description>学长毕业了的事现在写不出来了。本来想找找那天的流水账意外发现没有写，只有这几个字：&#xA;十月十六 晴 封寝。&#xA;嗳，惆怅。</description>
     </item>
     <item>
       <title>“永不褪色”</title>
-      <link>http://localhost:1313/post/bad-thing/</link>
+      <link>https://chlzhong.org/post/bad-thing/</link>
       <pubDate>Sun, 23 Jun 2024 23:45:02 +0800</pubDate>
-      <guid>http://localhost:1313/post/bad-thing/</guid>
+      <guid>https://chlzhong.org/post/bad-thing/</guid>
       <description> 蓝黑墨水里的蓝色染料会氧化褪色，但是由鞣酸亚铁氧化成的黑色鞣酸铁是永不褪色的。你以为我的意思是，用¥8.5就可以写一篇传世的的情书？错啦，就可以收获一张蓝眼忧郁粉床单！ </description>
     </item>
     <item>
       <title>学习资料-应付考试版</title>
-      <link>http://localhost:1313/post/study-materials-exam-preparation-version/</link>
+      <link>https://chlzhong.org/post/study-materials-exam-preparation-version/</link>
       <pubDate>Sat, 22 Jun 2024 20:38:44 +0800</pubDate>
-      <guid>http://localhost:1313/post/study-materials-exam-preparation-version/</guid>
+      <guid>https://chlzhong.org/post/study-materials-exam-preparation-version/</guid>
       <description>考纲： 排队论模型：学习简单的排队论模型的建模方法，熟悉和掌握排队系统中的平均队长、平均顾客数、系统中顾客退留时间、队列中顾客等待时间等的计算。 规划论模型：学习掌握数学规划：线性规划、整数规划、目标规划、动态规划等相关概念和理论，并且要求能用相关的方法建立对应的数学规划模型和求解。 插值与拟合建模：掌握曲线拟合、插值的基本方法，学会用插值、拟合作数据处理。 回归分析模型：学习掌握线性回归与非线性回归的相关概念和理论，并且要求能用相关的最小二乘方法建立对应的回归分析模型，井能进行相关的概率统计进行检验。 差分方程模型：了解差分法的基本思想，学会建立实际问题的离散模型，掌握递推、迭代法等求解过程，理解和掌握蛛网模型、银行货款等问题。 常微分方程模型：熟悉微分方程建模的基本步骤，掌握线性微分方程建模基本方法，了解非线性微分方程模型的一些特殊性质：熟悉微分方程的解法。 决策论模型：掌握決策论的基本理论及其应用。 图和网络模型：掌握最短路、最小生成树、最大流等的原理与求解。 一、排队论模型 。。。&#xA;二、规划论模型 见张瑛瑛资料&#xA;三、插值与拟合模型 。。。&#xA;四、回归分析模型 回归：是一种统计分析方法，用于预测一个连续变量与一个或多个其他变量之间的关系。&#xA;线性回归：是回归分析的一种，假设因变量与自变量之间存在线性关系，即因变量与自变量的关系可以用一条直线来描述。&#xA;非线性回归：是回归分析的一种，假设因变量与自变量之间不存在线性关系，即因变量与自变量的关系不能用一条直线来描述，需要用更复杂的函数模型来描述。&#xA;一元线性回归模型：$ y = \beta_0 + \beta_1 x$ $$\color{red}\begin{cases} 斜率 \beta_1：\frac{\sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}}{\sum_{i=1}^n x_i^2 - n \bar{x}^2} \\ 截距 \beta_0：\bar{y} - \beta_1 \bar{x}\end{cases}$$&#xA;检验方法：课本是假设检验判断是否为线性，真题没有考&#xA;五、差分方程 差分:$\Delta y_{x} = y_{x+1} - y_{x}$&#xA;二阶差分：$\Delta {\Delta y_{x}} = \Delta^2 y_{x} = y_{x+2} - 2y_{x+1} +y_{x}$&#xA;一阶线性差分方程的一般形式为：$ y_{x+1} = ay_x + f(x)$</description>
     </item>
     <item>
       <title>谈情说爱</title>
-      <link>http://localhost:1313/post/about-love/</link>
+      <link>https://chlzhong.org/post/about-love/</link>
       <pubDate>Fri, 21 Jun 2024 22:28:38 +0800</pubDate>
-      <guid>http://localhost:1313/post/about-love/</guid>
+      <guid>https://chlzhong.org/post/about-love/</guid>
       <description>题目写在这里的时候就注定这是一篇讨厌的抽象文章了，但是不要喷我，喷刘姐去。（事实上【狐狸和猫】那篇文章已经表达了我的看法。）&#xA;两不相欠&#xA;绝不纠缠&#xA;天罡我劝你多看。&#xA;现在平均年龄78.56岁1，四舍五入算80岁。前18年基本在上中国特色主义学校和爱情隔绝，又俗话说婚姻是爱情的坟墓，根据《中国人口普查年鉴-2020》，瓷国男性初婚年龄为29.38岁，女性为27.95岁，四舍五入一下就是30和28岁，取平均29岁。那么中间11年相当于谈了这辈子八十年的恋爱。&#xA;假设你在结婚前可以谈三段恋爱2，那么11年就要变成3年。（什么？为什么另外两个不算？你也不想以后和老伴或是儿孙讲你和ta们的故事吧）我们一天24小时有8小时睡觉，并且无论是大学生还是就业人员，都预留8小时的工作学习时间，那么留给恋爱的时间还有8个小时。也就是说要用1年3（8760h）的时间完成恋爱这件事情。&#xA;根据大名鼎鼎的一万小时定律4，在精通恋爱这件事上你和你未来要定终生的那位在时间上是明显不达标的，算上另外两位呢？这里就机械算是达标，但是初恋这个时间点可以认为你是非理性的新手。（什么废话结论）所以对于分手这件事其实没有什么特别值得难过的事情：自然得就像人会死一般。&#xA;说回恋爱，朴素地认为它符合离散数学中&amp;quot;关系&amp;quot;的定义：&#xA;假设有一个集合 (P)，其中的元素表示一群人。我们可以定义一个恋爱关系 (L)，它是集合 (P) 上的一个二元关系：&#xA;$L \subseteq P \times P $ 。如果 $(p_1, p_2) \in L $，这表示人 $p_1 $ 和人 $ p_2 $ 处于恋爱关系中。以下根据具体的性质来讨论一下：&#xA;自反性： 对任何一个人 $ p \in P$，我们不要求 $ (p, p) \in L$，不解释了。 对称性： 如果 $(p_1, p_2) \in L$，那么$ (p_2, p_1) \in L$。这表示如果人 $p_1$和人 $ p_2 $ 处于恋爱关系中，那么人$p_2 $ 和人 $ p_1 $也是如此，符合。 传递性： 恋爱关系通常不具备传递性。如果 $ (p_1, p_2) \in L$且 $ (p_2, p_3) \in L $，则$(p_1, p_3) \in L $。这在恋爱关系中通常不成立，因为如果上述条件成立，$p_ 1$ 、$p_2$就是我讨厌的同性恋了，而且&amp;hellip;打咩打咩太淫乱了 综上所述，恋爱关系可以被数学地表示为集合 (P) 上的一个对称的二元关系，但它仅是对称的。</description>
     </item>
     <item>
       <title>奶奶的</title>
-      <link>http://localhost:1313/post/fxxk/</link>
+      <link>https://chlzhong.org/post/fxxk/</link>
       <pubDate>Fri, 21 Jun 2024 11:30:27 +0800</pubDate>
-      <guid>http://localhost:1313/post/fxxk/</guid>
+      <guid>https://chlzhong.org/post/fxxk/</guid>
       <description>这是习思也是奶奶的：&#xA;这个P事 没做过 再早一点 就爆破&#xA;我想我没听错 你说你bother我&#xA;问了问 你比我老很多&#xA;有的聊很多 有的没有说&#xA;或者 心里想的 指没照做&#xA;收到 我的嘴巴在隐瞒什么&#xA;目前对自己 不是太满意&#xA;一个谢谢 像在付时薪&#xA;如果丢个不 怕你没反应&#xA;是否有得等了 是否空欢喜&#xA;有时太软弱 我有时太懒惰&#xA;有时太敢说 有时又太晚说&#xA;我说 回收到的那个不是我&#xA;怎麽说呢 因为他不愿承认&#xA;奶奶的奶奶的奶奶的奶奶的！&#xA;奶奶的奶奶的奶奶的奶奶的！&#xA;奶奶的奶奶的奶奶的奶奶的！&#xA;附上解决方案（不知道Excel能不能直接做）&#xA;import pandas as pd df1 = pd.read_excel(&amp;#39;data/A04232A1100071011-+成绩上报Excel模板.xls&amp;#39;) df2 = pd.read_excel(&amp;#39;data/雨课堂作业和期中成绩.xlsx&amp;#39;) # 选择需要列 df2 = df2[[&amp;#39;姓名&amp;#39;, &amp;#39;雨课堂作业折合分=总分/18*0.2&amp;#39;, &amp;#39;期中成绩&amp;#39;]] # 使用姓名列来合并两个DF df_merged = pd.merge(df1, df2, on=&amp;#39;姓名&amp;#39;, how=&amp;#39;left&amp;#39;) #之所以head是要查看合并后的名字 df_merged.head() # 更新成绩列 df1[&amp;#39;雨课堂作业折合分=总分/18*0.2&amp;#39;] = df_merged[&amp;#39;雨课堂作业折合分=总分/18*0.2_y&amp;#39;] df1[&amp;#39;期中成绩&amp;#39;] = df_merged[&amp;#39;期中成绩_y&amp;#39;] # 保存更新后的Excel文件 df1.</description>
     </item>
     <item>
       <title>南山夜雨</title>
-      <link>http://localhost:1313/post/simple-poem/</link>
+      <link>https://chlzhong.org/post/simple-poem/</link>
       <pubDate>Thu, 20 Jun 2024 23:55:10 +0800</pubDate>
-      <guid>http://localhost:1313/post/simple-poem/</guid>
+      <guid>https://chlzhong.org/post/simple-poem/</guid>
       <description>东风游莲塘，灼灼入吾心。&#xA;愿为檐下霖，十旬长倾倾。&#xA;1&#xA;闪电瞬间&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>吹牛（2）</title>
-      <link>http://localhost:1313/post/chuiniu-02/</link>
+      <link>https://chlzhong.org/post/chuiniu-02/</link>
       <pubDate>Tue, 18 Jun 2024 23:49:03 +0800</pubDate>
-      <guid>http://localhost:1313/post/chuiniu-02/</guid>
+      <guid>https://chlzhong.org/post/chuiniu-02/</guid>
       <description>电子海洛因和我的平替人生 知乎里的游戏受众总是把游戏视为纯洁无瑕的存在，一看到“电子海洛因”这个词就急忙发知乎惊喜。然而，不论是网游还是单机游戏，作为一种商品，它们的本质都是为了赚钱。许多所谓的第九艺术不过是画面精美的一人称电影，未能展现游戏这一媒体的特殊性质。看看那些单机3A手摇电影，我真不知道是如何与第九艺术挂上钩的。在我看来，艺术是作者通过特定的方式和技法来表达自己的思想，媒介并不是必要的。以画面取胜的《Gris》和《荒野大镖客2》当然是好游戏，要称之为艺术也未尝不可，只是不要强行与第九这个开天辟地的词汇挂钩就好了。（单论网游，更是可以直呼其为电子海洛因：至少它们真的会分泌多巴胺，而所谓的艺术性却谈不上）&#xA;不过说到底，普通玩家不在乎游戏是否是艺术，好玩就行了。于是来说说所谓我的“平替人生”：&#xA;使用这个词的一个大原因是B站那些大型纪录片里传播的焦虑1，我承认用在这里算是吸引眼球。&#xA;从我出生开始，所做的任何事情似乎都是在重复别人的行为，这里举个例子：&#xA;看到湖边飞鸟和火烧云&#xA;古人：落霞与孤鹜齐飞，秋水共长天一色&#xA;我们：卧槽，好美&#xA;这个例子通常是在鼓励你多读书，不要遇到什么事情都只会说“卧槽”，甚至离开微信都无法完整地表达。然而，我觉得机械地复述王勃的名句又有什么意义呢？更何况这句也是他摘录的子山句2。我一直觉得《滕王阁序》最好的是“天高地迥，觉宇宙之无穷；兴尽悲来，识盈虚之有数。”因为在初唐这个节点，很少有（虽然大概率是我孤陋寡闻）这样的思想，承袭了《兰亭序》的意思。&#xA;后之视今，亦犹今之视昔，悲夫&#xA;真是令人悲哀，除了传统的理科领域，自然生活中几乎没有创造，而我们却十分挑剔地生活着。我甚至不知道头上的灯泡是如何发光的，却能对一个我无论如何做不出的游戏侃侃而谈，对任何一个人评头论足——当然，其中很多语言也是有意无意中模仿别人的。&#xA;这种意思在现代也出现在草东的歌里：&#xA;我想要说的 前人们都说过了&#xA;我想要做的 有钱人都做过了&#xA;我想要的公平都是不公们虚构的&#xA;所以我真的不喜欢讨论一些抽象的话题，因为这显然是被别人讨论过很多遍的废料。&#xA;辛亏有党带领着我建设精神文明&#xA;但正是这种几近悲观的认知,让我们不得不去思考一个更深层次的问题:在这个信息爆炸的时代,我们该如何找到自己的声音?&#xA;也许答案就在于我们如何看待和使用这些&amp;quot;被重复过的想法&amp;quot;:&#xA;个人经历的独特性: 即便是老生常谈的话题,每个人的人生经历都是独一无二的。你对湖边景色的感受,可能源于某个特定的回忆或情感。这种个人化的解读和联想,就是你独特的声音。至少，你是真的可以”秉烛夜游“，而李白只能”现在是幻想时间“ 跨界思考的价值: 将不同领域的知识和经验结合,往往能产生新的洞见。比如,你将游戏、文学和现代生活的观察融合在一起,就创造出了独特的视角。前文说除开理科领域，那至少在这里，以及更天才的人文领域是有新创造的。 这就是我们每个人的使命:不是创造全新的事物,而是以我们独特的方式,为这个世界增添一抹不同的色彩。这种微小但真实的贡献,或许才是我们摆脱&amp;quot;平替人生&amp;quot;焦虑的最佳方式。这里摘一个子建&amp;quot;晨雾之微补宜山海，萤烛末广增辉日月&amp;quot;&#xA;最后,我想说的是,所谓的&amp;quot;平替人生&amp;quot;也许并不是一件坏事。它提醒我们,我们都是站在巨人的肩膀上。重要的不是追求绝对的原创,而是如何在继承中创新,在重复中寻找独特。所以快来看看我买的金豪世纪：&#xA;各年龄段使用的各种产品：常见的有iPhone与Redmi、宝马和比亚迪。&amp;#160;&amp;#x21a9;&amp;#xfe0e;&#xA;落花与芝盖齐飞，杨柳共春旗一色。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>吹牛系列</title>
-      <link>http://localhost:1313/post/%E5%90%B9%E7%89%9B/</link>
+      <link>https://chlzhong.org/post/%E5%90%B9%E7%89%9B/</link>
       <pubDate>Mon, 17 Jun 2024 17:28:38 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E5%90%B9%E7%89%9B/</guid>
+      <guid>https://chlzhong.org/post/%E5%90%B9%E7%89%9B/</guid>
       <description>一、面纱&#xA;勤奋是一种美德，爱国主义，集体主义，忠诚， 责任。词汇学意义上的美好事物侵害个人自由个性和隐私尊严。集体主义始终无法自圆其说地回答一个最基本的质疑:凭什么说我们是自己人?我为什么要爱这个“集体”?民主一点的自由主义呢，事实上他们只是把社会从一种压迫转到了另一种压迫，一种表面看上去公平交易的压迫。人人好像生而平等。1，然而当三个人开始为利益投票，中学生都能算出有$C_3^2$种排列组合，倘若是两个歹徒和一位受害者呢？&#xA;所以无论集体主义还是自由主义都是为了奴役自己，都是一些人为了把自己变成某种“人力资源”，根本不存在那种真正尊重你这个个体的意识形态。人类社会的维持需要一部分人被奴役，没有任何人被奴役的社会是无法存在的。无论是底层的细胞还是大一点的的自然界，都会有作为“苦力”形象的成分存在。&#xA;二、认识&#xA;人类一生做的事情就是活着，或者说生存（与繁衍）。从这个意义看，人与其他动物没有任何区别，任何人类社会的现象都还原到基因层面， 所以在基因利益以外的一切意义，全是“假”的，全是你为了开心自己编出来骗自己的。&#xA;世界上只有一种真正的英雄主义，那就是认清生活的真相后依然热爱生活。——罗曼·罗兰&#xA;Il n&amp;rsquo;y a qu&amp;rsquo;un héroïsme au monde: c&amp;rsquo;est de renaître d&amp;rsquo;une façon ou d&amp;rsquo;une autre, de se forger une conscience neuve.&#xA;其实很没意思，因为你的生活是你自己构建的，或者说是你自己相信并过下去的。除了伤病带给你的痛苦是客观存在的，其余的所有痛苦，都是你的价值观带给你的，而你的价值观是你自己选择的。所以什么叫认清生活的真相呢？只不过是自己信念的更改罢了。&#xA;我们不过是一些可怜的生命，我们短短的几十年不过是存在着，仅此而已。&#xA;三、受活&#xA;自己的人生，是完全自己的问题。&#xA;好像是打游戏，他玩农你玩原我玩3k一样，你的经历2使你同意各种价值观的条款，参与他们的游戏，构建了自己的梦想，并持续付出约75年左右的时间。世界琳琅满目，你不能全都要，玩自己想玩的“游戏”就好。&#xA;只是好像大部分人并不知道自己想玩什么。3&#xA;幸亏瓷国的大学里水课够多。&#xA;事实上我本人不相信这个观点，天然的分类就有性别了，遑论后天经历。你能平等对待香的东西和臭的东西吗?人天生就有分别心。&amp;#160;&amp;#x21a9;&amp;#xfe0e;&#xA;并不一定是主观的进行，但都是自己在参与&amp;#160;&amp;#x21a9;&amp;#xfe0e;&#xA;我想这很大一部分原因归咎与互联网：互联起来，还有独立变量吗？&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>Eudemonia - 海底的云和少女</title>
-      <link>http://localhost:1313/post/eudemonia/</link>
+      <link>https://chlzhong.org/post/eudemonia/</link>
       <pubDate>Sun, 16 Jun 2024 23:40:12 +0800</pubDate>
-      <guid>http://localhost:1313/post/eudemonia/</guid>
+      <guid>https://chlzhong.org/post/eudemonia/</guid>
       <description>记忆宝藏系列&#xA;深海大菠萝 戴珍珠耳环的少女 良人的良夜，床是一座海。&#xA;海岛一样永久孤绝的命运。&#xA;岩石与岩石之间，孤岛与孤岛之间，虽然“同晒着太阳，同激起白沫，同守着海上的寂静”，在如此亲密的关系下，确是彼此陌生的灵魂。 它们从来没有倾听过对方脉搏的律动声，也从未认识生命显示予对方的容颜。&#xA;—— 但是不可有悲哀。</description>
     </item>
     <item>
       <title>重庆市民钟先生遭歹猫袭击受伤 公众呼吁加强治安管理</title>
-      <link>http://localhost:1313/post/funny-news/</link>
+      <link>https://chlzhong.org/post/funny-news/</link>
       <pubDate>Sat, 15 Jun 2024 12:49:27 +0800</pubDate>
-      <guid>http://localhost:1313/post/funny-news/</guid>
+      <guid>https://chlzhong.org/post/funny-news/</guid>
       <description>重庆，2024年6月15日 —— 今日中午，重庆市一名市民钟先生在回寝室途中遭遇歹猫袭击，不幸受伤流血，事发地点位于南岸区某大学附近。据目击者称，钟先生当时正帮助小猫，突然被这只歹猫拦住并攻击。&#xA;钟先生在袭击中指头部受伤，随即倒地，歹猫迅速逃离现场。路人见状立即拍下照片，并未报警。相关人员迅速赶到现场，将钟先生送往附近寝室进行救治。舍友表示，钟先生伤势较重，但暂无生命危险，目前正在接受进一步治疗和观察。&#xA;事发后，警方已对此次袭击事件展开全面调查，并加强了该区域的巡逻和警戒。初步调查显示，袭击可能是随机作案，但具体动机尚不明确。警方呼吁知情群众提供线索，协助破案。&#xA;南岸区公安局相关负责人表示，此次袭击事件暴露出当前治安管理中存在的漏洞，将加大力度，提升治安防控水平，确保市民安全。公安局也提醒长相极佳市民，在日常生活中应提高警惕，避免单独行动，遇到可疑情况应及时报警。&#xA;犯罪嫌疑猫 此次事件引发了市民广泛关注和讨论。许多市民在社交媒体上表达了对钟先生的关切和慰问，并呼吁政府和有关部门加强治安管理，确保社区安全。&#xA;作为社会的一员，我们在此呼吁每一位市民，共同参与到维护社会治安的工作中来，增强自我防范意识，共同营造一个和谐、安全的生活环境。&#xA;新闻来源：小林日报</description>
     </item>
     <item>
       <title>我的头发</title>
-      <link>http://localhost:1313/post/my-hair/</link>
+      <link>https://chlzhong.org/post/my-hair/</link>
       <pubDate>Thu, 13 Jun 2024 22:48:27 +0800</pubDate>
-      <guid>http://localhost:1313/post/my-hair/</guid>
+      <guid>https://chlzhong.org/post/my-hair/</guid>
       <description>莫名奇妙地变卷(._.`)</description>
     </item>
     <item>
       <title>听歌系列之烦恼</title>
-      <link>http://localhost:1313/post/songs_1/</link>
+      <link>https://chlzhong.org/post/songs_1/</link>
       <pubDate>Tue, 11 Jun 2024 19:48:42 +0800</pubDate>
-      <guid>http://localhost:1313/post/songs_1/</guid>
+      <guid>https://chlzhong.org/post/songs_1/</guid>
       <description>第一次听蛋堡是在罗大佑的春夏秋冬里。“过程”给我一个轻快悠扬朗朗上口的感觉，全然与之前（现在也是）对饶舌rap歌曲的厌恶不同。“小熊”的调调也非常吸引我的耳虫，早已是我的穿脑魔音了。&#xA;今天有点不开心，于是打开AM开始随机播放蛋堡的歌——&#xA;那少年维持着烦恼 专心在他的烦恼 那微不足道的烦恼 很抓我的歌词。&#xA;尽管这么看似乎整个人生都是一个子建（星星眼！）的有形无形论——“有形必朽，有迹必穷。芒芒元气，谁知其终？名秽我身，位累我躬。窃慕古人之所志，仰老庄之遗风。假灵龟以托喻，宁掉尾于涂中”，但不管是“头发的长短，鞋带的颜色”，还是她的感受，哪怕不在多年以后都已经“微不足道”了。不算是麻木，只是单纯地忘记和消失了：所有以意志发生的东西都不过是不可证伪的空对空辩论。想起许多往事，很羞，有很难过。陶诗云：“……行行停出门，还坐更自思，不怨道里长，不畏道里长，但畏人我欺，万一不合意，永为世笑嗤，……”真使我下泪。&#xA;说回歌。整张专辑节奏比较急，想起小学时吹口琴，刚开始只是在孔上一通乱亲，吹出来的声音平淡无奇。后来换了专门人，吹出来顿感清脆悦耳。那薄薄的金属片发出的清脆昂扬的声音，给我的感觉就像这里我第一次听到这首“The Sorrows Of Young Werther ”。中间的小孩子乱叫不太感冒，我觉得很奇怪，其实我不是不喜欢小孩式的声音，只是小说的人不说话，在我心里哑巴说话是很美的，过了就是XX。&#xA;中间夜聊的歌词很精彩，在我这里胜过周杰伦的浪漫手机。&#xA;一个人的夜晚，谁和谁陪伴 两个人的夜晚，对白都在荧幕和键盘 暧昧很简单&#xA;倒不是有多华美之美，文献学的意义上几乎又要打败我——这种感受也是前人之述备矣！只是早就和自己和解，你看，他甚至不知道她们。偷偷这首主打歌提醒我英剧正常人还没看完，有机会好好研究一下。歌不错，一下回到学生时代。&#xA;这的确是一件非常美好的事。有些人会打球，有些人长得帅，有些人成绩好，有些人会唱歌，有人装牛装得深沉，他们稍微努力一下都能把到妹子。我也挺想把妹的，可惜失败了。后来高中的好友恼怒于静女二三德，看流水里流云，看不见他的船一夜二百里。&#xA;寂兮静兮，静兮寂兮，&#xA;​ 相思是空空的往昔历历。&#xA;人还活着就知交半零落，所以我并不怪他。&#xA;不相识的好看的她，今天碰见两次。&#xA;那么晚安。</description>
     </item>
     <item>
       <title>粽子节快乐</title>
-      <link>http://localhost:1313/post/%E7%B2%BD%E5%AD%90%E8%8A%82%E5%BF%AB%E4%B9%90/</link>
+      <link>https://chlzhong.org/post/%E7%B2%BD%E5%AD%90%E8%8A%82%E5%BF%AB%E4%B9%90/</link>
       <pubDate>Mon, 10 Jun 2024 10:20:58 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E7%B2%BD%E5%AD%90%E8%8A%82%E5%BF%AB%E4%B9%90/</guid>
+      <guid>https://chlzhong.org/post/%E7%B2%BD%E5%AD%90%E8%8A%82%E5%BF%AB%E4%B9%90/</guid>
       <description>不记得哪个互联网人说的了，“我们几千号人每天就在研究怎么让人上瘾，你说你靠意志力战胜了我们App，这是有多看不起我们的专业水平？要是你只靠意志力就可以避免上瘾，那我们吃什么？”&#xA;让人上瘾东西太多了，大学生控制力远远不足以对抗，所以每天刷抖音、小红书（笑死我了，原文甚至没有你乎），关注的都是一些无关紧要的信息，什么谁又瘦了100斤，哪个明星又分手了哪个明星又有绯闻了blabla，看起来学到了很多，但其实都对当下的生活没什么帮助。&#xA;13年就有大学生意识到学历泛滥了，而大众是在19年20年才开始对“学历贬值”聊得热火朝天。&#xA;好吧&amp;hellip;现在你都可以看到很多人兴致勃勃大谈特谈“北京随便丢一块砖都能砸死5个研究生”的古老传说。&#xA;计算机最好的进场时机是15年左右（所以捞到快钱的基本都是90后），但时至今日近乎腰斩的校招录用名额和连年下跌的财报都拦不住18岁对计算机发自内心的热爱。&#xA;如果不主动收集最新的信息并且刻意逃避从众，信息到你手里至少有3年的延迟，你现在觉得醍醐灌顶+原来如此的想法，很多是好几年前的了。&#xA;随便找了两篇&#xA;清北的无奈，迈不过的中产阶级-搜狐mt.sohu.com/20160323/n441730619.shtml&#xA;一名985毕业生的大学简史mt.sohu.com/20161012/n470125061.shtml&#xA;注意到时间了吗？16年的文章了。&#xA;换句话说，8年前的文章了。&#xA;一个大学生手握自己的录取通知书骄傲地走进大学校门，幻想着自己即将受到的顶级待遇，一些高瞻远瞩的家长还跟他说过“读了大学就解放了”。&#xA;大学里，雕梁画栋丹楹刻桷，象牙塔美不胜收，湖边的风吹动女孩子的裙角飞扬。&#xA;经过十几年家长老师的美化和夸张手法，很多人都觉得，苦了12年到大学就可以享受福报了，脸上浮现着笑容，每个人都在憧憬自己的美好青春。&#xA;有人大一就沉浸于校园恋爱，泪流满面觉得找到了最真挚的爱情毕业就结婚，有人付出整个学期的空闲时间最后得到2000块的奖学金开心好几天，所有人都在过着自己的“丰富人生”，时不时感慨一句，青春完美不过如此。&#xA;并没有说这样不对的意思哈，而是说既然这样想，那就做好准备，接受学历无法变现。从来没有一个规则，规定人可以凭借高考的一次成功不断获得价值。&#xA;有次同事一边笑一边叫我过去看一份简历，我凑过去看，同事说：“哈哈哈，这一看就是浪了四年的。”&#xA;我说，也不能这么说吧，大学应该是一个人最自由的四年了，苦了12年，享享福报也不行嘛？&#xA;“确实，所以他四年里发了好多条朋友圈感叹。”&#xA;“但现在这位尊贵的名校生享完了他的福报，回到现实生活中去了。”&#xA;同事羡慕地叹了口气，继续说：“看他朋友圈，那些与他感情深厚的朋友们，还专门在酒楼订了一桌酒席为他庆祝毕业。”&#xA;“真是相当丰富多彩的四年生活，有时候想想，也许他是真的有福报。”&#xA;作者：如日方升&#xA;链接：https://www.zhihu.com/question/623983985/answer/3397300166&#xA;来源：知乎&#xA;著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。&#xA;适度摄入信息危害没有我想的那么大，小时候爸妈打电话得专门跑去电话亭，现在一个视频就可以，信息化有害但也方便了生活。虽然哪怕是今天你们也不会call me。&#xA;那么看到这篇博客的你，我祝你粽子节快乐。&#xA;：）</description>
     </item>
     <item>
       <title>购书一本</title>
-      <link>http://localhost:1313/post/buy-a-book/</link>
+      <link>https://chlzhong.org/post/buy-a-book/</link>
       <pubDate>Sun, 09 Jun 2024 19:25:53 +0800</pubDate>
-      <guid>http://localhost:1313/post/buy-a-book/</guid>
+      <guid>https://chlzhong.org/post/buy-a-book/</guid>
       <description>今年以来兴趣都在钢笔那里，很久没有买书。&#xA;昨天在看钢笔时无意瞅到一本￥10的书，咋一看以为是盗版，不料是当当的拼多多官方店，细看还是人文社的，遂拿下。当当的快递一向很烂，我这本倒是很满意。对多多的印象也改观了。</description>
     </item>
     <item>
       <title>搯花</title>
-      <link>http://localhost:1313/post/tao-flower/</link>
+      <link>https://chlzhong.org/post/tao-flower/</link>
       <pubDate>Thu, 06 Jun 2024 22:07:11 +0800</pubDate>
-      <guid>http://localhost:1313/post/tao-flower/</guid>
+      <guid>https://chlzhong.org/post/tao-flower/</guid>
       <description>怎么说呢。&#xA;布谷鸟的叫声越来越响亮悠扬，随着还有乌鸦、喜鹊跟着哼哼，路上有好些学长们在散步，想起 “早起的鸟儿有虫吃”，但是猫猫们也不吃虫子为啥起这么早呢……&#xA;外面很凉快，赶早八也不愿切换快步状态，晃晃悠悠的，慢慢享受着清凉的夏日早晨，比起白天三四十度的气温，还有炎炎烈日，这一片刻也显得很难得了。&#xA;上完课准备回校开始地速成NLP，得知亲戚忽至，于是——&#xA;植物园一条线排着，十来重瓦屋，玻璃墙，钻切来得十分明，太阳底下更有一种光泽，表示这里总是兴旺的。虽然只有我们三个人。屋后竹林，绿叶堆成了台阶的样子，倾斜至河岸，河水沿竹子打一个弯，潺潺流过。这里离花才是真近，中间就只有河，馆的一段正对了竹子临水而立，竹林里一条小路，金鹰上也窥得见，不当心河边忽然站了一个人——南山上老头出来赏花。仿佛不会说水清竹叶绿——城下人亦望城上。&#xA;这样的花，总觉得有一个东西是深的，碧蓝的，绿的，又是那么圆。&#xA;还有那比我大大得多的优雅龙舌兰——多半是黄昏时，孑然一身，躲着剑下贪凉，（热带植物贪凉?）于是惊动一声乡愁。&#xA;水人的栀子也好——小林的心里又渐渐滋长起花来了，我们双眼对双眼，这时的点金指就很萧瑟。&#xA;—见山──黑不了的青天。&#xA;[???]不见的图图。&#xA;下一次的欢愉得是暑假了。&#xA;池塘生春草，&#xA;池上一棵树，&#xA;树言，&#xA;“我以前是一颗种子。”&#xA;草言，&#xA;“我们都是一个生命。”&#xA;植树的人走了来，&#xA;看树道，&#xA;“我的树真长得高，——&#xA;我不知那里将是我的墓？”&#xA;他仿佛想将一钵花端进去。</description>
     </item>
     <item>
       <title>Minecraft</title>
-      <link>http://localhost:1313/post/minecraft/</link>
+      <link>https://chlzhong.org/post/minecraft/</link>
       <pubDate>Wed, 05 Jun 2024 23:39:15 +0800</pubDate>
-      <guid>http://localhost:1313/post/minecraft/</guid>
+      <guid>https://chlzhong.org/post/minecraft/</guid>
       <description>故事的&amp;hellip;&#xA;说“谢谢海彬”：&#xA;谢谢海彬&#xA;真是奇怪，我的事情就跟正弦函数图像一样，一波一波的，人背运的时候就开始迷迷糊糊丢三落四，心情越糟糕事情就越多，这倒是蛮好的，锻炼小林。&#xA;睡个觉先&amp;hellip;今天芒种。</description>
     </item>
     <item>
       <title>Soulsan</title>
-      <link>http://localhost:1313/post/soulsan/</link>
+      <link>https://chlzhong.org/post/soulsan/</link>
       <pubDate>Tue, 04 Jun 2024 18:29:48 +0800</pubDate>
-      <guid>http://localhost:1313/post/soulsan/</guid>
+      <guid>https://chlzhong.org/post/soulsan/</guid>
       <description>“ 妳有心事？你说，逗着她玩。&#xA;你怎么看得出来？&#xA;这明摆着，一个女孩子独自跑到这种地方来。&#xA;你不也一个人？&#xA;这是我的嗜好，我喜欢一个人游荡，可以沉思冥想。可像妳这样一个年轻姑娘——&#xA;得了吧，不只是你们男人才有思想。&#xA;我并没有说妳没有思想。&#xA;恰恰是有的男人并没有思想！&#xA;看来妳遇到了困难。&#xA;思想人人都有，并不非要有困难。&#xA;我没有同妳争吵。&#xA;我也没有这意思。&#xA;我希望能对妳有些帮助。&#xA;等我需要的时候。&#xA;妳现在没有这种需要？&#xA;谢谢，没有。我只需要一个人，谁也别来打扰我。&#xA;这就是说妳遇到了烦恼。&#xA;随你怎么说。&#xA;妳患了忧郁症。你说得也太严重了。&#xA;那妳承认妳有烦恼。&#xA;烦恼人人都有。&#xA;可妳在自寻烦恼。&#xA;为什么？&#xA;这不需要很多学问。&#xA;你这人真油。&#xA;如果还不至于讨厌的话。&#xA;并不等于喜欢。&#xA;”&#xA;事情发生在从三峡到圣托里尼的游轮上，那趟游轮夜间从万州出发，整个行程大概4个小时。游轮很大，有卧室，餐厅，酒吧一应俱全。&#xA;你的座位对面是一个年轻女孩，和你年龄相仿。她讲话不很好听，带着重庆人特有的温文软嗲。没有星星的长江漆黑一片，使得旅途令人乏味。 于是你们都用不流利的普通话聊天。她说她是福建人，她问了你很多江上的生活。你一一回答，看得出来她对此颇有兴趣。&#xA;原来她已经读了大学，主修心理。她年纪轻轻也去过印度，向你解释了阿特曼、梵为何物。碰巧你那时候读过一些和印度教相关的小说，便和她聊的火热。她很漂亮，芒果味儿的香水，大耳环，纹身，充满野性的外表，但她内心丰富，声音冲动富有节奏。有时候欲言又止，叫你感受到了她暗流涌动的内心世界。聊天中你得知她父母待她不薄，八岁那年就为她订下终身大事。她于是也就上了这艘船。&#xA;你说她是个任性的孩子。&#xA;聊了两个多少小时之后，你们都感到疲惫，当时已经夜里三点多了。透过窗外，远处海面漆黑一片，近处被掀起的海浪灰色朦胧，让人眩晕，她说她要去船舱的卧室睡一会。而你想去甲板上吹吹风。&#xA;当时正是夏日，夜间的风里也裹着温暖的湿气，你在甲板上吹了半个多小时，胸中生出一股无法释放的烦闷，脑海里抑制不住的去想她，两腿就不听使唤的向她卧室的船舱走去了。&#xA;船舱的长廊没开灯，鬼魅般的漆黑，门与墙壁都难以区分。你努力沿着长廊走到尽头，又原路返回，又再次走到尽头，原路返回…。不知道走了多少个来回之后，最里面的那道门开了，一只手把你拉了进去。你紧张又兴奋，并预见到将要发生的事情，一心只想顺其自然。卧室里依然漆黑无光，你看不清她。但凭借着闻到的芒果味香水，你便知道是她。&#xA;你问她能同你过河吗？去河对岸，那边有一座灵山，可以见到种种神奇，可以忘掉痛苦，可以得到解脱，你努力引诱她。&#xA;你们亲热，温存。她说她不是傻瓜。又说那些杂种带她夜里到河里去游泳，都回来了，说是上岸以后，才发现只少了她。全是鬼话，可他们都这么说，还说可以验尸，不信尽管去找法医。她妈妈不同意，忍受不了，女孩子死的时候刚十六周岁。她知道他们不止一次约她夜里出去，把她堵在桥墩下，一个个从她身上路过去。&#xA;在只能用身体去感受的黑暗里，她像一只蝙蝠无需光线也能成功定位，严丝合缝的让你沉入她的海里。走出那道门之后，你回到夹板上，一直等到日出。海面上生出红日，远处漆黑波浪变得清晰跳跃，你庆幸今后的人生将会有所不同。&#xA;天刚亮时，船正好靠岸了，你有意去找她，但是没有遇到，于是只好租车先去到圣托里尼的酒店。酒店坐落如梯田般的层层悬崖之上，你不禁回想起文山和那个夜晚，你发现旁边就有个视野极好的观景台，在那里眺望阳光照耀下的爱琴海，真是太美了，空气通透清澈，视野一览无余，让人心生爱情的美好。于是你开始回味夜里那次有计划的失身，脑海里浮现出她野性的面容，她芒果味的香水。&#xA;这时候你又看到观景台上走来一对讲着英文的白人中年夫妇，这让你想起来她讲到她的事情，你想象着她在家里被殴打的经历，通过窗户。心生敬佩。可突然间，你想到了什么，感觉事情不对。你冷静回想那次激情时刻，闭上眼睛，让记忆回到那片极度朦胧且暧昧的黑暗中，你再次闻到了芒果味的香水，并在一片混沌之中看了一个金属片跟随那对丰满的胸部起伏跳跃。原来如此，你深吸一口从海的另一面吹来的风，感到内脏冰凉，那个金属片是她战死的爸爸留下的遗物名牌。而那个黑暗中野性十足的女人是她少言寡语的妹妹。&#xA;从三峡溪涧伸起的几棵老白果树上还未脱尽的叶子，映照得失去了颜色，只有灯光照着的走廊和屋檐才实实在在。</description>
     </item>
     <item>
       <title>发电系列之图图呢</title>
-      <link>http://localhost:1313/post/crazy-life_1/</link>
+      <link>https://chlzhong.org/post/crazy-life_1/</link>
       <pubDate>Mon, 03 Jun 2024 22:34:40 +0800</pubDate>
-      <guid>http://localhost:1313/post/crazy-life_1/</guid>
+      <guid>https://chlzhong.org/post/crazy-life_1/</guid>
       <description>难得周一课少，再说几句——&#xA;一直用的知乎作为自己部落格的图床，优点是访问快，缺点就是bigger不高，不方便查看（当然主要原因是我没编辑html&amp;hellip;），于是今天想尝试更换为Github的，翻了几篇文章感觉为了这个东西牺牲访问速度不太划算，遂罢（建议加到未遂里）。&#xA;好玩的是在教程的过程中看到有位自己网站的图都寄了，看来比起国内的审核，github更严？（知乎惊喜.jpg）&#xA;这一拍做个分割线&#xA;一件事情只会在开始之前和结束之后美好，&#xA;比如读大学、打工、恋爱，&#xA;以及写论文，&#xA;我现在就在赶论文，非常痛苦。&#xA;对人的思念大致上分为两种，&#xA;一种是放空念陶诗，觉得自己状态不错的闲暇，才有底气联系某人的思念，&#xA;另一种是即便深陷泥沼，只要想起某人，就觉得事情没那么糟糕的思念。&#xA;很难说哪种是利用哪种是喜欢，&#xA;反正在XX看来都是失联。&#xA;好月好月，一溪哀意投花林。&#xA;这个时候，如月之前，&#xA;发及面庞，深谙华美与月同辉一色，&#xA;我在犹豫该说“别难过了”还是“别哭啦”，&#xA;我想我只是想和她周旋。&#xA;每个人都觉得自己有段很长的故事要讲，&#xA;最后说出来也就寥寥数语，&#xA;别人在故事的开头就走得干脆利落，&#xA;剩下的篇幅全是自我拉扯。&#xA;可以更自然，一点都不自然。&#xA;秋风发微凉，寒蝉鸣我侧，&#xA;今天的烦忧就死在今天，&#xA;假如有人......&#xA;No, por favor, no lo hagas1&#xA;百年孤独的典故&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     <item>
       <title>报告未遂</title>
-      <link>http://localhost:1313/post/attempted-work/</link>
+      <link>https://chlzhong.org/post/attempted-work/</link>
       <pubDate>Mon, 03 Jun 2024 13:00:45 +0800</pubDate>
-      <guid>http://localhost:1313/post/attempted-work/</guid>
+      <guid>https://chlzhong.org/post/attempted-work/</guid>
       <description>出现了 XX 就把内容删去了，关于 XX 可点这里</description>
     </item>
     <item>
       <title>Statistic</title>
-      <link>http://localhost:1313/post/statistic/</link>
+      <link>https://chlzhong.org/post/statistic/</link>
       <pubDate>Sun, 02 Jun 2024 14:12:14 +0800</pubDate>
-      <guid>http://localhost:1313/post/statistic/</guid>
+      <guid>https://chlzhong.org/post/statistic/</guid>
       <description>Fountain Pen 钢笔型号 材质 颜色 尺寸(mm) 重量(g) 百乐78G F 树脂 黑 135*11 11.5 英雄616 树脂 墨绿 138*12 16 高仕经典世纪 F 金属 蓝珐琅白夹 132*9 16 金豪大道9016 F 树脂 透明白 142*15 21 写乐1911S M PMMA树脂 象牙白 135*15 17 英雄100 金属 金夹 140*13 21 金豪世纪100 F 亚克力 橘红色 138*14 27 里莜弥图 EF 亚克力 银河 140*14 20 百乐Elite95S M 树脂|铝 深红 118*12 15.2 英雄382 0.8美工尖 金属 丽雅黑 115*13 33 英雄H620 金属 蓝色 137*11 28 威迪文海韵 F 金属 纯黑白夹 145*？ 33 自来水笔1（fountain pen）产品术语： 钢笔：具有蓄贮书写墨水装置和点有铱粒的金属笔尖，应用毛细原理书写的笔。</description>
     </item>
     <item>
       <title>狐狸和猫</title>
-      <link>http://localhost:1313/post/fox-and-cat/</link>
+      <link>https://chlzhong.org/post/fox-and-cat/</link>
       <pubDate>Fri, 31 May 2024 22:13:59 +0800</pubDate>
-      <guid>http://localhost:1313/post/fox-and-cat/</guid>
+      <guid>https://chlzhong.org/post/fox-and-cat/</guid>
       <description>小猫说：&#xA;今日雨水。 可惜我小小的房间没有窗，听不到雨水落地时淅淅沥沥的声音。&#xA;想特意去淋淋雨，但眼镜沾上雨水后，我便很难看清东西。&#xA;下雨时，空气带上了许多凉意，在凉凉的世界里待着，好像时间都变快了。&#xA;我常常会闻到油菜花的香味。 先是浓腻的花香，而后我的脑海里闪过大片的金黄。&#xA;我不自觉地想要抓住这熟悉的感觉，然而，每当我想细细回忆时，这香味总是会在片刻间消失得无影无踪，仿佛它从未存在过似的。&#xA;我知道，它存在于几年前我所居住的地方，它生长于那片被村民精心耕种呵护的土地。&#xA;它的香气，跨越时间空间，永远留存在我的身体里面，陪我长大，陪我变老。&#xA;最近不太想睡觉。 晚上，眼睛一闭一睁，便到了第二天。若是再赖赖床，躺床上玩玩手机，这新的一天便又过去一半了。&#xA;这种对于时间的麻木让我感到很恐慌。 1月28号从学校回到家，2月25号便要返校，明明计划清单上的事情一件没做，这50多天的寒假居然就那么过去了。&#xA;—————————————————————————————————————————&#xA;狐狸的话：&#xA;爱让人成为自己。&#xA;爱很抽象。爱到底是什么？从小家人和朋友之间的支持，理解，陪伴，共鸣。遇见ta之后恋人之间的尊重，理解，支持，帮助，依靠。珍重的爱慕与杂乱的爱欲。&#xA;爱情的意义在于有一个人，胜过世界上的任何人理解你，胜过世界上的任何人陪伴你，胜过世界上的任何人不顾一切的爱你。你的喜欢和兴趣，目标和意志。做出的努力，受过的苦。你的弱点，委屈。对未来的期待和不坚定的理想。你经历里越不过去的坎，无法化解的困难。你现在遇到的无法自己解决的问题，将来潜在的烦恼。都有一个人接的住，都有一个人可以毫无保留，都有一个人可以在你同侧。愿意了解你，接受你，支持你，帮助你，和你一起面对这世界的一切。&#xA;爱能打败大部分孤独，而人生来孤独。父母的经历和自己客观上是不同的，这决定了我们永远无法做到彻底的相互理解。因为合得来而成为的朋友，在某些方面做不到理解。朋友只有一个或者几个面，能满足理解的需求。只有恋人之间可以做到最全面的理解。我是一个唯物主义者，但是在爱情这件事上，我更认可它是玄学。遇见合适又喜欢的恋人靠不了逻辑，这得靠缘分。&#xA;还有什么比拥有了一切却没有人能分享更难过的事？ 那么还有什么比拥有了一切又有人分享更幸福的事？ 活着的意义从来不是当人矿。重要的从来不是所谓的好的生活，而是你喜欢的，想要的生活。幸福也从来不是靠忽悠，活的开不开心自己心里最清楚。当然，经济基础决定上层建筑，想要幸福得有经济基础，要好好努力。&#xA;幸福的奋斗过程是需要爱的。如果不是爱情，可能需要友情和亲情弥补。但是恐怕达不到同样的效果。一个人的信念和力量，是不够和世界对抗的。甚至有的时候连自己都无法对抗，不是吗？&#xA;—————————————————————————————————————————&#xA;小猫说：&#xA;1、一日三餐，粗茶淡饭，蜜饯干果，瓜子点心，胭脂水粉，衣服房子，家具……&#xA;当我认真盘算起这些琐而必需之物时，终于明白了那句“距离产生美”。我现在所不关心的会使我以后一阵子郁郁寡欢吗？&#xA;我看见每个过往的行人，有一张衰弱、不快乐的脸。&#xA;我不要它和我如影随形。讨厌计划又害怕consequence。&#xA;2、山下花好，素雅吝啬，不肯分我一点香味。山上人好，搽粉画眉，雾里我说这是朦胧的距离。手机说明天大雨，大雨好看。&#xA;亭然翠影，无须点墨。闲澹天色，不染纤尘。&#xA;—————————————————————————————————————————&#xA;小猫说：&#xA;杜鹃没有任何一点花的味道，在颜色上却很有一抹的好看。常相见的一丛之中颜色便“气候不同”。这里红一点那里粉一点，最妙的是沾上的颗珠子：湿答答，你听，哒哒哒哒，原是下雨，或是泪滴儿，我不知道，我不知道。&#xA;—————————————————————————————————————————&#xA;狐狸的话：&#xA;在世俗上取得成功尤其是体育或者一项技能或者科学研究的习得过程往往都和闭关很像。需要内心是高度专注的状态，也就是古代人说的“定心”，借着高度专注内心推动客观世界的发展（取得技能的熟练或者灵感的迸发，就类似钻木取火）。&#xA;高度专注的心，是相对清静，稳定，纯净的。&#xA;然而爱情，天然就是躁动的，杂乱的，里面包含了欲望，虚荣，性欲，想想那些所谓小鹿乱撞，crush，暧昧。&#xA;这就是和定心完全不搭调的低级心境，是无法让人在客观世界达到什么高度的。&#xA;所以兵荒马乱就是最优解。 </description>
     </item>
     <item>
       <title>我们到底学到了什么？</title>
-      <link>http://localhost:1313/post/what-on-earth-have-we-learned/</link>
+      <link>https://chlzhong.org/post/what-on-earth-have-we-learned/</link>
       <pubDate>Thu, 30 May 2024 11:39:25 +0800</pubDate>
-      <guid>http://localhost:1313/post/what-on-earth-have-we-learned/</guid>
+      <guid>https://chlzhong.org/post/what-on-earth-have-we-learned/</guid>
       <description>上图是妓院开设的课程表，落实的话我已经是一个熟练掌握高数线代概率论的讨厌花海的学生了。可事实上除了花海符合实际其余都只知名字怎么写而已。到底是怪老师没有讲清楚知识呢？还是怪我们自己没有好好学？还是怪这么课本身就不适合在我们学院开？其实学到机器学习还是可以知道这些知识运用很广泛，还是挺有用、挺有意思的，但是我们的课程根本不可能讲到那里去，课时太少，练习不够。由此我又想到本科阶段到底该学些什么；以我跟老师们的接触，他们大多都说该打好基础，我也赞同，但是我们开的这些课有没有达到这种目的呢？哪些课能显著体现计算机的基础？都是值得大家一起思考的问题。比如现在看机器学习就严重感觉到线代中矩阵的知识忘得差不多了，那才能让人感觉到什么叫基础，像我们所开过的数电、大物等课程有基础作用吗？似乎感觉有些偏了…… 反倒是语言课、数据结构这些课要好好深入学习学习，但是这些课我们又上好了吗？似乎也没有…… 我们的课程安排似乎是想让学生尽量多学些东西，但是顾了广度肯定会顾不上深度，这永远是一对矛盾，又是一个权重的问题。&#xA;拚命狂赶了两年（？），但是一点也不值得高兴……</description>
     </item>
     <item>
       <title>江阿姨</title>
-      <link>http://localhost:1313/post/jiangjiang/</link>
+      <link>https://chlzhong.org/post/jiangjiang/</link>
       <pubDate>Sun, 26 May 2024 12:47:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/jiangjiang/</guid>
+      <guid>https://chlzhong.org/post/jiangjiang/</guid>
       <description>江阿姨要我写一篇文章纪念她，我觉得很好玩：一者从高中毕业以后没有再写过记人的文章（其实估计初中后就没写过了），二者人还在这却真真是两年的不相见，实在不知道要怎么开一个头，只得乱写。因为一直觉得记不住的事情就是没有，加之自己的忘性确实太大，所以本文杜撰为主，记忆为辅。又这个时代没有离别，那我就重新造一个“她”来思念：&#xA;以上写于2024年四月三十号，至重新动笔已一月有余，遂做个引子。&#xA;小林在念书时候爱和根哥打游戏，也时常收到老王的游戏邀请。对别的事情其实没有太关心。嗳，横在面前的是旧人新的聊天框，记忆里的无论如何是昔日里的旧人，几个无业游民！这其间好像便增了无限的乐趣，设想遥远的午后又遇到 阿水，于是乎笑。&#xA;那么阿水是谁呢？来得一个唐突，却极容易答覆，有了那一个“她”便答覆了一半，在小林的记忆里是熟得忘记了的一位翠翠，而一天之中便能在他的瞳孔里长大了，那么好看的一个三姑娘。究竟有一点不自首肯，心之波流有如逝者，哪里有一个截得断的波说这是在那里推澜？于是开始地——&#xA;蟪蛄不知春秋&#xA;阿水的样子很不坏。印象里其实一个无着落。大概近乎清水惊蜓，游于绿竹的美之中，一叶下来便是天下春了。春眠不觉晓，眼见的开始是阿水的头发林，教人疑心子美诗一点不贴切。小林见过阿水披发的样子，站在那里就要立刻得的一棵细柳，因为她的头发拖得快近地，笑说要引她到高山上去挂发，教她的头发成了人间的瀑布。细想又很糟糕，岂不是怒发冲天不好看了 教阿水高歌当泣，忙说窗外的树好，顺手摇了摇进教室的那树，飒飒的一响要在眼波里晕开想象中的泪水。这是要讲阿水的“那扇窗”了：清彻，一如桃花潭水，声响是没有声响，而桃花不能躲避它的红。而后是一闪一闪亮晶晶，接着🦊也来了，玫瑰就燃起来了，轻红就弗花脸了。这是讲再看阿水的脸就要红起来。&#xA;阿水讲话不太好听，这是可以被轻松论证的：&#xA;我认为她讲话不好听&#xA;我认识的人认为她讲话不好听&#xA;这两点都难以证明。小林倒倾向于这样认为，因为这是生平第一次听见有人在他面前说&#xA;“欸，你怎么变丑了？” 霎时间是天雷阵阵，山崩地裂，海枯石烂，风雨如晦而又立刻万籁俱静去。似乎说得在理！ 便不再理会，栽我的瞌睡去。人总有一个留纪念的意思。所以庄周一派的旷达，总不能说是近人情。泰哥尔《飞鸟集》有一章云，&#xA;愿生者有那不朽的爱，死者有那不朽的名&#xA;将此意说得最有情趣，令人觉得人生可敬可爱。中国读书人的生活总是那么的干燥无味：动不动以好名不好名来品评人，其实名是啥物事？好名又是啥物事？本着朴实的感情，好名怎么算得一件不好的事呢？生平或者身后留得好的名声，不正同我们愿被人怀念着是一样的心事么？人生虽短，令名则长，大丈夫真是被应该留丑百世。看官，不要把自己也骗到了。&#xA;所以阿水讲话究竟好不好听呢？在小林这里是不好听的。&#xA;阿水的字我从来没见过，想象中是很娟秀的一笔字，正如其人。&#xA;阿水总不爱收拾。这与小林的想象、大众所熟知的印象都是迥乎不同的。清早起来没有机会得知她如何拾掇自己的头发林，可对于摆在书桌上的东西却是一清二楚，只是一个“乱”字倒显得她的桌子简单了。练习册和课本的堆叠无论如今称不上艺术，不然她自己也不会发出 “欸，我的书呢？” 那间教室里的学生爱把自己的东西丢在靠窗的角落，所以小林分不清来窗边的人是远眺波特莱尔的诗歌还是趁机来看他；但对阿水，无疑是来寻那多半不在此的课本。可惜课本不是某人的手表，会说“我在这里” 嗳，两件事均忍俊。课本之外的关系小林与阿水就没有什么交集了，不存在的逗她玩，不存在的问点题，不存在的闲聊以及不存在的送别。&#xA;此去经年，应是良辰好景虚设。便纵有千种风情，更与何人说？&#xA;进房小小的硬床，灯光慢慢移动，阿水不觉很清新，她没有答话，静得很。灯光无助于老师之爱，少女的心又不能自己燃起来——真是随风潜入夜。打着台灯写作业，此时纷白的墙算是最白，除外只有她一人的面孔，头发则是黑而乱了。闭眼便看见河边的鹭鸶，碧水白沙之间阿水在青天下面静得像一根羽毛。浑然不觉安军一门闩把月光都闩出去了。月亮隐在云里去了，阿水也就睡下。&#xA;清早醒来是作业梦里的事了，后面的事情就是她的名字现在几乎没有念出口过了。谈天也是我的一个同学，这实在是一位可爱的姑娘。她对于小儿女是那样富于同情心，她自己分明就是一位小女孩咧：实验报告不给她看，便哭了，多么新鲜的眼泪！真的，真的她是自在的，所谓生香真色人难学也。什么时候会大家闺秀呢，期待那个霁雪夜了。&#xA;“且听下回分解”&#xA;这一拍把人的诗思给笑没了。两个山上风马牛不相及，我分明见过她长大的模样：王岚样，不是吗？山上的岁月同我们的不一个样子，这一点且看今日月亮湖盛开的不知名紫色小花，而这篇文章并非为阿水做一个信史或是传记云云，看官也就不要刻意考究。小林与王岚的初相识是在初中的历史公开课上，也有可能是一九年五月五号的下午。小林踌躇不敢答，不晓得说谁，年过十五而依然含羞。她说不要再提，有许多事言之而不能行，有好几回要发愤自饮自餐，说一单食一壶饮和你一起吃总不让人焦头烂额，你看这样是什么话？曾蒙一位小姐这样夸奖我。&#xA;连我也不懂了&#xA;“……”&#xA;“什么？”&#xA;“你就随便写写，主要写点好的，我爱听的。”&#xA;“我知道，我知道——妳叫我写的字里不要有江老老上课打瞌睡这一回是吗？我知道，我知道。”&#xA;但是她没有回，于是我们也只好下回再见。</description>
     </item>
     <item>
       <title>建站指北</title>
-      <link>http://localhost:1313/post/guide-to-building-a-website/</link>
+      <link>https://chlzhong.org/post/guide-to-building-a-website/</link>
       <pubDate>Sun, 26 May 2024 11:20:57 +0800</pubDate>
-      <guid>http://localhost:1313/post/guide-to-building-a-website/</guid>
+      <guid>https://chlzhong.org/post/guide-to-building-a-website/</guid>
       <description>原文见如何用 GitHub Pages + Hugo 搭建个人博客 · 小绵尾巴 (cuttontail.blog) 整个过程基于Windows11 0.部落格 部落格是什么？&#xA;部落格（博客）是一种在线日记型式的个人网站，借由张帖子章、图片或影片来记录生活、抒发情感或分享信息。博客上的文章通常根据张贴时间，以倒序方式由新到旧排列。许多博客作者专注评论特定的课题或新闻，其他则作为个人日记。一个典型的博客结合了文字、图像、其他博客或网站的超链接、及其它与主题相关的媒体。能够让读者以互动的方式留下意见，是许多博客的重要要素。大部分的博客内容以文字为主，也有一些博客专注艺术、摄影、视频、音乐、播客等各种主题。博客是社会媒体网络的一部分。——维基百科&#xA;一直认为一件事情如果你忘记了那么它就不存在。“记录”从古至今都是很有仪（niu）式（ben）感的事情：登高作赋，临泉赋诗，兰亭修序……甚至还要画张山水裱起来，聊以服人。如今人们爱用朋友圈（个人很鄙夷路上奔波之后的所谓“又是自由的一天”）记录生活也差不多是这个道理，只是依赖于微信总让人不舒服，因此自己搭一个部落格是一件很棒很酷的事情，否则怎么算会“上网”呢？本文便是出于这样的目的，争取让每个人都可以零基础搭建自己的部落格。&#xA;这篇教程假设你已经：&#xA;安装了 Git，并且了解基本的 Git 知识； 有一个 GitHub账号； 有自己偏好的文本编辑器（比如Typora）。 如果你满足以上条件那就开始吧！&#xA;1. 安装 Hugo 点击Release v0.126.1 · gohugoio/hugo (github.com)并下滑找到hugo_0.126.1_windows-amd64.zip，点击下载。(本文写于2024年5月26号，你下载的时候版本可能已经更新。) 把下载好的.zip文件解压，并放置在你想放的文件夹中（我的路径：D:\DevTools\Hugo，也就是说现在 Hugo 目录下有一个名为 hugo_0.126.1_windows-amd64 的文件夹）。打开设置，搜索“编辑系统环境变量”，在弹出的“系统属性”窗口中点击“环境变量”，再在弹出的“环境变量”窗口的“系统变量”中选中 Path 路径，并点击编辑。通过右侧的“新建”按钮，将[D:\DevTools\Hugo\hugo_0.126.1_windows-amd64]添加到环境变量（根据自己的路径修改）。&#xA;WIN+D回到桌面，右键选择”在终端中打开“。输入：&#xA;hugo version 一切正常的话会显示你目前安装的版本号：&#xA;2. 创建 GitHub 仓库 2.1 创建博客源仓库 命名博客源仓库（我使用的是demo）; 勾选 Public，设置为公开仓库； 勾选添加 README 文件。 2.2 创建 GitHub Page 仓库 命名 GitHub Pages 仓库，这个仓库必须使用特殊的命名格式 &amp;lt;username.github.io&amp;gt;， &amp;lt;username&amp;gt; 是你自己的 GitHub 的用户名； 勾选 Public，设置为公开仓库； 勾选添加 README 文件，这会设置 main 分支为仓库的默认主分支，在后面提交推送博客内容时很重要。 3.</description>
     </item>
     <item>
       <title>Demo01</title>
-      <link>http://localhost:1313/post/demo01/</link>
+      <link>https://chlzhong.org/post/demo01/</link>
       <pubDate>Sun, 26 May 2024 11:18:23 +0800</pubDate>
-      <guid>http://localhost:1313/post/demo01/</guid>
+      <guid>https://chlzhong.org/post/demo01/</guid>
       <description>这是我的第一篇博客。&#xA;HELLO WORLD！</description>
     </item>
   </channel>
