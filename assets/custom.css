@@ -1,0 +1,187 @@
+/* Place custom css here. */
+
+/* Archives Styles */
+archives-page h1 {
+  margin-bottom: 20px;
+}
+.archives-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.year-column {
+  flex: 1 1 100%;
+  min-width: 200px;
+}
+.year-column h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+.month-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.month-column:last-child {
+  margin-bottom: 0;
+}
+.year-column ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.year-column li {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 1em;
+}
+.year-column a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 0.2s ease;
+}
+.year-column a:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.year-column .date {
+  color: #999;
+  font-size: 0.9em;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+/* Dark Mode Styles for Special Pages */
+.dark .special-page,
+.dark #archives-page,
+.dark .special-page a,
+.dark #archives-page a,
+.dark .special-page .date,
+.dark #archives-page .date {
+  color: #b0b0b0; /* 使用较浅的灰色，减弱亮度 */
+}
+
+.dark .special-page a:hover,
+.dark #archives-page a:hover {
+  border-bottom-color: #b0b0b0; /* 链接悬停时的下划线颜色 */
+}
+
+@media (prefers-color-scheme: dark) {
+    code {
+        background-color: #2a2a2a !important; /* 更暗的背景色，减少亮度 */
+        color: #8BC34A !important; /* 使用更温和的绿色，减轻刺眼感 */
+    }
+}
+
+code::before, code::after {
+    content: '' !important; /* 移除 code 元素前后内容 */
+}
+
+/* Custom Styles */
+.img-apple {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-apple {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .img-apple {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+::selection {
+    background-color: rgb(255, 255, 224); /* 选中背景颜色（淡黄色） */
+    color: rgb(0, 0, 0); /* 选中文本颜色（黑色） */
+}
+
+::-moz-selection {
+    background-color: rgb(255, 255, 224); /* Firefox 的选中背景颜色（淡黄色） */
+    color: rgb(0, 0, 0); /* Firefox 的选中文本颜色（黑色） */
+}
+
+/* Special Page Links */
+.special-page a {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  color: initial;
+}
+
+.special-page :not(.logo) > a:hover {
+  position: relative;
+  inset: 1px 0 0 1px;
+}
+.special-page .no-special-link {
+  border-bottom: none;
+}
+.special-page .no-special-link:hover {
+  position: static;
+}
+
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather'), local('Merriweather-Regular'),
+       url('../fonts/merriweather-v13-latin-regular.woff2') format('woff2'),
+       url('../fonts/merriweather-v13-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Kai SC';
+  font-style: normal;
+  font-weight: 400;
+  src:  local('Kaiti'), local('Kaiti SC'), local('STKaiti'), local('楷体'), local('SimKai'), local('AR PL KaitiM GB'), local('DFKai-SB'), local('FandolKai'),
+       url('https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2') format('woff2');
+}
+body {
+  font-family: 'Merriweather', serif;
+}
+h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
+  font-family: 'Lato', sans-serif;
+}
+
+
+blockquote {
+  font-family: 'Kai SC', 'Kai TC', serif;
+  font-style: normal !important;
+  font-size: 0.9em;
+  quotes: none !important;
+  margin: 1em 0;
+  padding: 0 2em;
+  border-left: 2px solid var(--border-color) !important;
+  padding-left: 1em !important;
+  text-align: left !important;
+}
+
+blockquote::before,
+blockquote::after {
+  content: '' !important;
+}
+
+.single blockquote {
+  background: var(--bg-block) !important;
+  border-left-width: 5px !important;
+  padding: 3px 1em 3px !important;
+}
+
+code {
+    background-color: #F1E3E1; 
+    color: #0066cc; 
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    font-size:110%;
+}

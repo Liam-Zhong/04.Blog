@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Index on Chlzhong</title>
+    <title>Index | Chlzhong</title>
     <link>https://chlzhong.org/tags/index/</link>
-    <description>Recent content in Index on Chlzhong</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>© 2024, liam</copyright>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://chlzhong.org/tags/index/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://chlzhong.org/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <description>Index</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Tue, 19 Nov 2024 12:04:29 +0800</lastBuildDate>
   </channel>
 </rss>

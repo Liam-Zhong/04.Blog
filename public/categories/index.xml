@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Chlzhong</title>
+    <title>Categories | Chlzhong</title>
     <link>https://chlzhong.org/categories/</link>
-    <description>Recent content in Categories on Chlzhong</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>© 2024, liam</copyright>
-    <atom:link href="https://chlzhong.org/categories/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://chlzhong.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright>
   </channel>
 </rss>
