@@ -1,0 +1,563 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>学习资料-应付考试版 - Chlzhong</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="考纲： 排队论模型：学习简单的排队论模型的建模方法，熟悉和掌握排队系统中的平均队长、平均顾客数、系统中顾客退留时间、队列中顾客等待时间等的计算。 规划论模型：学习掌握数学规划：线性规划、整数规划、目标规划、动态规划等相关概念和理论，并且要求能用相关的方法建立对应的数学规划模型和求解。 插值与拟合建模：掌握曲线拟合、插值的基本方法，学会用插值、拟合作数据处理。 回归分析模型：学习掌握线性回归与非线性回归的相关概念和理论，并且要求能用相关的最小二乘方法建立对应的回归分析模型，井能进行相关的概率统计进行检验。 差分方程模型：了解差分法的基本思想，学会建立实际问题的离散模型，掌握递推、迭代法等求解过程，理解和掌握蛛网模型、银行货款等问题。 常微分方程模型：熟悉微分方程建模的基本步骤，掌握线性微分方程建模基本方法，了解非线性微分方程模型的一些特殊性质：熟悉微分方程的解法。 决策论模型：掌握決策论的基本理论及其应用。 图和网络模型：掌握最短路、最小生成树、最大流等的原理与求解。 一、排队论模型 。。。
+二、规划论模型 见张瑛瑛资料
+三、插值与拟合模型 。。。
+四、回归分析模型 回归：是一种统计分析方法，用于预测一个连续变量与一个或多个其他变量之间的关系。
+线性回归：是回归分析的一种，假设因变量与自变量之间存在线性关系，即因变量与自变量的关系可以用一条直线来描述。
+非线性回归：是回归分析的一种，假设因变量与自变量之间不存在线性关系，即因变量与自变量的关系不能用一条直线来描述，需要用更复杂的函数模型来描述。
+一元线性回归模型：$ y = \beta_0 &#43; \beta_1 x$ $$\color{red}\begin{cases} 斜率 \beta_1：\frac{\sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}}{\sum_{i=1}^n x_i^2 - n \bar{x}^2} \\ 截距 \beta_0：\bar{y} - \beta_1 \bar{x}\end{cases}$$
+检验方法：课本是假设检验判断是否为线性，真题没有考
+五、差分方程 差分:$\Delta y_{x} = y_{x&#43;1} - y_{x}$
+二阶差分：$\Delta {\Delta y_{x}} = \Delta^2 y_{x} = y_{x&#43;2} - 2y_{x&#43;1} &#43;y_{x}$
+一阶线性差分方程的一般形式为：$ y_{x&#43;1} = ay_x &#43; f(x)$" />
+  <meta name="author" content="Liam" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.126.1">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >Chlzhong</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Liam-Zhong"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">学习资料-应付考试版</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Jun 22, 2024</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>Liam</span>
+      
+    </div>
+    
+  </header>
+
+  <section><h2 id="考纲">考纲：</h2>
+<ol>
+<li><strong>排队论模型</strong>：学习简单的排队论模型的建模方法，熟悉和掌握排队系统中的平均队长、平均顾客数、系统中顾客退留时间、队列中顾客等待时间等的计算。</li>
+<li><strong>规划论模型</strong>：学习掌握数学规划：线性规划、整数规划、目标规划、动态规划等相关概念和理论，并且要求能用相关的方法建立对应的数学规划模型和求解。</li>
+<li><strong>插值与拟合建模</strong>：掌握曲线拟合、插值的基本方法，学会用插值、拟合作数据处理。</li>
+<li><strong>回归分析模型</strong>：学习掌握线性回归与非线性回归的相关概念和理论，并且要求能用相关的最小二乘方法建立对应的回归分析模型，井能进行相关的概率统计进行检验。</li>
+<li><strong>差分方程模型</strong>：了解差分法的基本思想，学会建立实际问题的离散模型，掌握递推、迭代法等求解过程，理解和掌握蛛网模型、银行货款等问题。</li>
+<li><strong>常微分方程模型</strong>：熟悉微分方程建模的基本步骤，掌握线性微分方程建模基本方法，了解非线性微分方程模型的一些特殊性质：熟悉微分方程的解法。</li>
+<li><strong>决策论模型</strong>：掌握決策论的基本理论及其应用。</li>
+<li><strong>图和网络模型</strong>：掌握最短路、最小生成树、最大流等的原理与求解。</li>
+</ol>
+<hr>
+<h3 id="一排队论模型">一、排队论模型</h3>
+<p>。。。</p>
+<hr>
+<h3 id="二规划论模型">二、规划论模型</h3>
+<p>见张瑛瑛资料</p>
+<hr>
+<h3 id="三插值与拟合模型">三、插值与拟合模型</h3>
+<p>。。。</p>
+<hr>
+<h3 id="四回归分析模型">四、回归分析模型</h3>
+<ul>
+<li>
+<p>回归：是一种统计分析方法，用于预测一个连续变量与一个或多个其他变量之间的关系。</p>
+</li>
+<li>
+<p>线性回归：是回归分析的一种，假设因变量与自变量之间存在线性关系，即因变量与自变量的关系可以用一条直线来描述。</p>
+</li>
+<li>
+<p>非线性回归：是回归分析的一种，假设因变量与自变量之间不存在线性关系，即因变量与自变量的关系不能用一条直线来描述，需要用更复杂的函数模型来描述。</p>
+<p>一元线性回归模型：$ y = \beta_0 + \beta_1 x$ <br></p>
+<p>$$\color{red}\begin{cases} 斜率 \beta_1：\frac{\sum_{i=1}^n x_i y_i - n \bar{x} \bar{y}}{\sum_{i=1}^n x_i^2 - n \bar{x}^2} \\ 截距 \beta_0：\bar{y} - \beta_1 \bar{x}\end{cases}$$</p>
+<p>检验方法：课本是<strong>假设检验</strong>判断是否为线性，真题没有考</p>
+<hr>
+</li>
+</ul>
+<h3 id="五差分方程">五、差分方程</h3>
+<p>差分:$\Delta y_{x} = y_{x+1} - y_{x}$</p>
+<p>二阶差分：$\Delta {\Delta y_{x}} = \Delta^2 y_{x} = y_{x+2} - 2y_{x+1} +y_{x}$</p>
+<p>一阶线性差分方程的一般形式为：$ y_{x+1} = ay_x + f(x)$</p>
+<ol>
+<li>
+<p><strong>齐次方程：</strong>
+如果 $f(x) = 0$，方程变为齐次方程：$ y_{x+1} = ay_x $ <br>
+其解为：<br>
+$$ \color{red}{y_x = C a^x} $$</p>
+</li>
+<li>
+<p><strong>非齐次方程：</strong></p>
+<ul>
+<li>如果 $f(x) = b$：</li>
+</ul>
+<p>递推得其解为：</p>
+<p>$$ \color{red}{f(n) = \begin{cases} bx+c &amp; \text{, } a = 1 \\ \frac{b}{1-a}+C\cdot a^x &amp; \text{, } a \neq 1 \end{cases}}$$</p>
+<br>
+<ul>
+<li>如果 $f(x) = (a_0 + a_1x + \cdots + a_nx^n)b^x$</li>
+</ul>
+<p>其特解为(记得还要加通解也就是对应齐次方程的解)：</p>
+<p>$$\color{red}{y_x^* = x^k(A_0 + A_1x + \cdots + A_nx^n) \cdot b^x \\ 其中A根据f(x)多项式系数判断，k = \begin{cases} 0 &amp; \text{, } a \neq b \\  1 &amp; \text{, } a =b \end{cases}}$$</p>
+</li>
+</ol>
+<p>例题：某城市2020年汽车保有量32万辆，预计此后每年报废上一年的汽车保有量的6%，并且每年新增汽车数量相同。为保护城市环境，该城市计划到2035年汽车保有量不超过50万辆，那么每年新增汽车数量不应超过多少辆？（$（0.94)^{15} = 0.395$）</p>
+<p>解：设第n年的汽车保有量为$a_n$，每年新增汽车数量为x。</p>
+<ol>
+<li>
+<p>由题：$a_n = 0.94a_{n-1} + x$</p>
+</li>
+<li>
+<p>其通解为：
+$a_n = C(0.94)^n + \frac{x}{1-0.94}$
+其中C是常数，需要根据初始条件确定</p>
+</li>
+<li>
+<p>利用初始条件 $a_0 = 32$，我们可以求出C：
+$32 = C + \frac{x}{0.06}$
+$C = 32 - \frac{x}{0.06}$</p>
+</li>
+<li>
+<p>即：
+$a_n = (32 - \frac{x}{0.06})(0.94)^n + \frac{x}{0.06}$</p>
+</li>
+<li>
+<p>现在，需要满足15年后不超过50万辆的条件：
+$a_{15} ≤ 50$</p>
+</li>
+<li>
+<p>代入n=15到刚刚的解：
+$(32 - \frac{x}{0.06})(0.94)^{15} + \frac{x}{0.06} ≤ 50$</p>
+<p>得：$x≤ 3.71$万</p>
+</li>
+</ol>
+<hr>
+<h3 id="六常微分方程模型">六、常微分方程模型</h3>
+<p>。。。</p>
+<hr>
+<h3 id="七决策论模型">七、决策论模型</h3>
+<p>一般会根据乐观准则、悲观准则、折衷主义准则进行决策</p>
+<p>过程其实很简单：</p>
+<ul>
+<li>先看列，乐观准则找每列最大值，悲观准则找每列最小值，折衷主义准则算出$（每列最大值）\cdot  \lambda +(每列最小值) \cdot (1-\lambda)$</li>
+<li>找到后取最大值</li>
+</ul>
+<p>例题: 某公司将推出一种新产品，有三种推广方案：让利销售 $(d_1)$，送货上门 $(d_2)$，不采取措施$(d_3)$。未来市场可能有畅销 $s_1$、一般$s_2$、滞销 $s_3$三种状态。假设事先不知道这三种自然状态的出现的概率，但知道各种状态下各方案的盈利，见表。请用以上介绍的3种决策方法进行决策（乐观系数 $\alpha = 0.6$）。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">市场状态</th>
+<th style="text-align:center">畅销 $s_1$</th>
+<th style="text-align:center">一般  $s_2$</th>
+<th style="text-align:center">滞销 $s_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">方案</td>
+<td style="text-align:center">盈利</td>
+<td style="text-align:center">盈利</td>
+<td style="text-align:center">盈利</td>
+</tr>
+<tr>
+<td style="text-align:center">让利销售 $(d_1)$</td>
+<td style="text-align:center">60</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">-6</td>
+</tr>
+<tr>
+<td style="text-align:center">送货上门 $(d_2)$</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">不采取措施 $(d_3)$</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">10</td>
+</tr>
+</tbody>
+</table>
+<p>解：1、<strong>乐观法</strong>:$ \underset{i}{max}\text{ }\underset{j}{max}{a_{ij}} $</p>
+<p>$max {60, 10, -6} = 60 $<br>
+$max {30, 25, 0} = 30$<br>
+$max {10, 10, 10} = 10 $<br></p>
+<p>$ \underset{i}{max}\text{ }\underset{j}{max}{a_{ij}} =60 $</p>
+<p>对应的最优方案为 $(d_1)$。</p>
+<ol start="2">
+<li><strong>悲观法</strong>:$ \underset{i}{max}\text{ }\underset{j}{min}{a_{ij}} $</li>
+</ol>
+<p>$min {60, 10, -6} = -6 $<br>
+$min {30, 25, 0} = 0 $<br>
+$min {10, 10, 10} = 10 $<br></p>
+<p>$ \underset{i}{max}\text{ }\underset{j}{min}{a_{ij}} =10$</p>
+<p>对应的最优方案为 $(d_3)$。</p>
+<ol start="3">
+<li><strong>乐观系数法</strong> $\alpha = 0.6$:</li>
+</ol>
+<p>$CV_1 = 0.6 \times 60 + 0.4 \times (-6) = 33.6 $<br>
+$CV_2 = 0.6 \times 30 + 0.4 \times 0 = 18 $<br>
+$CV_3 = 0.6 \times 10 + 0.4 \times 10 = 10 $<br>
+$\max {33.6, 18, 10} = 33.6 $</p>
+<p>故最优方案为 $(d_1)$。</p>
+<hr>
+<h3 id="八图和网络模型">八、图和网络模型</h3>
+<h6 id="最短路径问题">最短路径问题</h6>
+<p>最短路径是把两点之间路径最短的问题，它只着眼于点与点之间的路径问题，并不关注整个图，也就意味着对一个节点运行算法的结果与另一个节点的结果之间没有多少关系。</p>
+<p><strong>Dijkstra算法</strong>：</p>
+<ul>
+<li>
+<p>步骤</p>
+<ol>
+<li>初始化：设置起始顶点的距离为0，其他所有顶点的距离为无限大。起始顶点加入未处理顶点集合。</li>
+<li>选择未处理顶点集合中距离起始顶点最近的顶点作为当前顶点。</li>
+<li>更新当前顶点的邻居顶点的距离（如果通过当前顶点到达邻居顶点的路径更短，则更新邻居顶点的距离）。</li>
+<li>将当前顶点标记为已处理，并从未处理顶点集合中移除。</li>
+<li>重复步骤2-4，直到处理完所有顶点或目标顶点的距离不再更新。</li>
+</ol>
+</li>
+</ul>
+<h6 id="最小生成树问题">最小生成树问题</h6>
+<p>最小生成树是把连通的图的<strong>所有顶点</strong>连起来路径之和最小的问题，即生成树总权值之和最小。即<strong>在一个连通的图里，如何去除图里的边，使得剩余的边仍能连接所有的节点，且这些边的权重之和最小</strong>。</p>
+<p><strong>Kruskal算法</strong>：</p>
+<ul>
+<li>步骤
+<ol>
+<li>初始化一个空的生成树。</li>
+<li>依次选择权重最小的边，如果这条边加入生成树后不形成环，则将其加入生成树。</li>
+<li>重复步骤2，直到生成树包含图中的所有顶点。</li>
+</ol>
+</li>
+</ul>
+<p>例题：找到6.33图的最小生成树<img src="https://pic1.zhimg.com/80/v2-dfd9d074c48f5407291bd0ce91b1535c_1440w.png" alt="例题2"></p>
+<p>答案：<img src="https://pica.zhimg.com/80/v2-e8be91fc7ec227ca59fc7ad81b06a52e_1440w.png" alt="答案"></p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/bad-thing/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>“永不褪色”</span></a
+    >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="http://localhost:1313/post/about-love/"
+      ><span>谈情说爱</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    © 2024, lee.so
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

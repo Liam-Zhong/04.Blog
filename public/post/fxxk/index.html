@@ -1,0 +1,422 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>奶奶的 - Chlzhong</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="这是习思也是奶奶的：
+这个P事 没做过 再早一点 就爆破
+我想我没听错 你说你bother我
+问了问 你比我老很多
+有的聊很多 有的没有说
+或者 心里想的 指没照做
+收到 我的嘴巴在隐瞒什么
+目前对自己 不是太满意
+一个谢谢 像在付时薪
+如果丢个不 怕你没反应
+是否有得等了 是否空欢喜
+有时太软弱 我有时太懒惰
+有时太敢说 有时又太晚说
+我说 回收到的那个不是我
+怎麽说呢 因为他不愿承认
+奶奶的奶奶的奶奶的奶奶的！
+奶奶的奶奶的奶奶的奶奶的！
+奶奶的奶奶的奶奶的奶奶的！
+附上解决方案（不知道Excel能不能直接做）
+import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩上报Excel模板.xls&#39;) df2 = pd.read_excel(&#39;data/雨课堂作业和期中成绩.xlsx&#39;) # 选择需要列 df2 = df2[[&#39;姓名&#39;, &#39;雨课堂作业折合分=总分/18*0.2&#39;, &#39;期中成绩&#39;]] # 使用姓名列来合并两个DF df_merged = pd.merge(df1, df2, on=&#39;姓名&#39;, how=&#39;left&#39;) #之所以head是要查看合并后的名字 df_merged.head() # 更新成绩列 df1[&#39;雨课堂作业折合分=总分/18*0.2&#39;] = df_merged[&#39;雨课堂作业折合分=总分/18*0.2_y&#39;] df1[&#39;期中成绩&#39;] = df_merged[&#39;期中成绩_y&#39;] # 保存更新后的Excel文件 df1." />
+  <meta name="author" content="Liam" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.126.1">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >Chlzhong</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Liam-Zhong"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">奶奶的</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Jun 21, 2024</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>Liam</span>
+      
+    </div>
+    
+  </header>
+
+  <section><p>这是习思也是奶奶的：<br></p>
+<p>这个P事 没做过 再早一点 就爆破<br>
+我想我没听错 你说你bother我<br>
+问了问 你比我老很多<br>
+有的聊很多 有的没有说<br>
+或者 心里想的 指没照做<br>
+收到 我的嘴巴在隐瞒什么<br>
+目前对自己 不是太满意<br>
+一个谢谢 像在付时薪<br>
+如果丢个不 怕你没反应<br>
+是否有得等了 是否空欢喜<br>
+有时太软弱 我有时太懒惰<br>
+有时太敢说 有时又太晚说<br>
+我说 回收到的那个不是我<br>
+怎麽说呢 因为他不愿承认<br></p>
+<p>奶奶的奶奶的奶奶的奶奶的！<br>
+奶奶的奶奶的奶奶的奶奶的！<br>
+奶奶的奶奶的奶奶的奶奶的！<br></p>
+<hr>
+<div align="center">    
+<img src="https://picx.zhimg.com/80/v2-168f302dbfdbabccac3077a5d391c773_1440w.png" alt="50%" width="50%" height="auto">
+<img src="https://picx.zhimg.com/80/v2-ea9d4879b9444b96468aeb61d12dd41f_1440w.png" alt="50%" width="50%" height="auto">
+</div>
+<hr>
+<p>附上解决方案（不知道Excel能不能直接做）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;data/A04232A1100071011-+成绩上报Excel模板.xls&#39;</span>)
+</span></span><span style="display:flex;"><span>df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;data/雨课堂作业和期中成绩.xlsx&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 选择需要列</span>
+</span></span><span style="display:flex;"><span>df2 <span style="color:#f92672">=</span> df2[[<span style="color:#e6db74">&#39;姓名&#39;</span>, <span style="color:#e6db74">&#39;雨课堂作业折合分=总分/18*0.2&#39;</span>, <span style="color:#e6db74">&#39;期中成绩&#39;</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用姓名列来合并两个DF</span>
+</span></span><span style="display:flex;"><span>df_merged <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>merge(df1, df2, on<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;姓名&#39;</span>, how<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;left&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#之所以head是要查看合并后的名字</span>
+</span></span><span style="display:flex;"><span>df_merged<span style="color:#f92672">.</span>head()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 更新成绩列</span>
+</span></span><span style="display:flex;"><span>df1[<span style="color:#e6db74">&#39;雨课堂作业折合分=总分/18*0.2&#39;</span>] <span style="color:#f92672">=</span> df_merged[<span style="color:#e6db74">&#39;雨课堂作业折合分=总分/18*0.2_y&#39;</span>]
+</span></span><span style="display:flex;"><span>df1[<span style="color:#e6db74">&#39;期中成绩&#39;</span>] <span style="color:#f92672">=</span> df_merged[<span style="color:#e6db74">&#39;期中成绩_y&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 保存更新后的Excel文件</span>
+</span></span><span style="display:flex;"><span>df1<span style="color:#f92672">.</span>to_excel(<span style="color:#e6db74">&#39;更新后的成绩表.xlsx&#39;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;奶奶的老登&#34;</span>)
+</span></span></code></pre></div></section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/about-love/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>谈情说爱</span></a
+    >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="http://localhost:1313/post/simple-poem/"
+      ><span>南山夜雨</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    © 2024, lee.so
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>
