@@ -45,7 +45,7 @@
      <a class="ltr:pr-3 rtl:pl-3 no-special-link" href="{{ .Permalink }}"><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>{{ .Name }}</span></a>
     {{ end }}<!---->
     {{ with $pages.Prev . }}
-    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="{{ .Permalink }}"
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3 no-special-link" href="{{ .Permalink }}"
       ><span>{{ .Name }}</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     >
     {{ end }}

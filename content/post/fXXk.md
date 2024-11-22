@@ -10,8 +10,8 @@ description = "{{ .Summary }}"
 
 这是习思也是奶奶的：<br>
 
-这个P事 没做过 再早一点 就爆破<br>
-我想我没听错 你说你bother我<br>
+这个 P 事 没做过 再早一点 就爆破<br>
+我想我没听错 你说你 bother 我<br>
 问了问 你比我老很多<br>
 有的聊很多 有的没有说<br>
 或者 心里想的 指没照做<br>
@@ -41,19 +41,19 @@ description = "{{ .Summary }}"
 
 -----
 
-附上解决方案（不知道Excel能不能直接做）
+附上解决方案（不知道 Excel 能不能直接做）
 
 ```python
 import pandas as pd
 
-df1 = pd.read_excel('data/A04232A1100071011-+成绩上报Excel模板.xls')
-df2 = pd.read_excel('data/雨课堂作业和期中成绩.xlsx')
+df1 = pd.read_excel('data/A04232A1100071011-+成绩上报 Excel 模板。xls')
+df2 = pd.read_excel('data/雨课堂作业和期中成绩。xlsx')
 
 # 选择需要列
 df2 = df2[['姓名', '雨课堂作业折合分=总分/18*0.2', '期中成绩']]
-# 使用姓名列来合并两个DF
+# 使用姓名列来合并两个 DF
 df_merged = pd.merge(df1, df2, on='姓名', how='left')
-#之所以head是要查看合并后的名字
+#之所以 head 是要查看合并后的名字
 df_merged.head()
 ```
 
@@ -62,8 +62,8 @@ df_merged.head()
 df1['雨课堂作业折合分=总分/18*0.2'] = df_merged['雨课堂作业折合分=总分/18*0.2_y']
 df1['期中成绩'] = df_merged['期中成绩_y']
 
-# 保存更新后的Excel文件
-df1.to_excel('更新后的成绩表.xlsx', index=False)
+# 保存更新后的 Excel 文件
+df1.to_excel('更新后的成绩表。xlsx', index=False)
 
 print("奶奶的老登")
 ```

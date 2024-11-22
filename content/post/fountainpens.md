@@ -70,7 +70,7 @@ description = "{{ .Summary }}"
 
 7. #### 1761 [Faber-Castell](https://www.faber-castell.cn/)
 
-国内约等于没有官网（算上1993 [伯爵](http://www.graf-von-faber-castell.com.cn/)），**不买**。
+国内约等于没有官网（算上 1993 [伯爵](http://www.graf-von-faber-castell.com.cn/)），**不买**。
 
 
 
@@ -86,7 +86,7 @@ description = "{{ .Summary }}"
 
 1981 [劳彭](https://laban.com/) 台湾产，台独钢笔 **不买**
 
-1931 [英雄](https://hero.com.cn/) 616和100做得不错 别的纪念太重且贵 **不买**
+1931 [英雄](https://hero.com.cn/) 616 和 100 做得不错 别的纪念太重且贵 **不买**
 
 1997 [弘典](http://www.winwinsky.com/index.asp) 不厚道 **不买**
 
@@ -106,13 +106,13 @@ description = "{{ .Summary }}"
 
 1925 [并木](https://www.pilot-namiki.com/en/) 国内没有官网 不喜欢莳绘 **不买**
 
-1919 [白金](https://www.platinum-pen.co.jp/) 国内没有官网 老3776丑得别致 鱼雷造型乏善可陈 **不买**
+1919 [白金](https://www.platinum-pen.co.jp/) 国内没有官网 老 3776 丑得别致 鱼雷造型乏善可陈 **不买**
 
-1999 [中屋](https://www.nakaya.org/) 国内没有官网 背鳍和十角好看 笔尖3776同款 **不买**
+1999 [中屋](https://www.nakaya.org/) 国内没有官网 背鳍和十角好看 笔尖 3776 同款 **不买**
 
 1911 [写乐](https://cn.sailor.co.jp/) **别买，快跑**
 
-1930 [凌美](http://www.lamy.hk/) 丑，有ROC纪念但是没有PRC纪念 **不买**
+1930 [凌美](http://www.lamy.hk/) 丑，有 ROC 纪念但是没有 PRC 纪念 **不买**
 
 
 

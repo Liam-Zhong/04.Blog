@@ -7,7 +7,7 @@ draft = false
 comments = true
 +++
 
->或许十年后还是这样子 听到hip-hop会想跟着点头 <br>
+>或许十年后还是这样子 听到 hip-hop 会想跟着点头 <br>
 >
 >希望你听到现在 头早就跟着点
 

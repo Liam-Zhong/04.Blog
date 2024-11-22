@@ -63,8 +63,8 @@
   
   
   <meta name="description" content="这是习思也是奶奶的：
-这个P事 没做过 再早一点 就爆破
-我想我没听错 你说你bother我
+这个 P 事 没做过 再早一点 就爆破
+我想我没听错 你说你 bother 我
 问了问 你比我老很多
 有的聊很多 有的没有说
 或者 心里想的 指没照做
@@ -80,8 +80,8 @@
 奶奶的奶奶的奶奶的奶奶的！
 奶奶的奶奶的奶奶的奶奶的！
 奶奶的奶奶的奶奶的奶奶的！
-附上解决方案（不知道Excel能不能直接做）
-import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩上报Excel模板.xls&#39;) df2 = pd.read_excel(&#39;data/雨课堂作业和期中成绩.xlsx&#39;) # 选择需要列 df2 = df2[[&#39;姓名&#39;, &#39;雨课堂作业折合分=总分/18*0.2&#39;, &#39;期中成绩&#39;]] # 使用姓名列来合并两个DF df_merged = pd.merge(df1, df2, on=&#39;姓名&#39;, how=&#39;left&#39;) #之所以head是要查看合并后的名字 df_merged.head() # 更新成绩列 df1[&#39;雨课堂作业折合分=总分/18*0.2&#39;] = df_merged[&#39;雨课堂作业折合分=总分/18*0.2_y&#39;] df1[&#39;期中成绩&#39;] = df_merged[&#39;期中成绩_y&#39;] # 保存更新后的Excel文件 df1." />
+附上解决方案（不知道 Excel 能不能直接做）
+import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩上报 Excel 模板。xls&#39;) df2 = pd.read_excel(&#39;data/雨课堂作业和期中成绩。xlsx&#39;) # 选择需要列 df2 = df2[[&#39;姓名&#39;, &#39;雨课堂作业折合分=总分/18*0.2&#39;, &#39;期中成绩&#39;]] # 使用姓名列来合并两个 DF df_merged = pd.merge(df1, df2, on=&#39;姓名&#39;, how=&#39;left&#39;) #之所以 head 是要查看合并后的名字 df_merged." />
   <meta name="author" content="Liam" />
   
 
@@ -194,7 +194,7 @@ import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩�
   <meta itemprop="description" content="{{ .Summary }}">
   <meta itemprop="datePublished" content="2024-06-21T11:30:27+08:00">
   <meta itemprop="dateModified" content="2024-06-21T11:30:27+08:00">
-  <meta itemprop="wordCount" content="76">
+  <meta itemprop="wordCount" content="89">
   
   <meta property="og:url" content="https://chlzhong.org/post/fxxk/">
   <meta property="og:site_name" content="Chlzhong">
@@ -369,8 +369,8 @@ import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩�
   </header>
 
   <section><p>这是习思也是奶奶的：<br></p>
-<p>这个P事 没做过 再早一点 就爆破<br>
-我想我没听错 你说你bother我<br>
+<p>这个 P 事 没做过 再早一点 就爆破<br>
+我想我没听错 你说你 bother 我<br>
 问了问 你比我老很多<br>
 有的聊很多 有的没有说<br>
 或者 心里想的 指没照做<br>
@@ -392,24 +392,24 @@ import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩�
 <img src="https://picx.zhimg.com/80/v2-ea9d4879b9444b96468aeb61d12dd41f_1440w.png" alt="50%" width="50%" height="auto">
 </div>
 <hr>
-<p>附上解决方案（不知道Excel能不能直接做）</p>
+<p>附上解决方案（不知道 Excel 能不能直接做）</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>df1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;data/A04232A1100071011-+成绩上报Excel模板.xls&#39;</span>)
-</span></span><span style="display:flex;"><span>df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;data/雨课堂作业和期中成绩.xlsx&#39;</span>)
+</span></span><span style="display:flex;"><span>df1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;data/A04232A1100071011-+成绩上报 Excel 模板。xls&#39;</span>)
+</span></span><span style="display:flex;"><span>df2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">&#39;data/雨课堂作业和期中成绩。xlsx&#39;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 选择需要列</span>
 </span></span><span style="display:flex;"><span>df2 <span style="color:#f92672">=</span> df2[[<span style="color:#e6db74">&#39;姓名&#39;</span>, <span style="color:#e6db74">&#39;雨课堂作业折合分=总分/18*0.2&#39;</span>, <span style="color:#e6db74">&#39;期中成绩&#39;</span>]]
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用姓名列来合并两个DF</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用姓名列来合并两个 DF</span>
 </span></span><span style="display:flex;"><span>df_merged <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>merge(df1, df2, on<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;姓名&#39;</span>, how<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;left&#39;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#之所以head是要查看合并后的名字</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#之所以 head 是要查看合并后的名字</span>
 </span></span><span style="display:flex;"><span>df_merged<span style="color:#f92672">.</span>head()
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 更新成绩列</span>
 </span></span><span style="display:flex;"><span>df1[<span style="color:#e6db74">&#39;雨课堂作业折合分=总分/18*0.2&#39;</span>] <span style="color:#f92672">=</span> df_merged[<span style="color:#e6db74">&#39;雨课堂作业折合分=总分/18*0.2_y&#39;</span>]
 </span></span><span style="display:flex;"><span>df1[<span style="color:#e6db74">&#39;期中成绩&#39;</span>] <span style="color:#f92672">=</span> df_merged[<span style="color:#e6db74">&#39;期中成绩_y&#39;</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 保存更新后的Excel文件</span>
-</span></span><span style="display:flex;"><span>df1<span style="color:#f92672">.</span>to_excel(<span style="color:#e6db74">&#39;更新后的成绩表.xlsx&#39;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 保存更新后的 Excel 文件</span>
+</span></span><span style="display:flex;"><span>df1<span style="color:#f92672">.</span>to_excel(<span style="color:#e6db74">&#39;更新后的成绩表。xlsx&#39;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;奶奶的老登&#34;</span>)
 </span></span></code></pre></div></section>
@@ -428,7 +428,7 @@ import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩�
      <a class="ltr:pr-3 rtl:pl-3 no-special-link" href="https://chlzhong.org/post/about-love/"><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>谈情说爱</span></a>
     
     
-    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="https://chlzhong.org/post/simple-poem/"
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3 no-special-link" href="https://chlzhong.org/post/simple-poem/"
       ><span>南山夜雨</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     >
     

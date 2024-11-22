@@ -185,7 +185,7 @@
   <meta itemprop="description" content="{{ .Summary }}">
   <meta itemprop="datePublished" content="2024-06-22T20:38:44+08:00">
   <meta itemprop="dateModified" content="2024-06-22T20:38:44+08:00">
-  <meta itemprop="wordCount" content="382">
+  <meta itemprop="wordCount" content="415">
   
   <meta property="og:url" content="https://chlzhong.org/post/study-materials-exam-preparation-version/">
   <meta property="og:site_name" content="Chlzhong">
@@ -419,11 +419,11 @@ $$ \color{red}{y_x = C a^x} $$</p>
 <li>如果 $f(x) = (a_0 + a_1x + \cdots + a_nx^n)b^x$</li>
 </ul>
 <p>其特解为(记得还要加通解也就是对应齐次方程的解)：</p>
-<p>$$\color{red}{y_x^* = x^k(A_0 + A_1x + \cdots + A_nx^n) \cdot b^x \\ 其中A根据f(x)多项式系数判断，k = \begin{cases} 0 &amp; \text{, } a \neq b \\  1 &amp; \text{, } a =b \end{cases}}$$</p>
+<p>$$\color{red}{y_x^* = x^k(A_0 + A_1x + \cdots + A_nx^n) \cdot b^x \\ 其中 A 根据 f(x)多项式系数判断，k = \begin{cases} 0 &amp; \text{, } a \neq b \\  1 &amp; \text{, } a =b \end{cases}}$$</p>
 </li>
 </ol>
-<p>例题：某城市2020年汽车保有量32万辆，预计此后每年报废上一年的汽车保有量的6%，并且每年新增汽车数量相同。为保护城市环境，该城市计划到2035年汽车保有量不超过50万辆，那么每年新增汽车数量不应超过多少辆？（$（0.94)^{15} = 0.395$）</p>
-<p>解：设第n年的汽车保有量为$a_n$，每年新增汽车数量为x。</p>
+<p>例题：某城市 2020 年汽车保有量 32 万辆，预计此后每年报废上一年的汽车保有量的 6%，并且每年新增汽车数量相同。为保护城市环境，该城市计划到 2035 年汽车保有量不超过 50 万辆，那么每年新增汽车数量不应超过多少辆？（$（0.94)^{15} = 0.395$）</p>
+<p>解：设第 n 年的汽车保有量为$a_n$，每年新增汽车数量为 x。</p>
 <ol>
 <li>
 <p>由题：$a_n = 0.94a_{n-1} + x$</p>
@@ -431,10 +431,10 @@ $$ \color{red}{y_x = C a^x} $$</p>
 <li>
 <p>其通解为：
 $a_n = C(0.94)^n + \frac{x}{1-0.94}$
-其中C是常数，需要根据初始条件确定</p>
+其中 C 是常数，需要根据初始条件确定</p>
 </li>
 <li>
-<p>利用初始条件 $a_0 = 32$，我们可以求出C：
+<p>利用初始条件 $a_0 = 32$，我们可以求出 C：
 $32 = C + \frac{x}{0.06}$
 $C = 32 - \frac{x}{0.06}$</p>
 </li>
@@ -443,11 +443,11 @@ $C = 32 - \frac{x}{0.06}$</p>
 $a_n = (32 - \frac{x}{0.06})(0.94)^n + \frac{x}{0.06}$</p>
 </li>
 <li>
-<p>现在，需要满足15年后不超过50万辆的条件：
+<p>现在，需要满足 15 年后不超过 50 万辆的条件：
 $a_{15} ≤ 50$</p>
 </li>
 <li>
-<p>代入n=15到刚刚的解：
+<p>代入 n=15 到刚刚的解：
 $(32 - \frac{x}{0.06})(0.94)^{15} + \frac{x}{0.06} ≤ 50$</p>
 <p>得：$x≤ 3.71$万</p>
 </li>
@@ -463,7 +463,7 @@ $(32 - \frac{x}{0.06})(0.94)^{15} + \frac{x}{0.06} ≤ 50$</p>
 <li>先看列，乐观准则找每列最大值，悲观准则找每列最小值，折衷主义准则算出$（每列最大值）\cdot  \lambda +(每列最小值) \cdot (1-\lambda)$</li>
 <li>找到后取最大值</li>
 </ul>
-<p>例题: 某公司将推出一种新产品，有三种推广方案：让利销售 $(d_1)$，送货上门 $(d_2)$，不采取措施$(d_3)$。未来市场可能有畅销 $s_1$、一般$s_2$、滞销 $s_3$三种状态。假设事先不知道这三种自然状态的出现的概率，但知道各种状态下各方案的盈利，见表。请用以上介绍的3种决策方法进行决策（乐观系数 $\alpha = 0.6$）。</p>
+<p>例题: 某公司将推出一种新产品，有三种推广方案：让利销售 $(d_1)$，送货上门 $(d_2)$，不采取措施$(d_3)$。未来市场可能有畅销 $s_1$、一般$s_2$、滞销 $s_3$三种状态。假设事先不知道这三种自然状态的出现的概率，但知道各种状态下各方案的盈利，见表。请用以上介绍的 3 种决策方法进行决策（乐观系数 $\alpha = 0.6$）。</p>
 <table>
 <thead>
 <tr>
@@ -526,32 +526,32 @@ $\max {33.6, 18, 10} = 33.6 $</p>
 <h3 id="八图和网络模型">八、图和网络模型</h3>
 <h6 id="最短路径问题">最短路径问题</h6>
 <p>最短路径是把两点之间路径最短的问题，它只着眼于点与点之间的路径问题，并不关注整个图，也就意味着对一个节点运行算法的结果与另一个节点的结果之间没有多少关系。</p>
-<p><strong>Dijkstra算法</strong>：</p>
+<p><strong>Dijkstra 算法</strong>：</p>
 <ul>
 <li>
 <p>步骤</p>
 <ol>
-<li>初始化：设置起始顶点的距离为0，其他所有顶点的距离为无限大。起始顶点加入未处理顶点集合。</li>
+<li>初始化：设置起始顶点的距离为 0，其他所有顶点的距离为无限大。起始顶点加入未处理顶点集合。</li>
 <li>选择未处理顶点集合中距离起始顶点最近的顶点作为当前顶点。</li>
 <li>更新当前顶点的邻居顶点的距离（如果通过当前顶点到达邻居顶点的路径更短，则更新邻居顶点的距离）。</li>
 <li>将当前顶点标记为已处理，并从未处理顶点集合中移除。</li>
-<li>重复步骤2-4，直到处理完所有顶点或目标顶点的距离不再更新。</li>
+<li>重复步骤 2-4，直到处理完所有顶点或目标顶点的距离不再更新。</li>
 </ol>
 </li>
 </ul>
 <h6 id="最小生成树问题">最小生成树问题</h6>
 <p>最小生成树是把连通的图的<strong>所有顶点</strong>连起来路径之和最小的问题，即生成树总权值之和最小。即<strong>在一个连通的图里，如何去除图里的边，使得剩余的边仍能连接所有的节点，且这些边的权重之和最小</strong>。</p>
-<p><strong>Kruskal算法</strong>：</p>
+<p><strong>Kruskal 算法</strong>：</p>
 <ul>
 <li>步骤
 <ol>
 <li>初始化一个空的生成树。</li>
 <li>依次选择权重最小的边，如果这条边加入生成树后不形成环，则将其加入生成树。</li>
-<li>重复步骤2，直到生成树包含图中的所有顶点。</li>
+<li>重复步骤 2，直到生成树包含图中的所有顶点。</li>
 </ol>
 </li>
 </ul>
-<p>例题：找到6.33图的最小生成树<img src="https://pic1.zhimg.com/80/v2-dfd9d074c48f5407291bd0ce91b1535c_1440w.png" alt="例题2"></p>
+<p>例题：找到 6.33 图的最小生成树！<a href="https://pic1.zhimg.com/80/v2-dfd9d074c48f5407291bd0ce91b1535c_1440w.png">例题2</a></p>
 <p>答案：<img src="https://pica.zhimg.com/80/v2-e8be91fc7ec227ca59fc7ad81b06a52e_1440w.png" alt="答案"></p>
 </section>
 
@@ -569,7 +569,7 @@ $\max {33.6, 18, 10} = 33.6 $</p>
      <a class="ltr:pr-3 rtl:pl-3 no-special-link" href="https://chlzhong.org/post/bad-thing/"><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>“永不褪色”</span></a>
     
     
-    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="https://chlzhong.org/post/about-love/"
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3 no-special-link" href="https://chlzhong.org/post/about-love/"
       ><span>谈情说爱</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     >
     

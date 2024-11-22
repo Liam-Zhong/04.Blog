@@ -18,6 +18,6 @@ description = "{{ .Summary }}"
 
 -----
 
-放个粗略PPT
+放个粗略 PPT
 
-<iframe src="https://gamma.app/embed/rx83a562p1sz31t" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="O2O优惠券使用预测"></iframe>
+<iframe src="https://gamma.app/embed/rx83a562p1sz31t" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="O2O 优惠券使用预测"></iframe>

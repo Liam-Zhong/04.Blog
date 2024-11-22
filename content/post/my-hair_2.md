@@ -13,7 +13,7 @@ description = "{{ .Summary }}"
   <small style="text-align: center;">白无常</small>
 </div>
 
-> 我跟你说!栀子花的花瓣真的是一瓣一瓣打开的，每瓣花打开的时候，都会有很轻微的‘啪’的一声，‘啪’的一声打开一瓣，‘啪’的一声再打开一瓣。那天黄昏我就在那儿坐了两三个小时，等它一瓣瓣绽开。外边的花店最爱写三个词语：陌上花开，橘子花开，栀子花开，还有首歌叫《栀子花开》，可有多少人听到过栀子花开的声音？
+> 我跟你说！栀子花的花瓣真的是一瓣一瓣打开的，每瓣花打开的时候，都会有很轻微的‘啪’的一声，‘啪’的一声打开一瓣，‘啪’的一声再打开一瓣。那天黄昏我就在那儿坐了两三个小时，等它一瓣瓣绽开。外边的花店最爱写三个词语：陌上花开，橘子花开，栀子花开，还有首歌叫《栀子花开》，可有多少人听到过栀子花开的声音？
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
   <img src="/images/black.JPEG" alt="黑" class="img-apple">

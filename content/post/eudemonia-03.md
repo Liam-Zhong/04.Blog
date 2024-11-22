@@ -9,8 +9,8 @@ description = "{{ .Summary }}"
 +++
 
 <div align="center">    
-<img src="https://picx.zhimg.com/80/v2-dd27e048cbb59d7d1c41b6d93329a33e_1440w.jpeg" alt="即使引导破碎...算了送你一个天使的礼物" width="auto" height="auto">
-<center><small>即使引导破碎...算了送你一个天使的礼物</small></center>
+<img src="https://picx.zhimg.com/80/v2-dd27e048cbb59d7d1c41b6d93329a33e_1440w.jpeg" alt="即使引导破碎。..算了送你一个天使的礼物" width="auto" height="auto">
+<center><small>即使引导破碎。..算了送你一个天使的礼物</small></center>
 
 
 
