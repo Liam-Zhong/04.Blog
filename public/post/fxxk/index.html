@@ -221,11 +221,13 @@ import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩�
   
 </head>
 
-<head> 
- <link rel="preload" as="script" href="https://unpkg.com/@swup/head-plugin@2">
+
+  <head>
+    <link rel="preload" as="script" href="https://unpkg.com/@swup/head-plugin@2">
     <link rel="preload" as="script" href="https://unpkg.com/@swup/preload-plugin@3">
     <link rel="preload" as="script" href="https://unpkg.com/swup@4">
-</head>
+  </head>
+
   <body class="text-black duration-200 ease-out dark:text-white">
     <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
   <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
@@ -453,65 +455,70 @@ import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩�
 
   
 
- 
+
 <br>
 <h3>评论</h3>
-<div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
-<br/>
+<div
+  style="
+    width: 35px;
+    height: 3px;
+    background-color: rgb(42, 77, 208);
+    margin-top: 10px;
+    border-radius: 10px;
+  "
+></div>
+<br />
 
-<div id="cusdis_thread"
-    data-host="https://cusdis.com"
-    data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
-    data-page-id="/post/fxxk/"
-    data-page-url="/post/fxxk/"
-    data-page-title="奶奶的"
+<div
+  id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
+  data-page-id="/post/fxxk/"
+  data-page-url="/post/fxxk/"
+  data-page-title="奶奶的"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <script>
-  
   window.CUSDIS_LOCALE = {
-      "powered_by": "Powered By Cusdis",
-      "post_comment": "发送",
-      "loading": "加载中",
-      "email": "邮箱地址 (可选)",
-      "nickname": "昵称",
-      "reply_placeholder": "回复内容...",
-      "reply_btn": "回复",
-      "sending": "发送中...",
-      "mod_badge": "管理员",
-      "content_is_required": "内容不能为空",
-      "nickname_is_required": "昵称不能为空",
-      "comment_has_been_sent": "评论已发送，管理员审核通过后会展示"
+    "powered_by": "Powered By Cusdis",
+    "post_comment": "发送",
+    "loading": "加载中",
+    "email": "邮箱地址 (可选)",
+    "nickname": "昵称",
+    "reply_placeholder": "回复内容...",
+    "reply_btn": "回复",
+    "sending": "发送中...",
+    "mod_badge": "管理员",
+    "content_is_required": "内容不能为空",
+    "nickname_is_required": "昵称不能为空",
+    "comment_has_been_sent": "评论已发送，管理员审核通过后会展示"
   };
 
-  
   function adjustCusdisHeight() {
-      const cusdisIframe = document.querySelector('#cusdis_thread iframe');
-      if (cusdisIframe) {
-          const height = cusdisIframe.contentWindow.document.body.scrollHeight;
-          cusdisIframe.style.height = height + 'px';
-          document.getElementById('cusdis_thread').style.height = height + 'px';
-      }
+    const cusdisIframe = document.querySelector("#cusdis_thread iframe");
+    if (cusdisIframe) {
+      const height = cusdisIframe.contentWindow.document.body.scrollHeight;
+      cusdisIframe.style.height = height + "px";
+      document.getElementById("cusdis_thread").style.height = height + "px";
+    }
   }
 
-  window.addEventListener('load', () => {
-      const target = document.querySelector('#cusdis_thread iframe');
-      if (target) {
-          target.onload = adjustCusdisHeight;
-      }
-      adjustCusdisHeight();
+  window.addEventListener("load", () => {
+    const target = document.querySelector("#cusdis_thread iframe");
+    if (target) {
+      target.onload = adjustCusdisHeight;
+    }
+    adjustCusdisHeight();
   });
 
   const observer = new MutationObserver(adjustCusdisHeight);
-  observer.observe(document.getElementById('cusdis_thread'), { childList: true, subtree: true });
+  observer.observe(document.getElementById("cusdis_thread"), {
+    childList: true,
+    subtree: true,
+  });
   setInterval(adjustCusdisHeight, 1000);
-
-
-
-
 </script>
-
 
 </article>
 
@@ -538,53 +545,52 @@ import pandas as pd df1 = pd.read_excel(&#39;data/A04232A1100071011-&#43;成绩�
   >
 </footer>
 
-<script src="https://unpkg.com/@swup/head-plugin@2"></script>
-<script src="https://unpkg.com/@swup/preload-plugin@3"></script>
-<script src="https://unpkg.com/@swup/progress-plugin@3"></script>
-<script src="https://unpkg.com/swup@4"></script>
+    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
+    <script src="https://unpkg.com/@swup/preload-plugin@3"></script>
+    <script src="https://unpkg.com/@swup/progress-plugin@3"></script>
+    <script src="https://unpkg.com/swup@4"></script>
 
-  <script>
-  function loadCusdisComments() {
-    const cusdisThread = document.getElementById('cusdis_thread');
+    <script>
+      function loadCusdisComments() {
+        const cusdisThread = document.getElementById("cusdis_thread");
 
-    if (cusdisThread) {
-        cusdisThread.innerHTML = '';
-        cusdisThread.setAttribute('data-page-id', window.location.pathname); 
-        cusdisThread.setAttribute('data-page-url', window.location.href);   
-        cusdisThread.setAttribute('data-page-title', document.title);     
+        if (cusdisThread) {
+          cusdisThread.innerHTML = "";
+          cusdisThread.setAttribute("data-page-id", window.location.pathname);
+          cusdisThread.setAttribute("data-page-url", window.location.href);
+          cusdisThread.setAttribute("data-page-title", document.title);
 
-        if (window.CUSDIS) {
+          if (window.CUSDIS) {
             window.CUSDIS.renderTo(cusdisThread);
-        } else {
-            const script = document.createElement('script');
+          } else {
+            const script = document.createElement("script");
             script.src = "https://cusdis.com/js/cusdis.es.js";
             script.async = true;
             script.defer = true;
             script.onload = () => {
-                if (window.CUSDIS) {
-                    window.CUSDIS.renderTo(cusdisThread);
-                }
+              if (window.CUSDIS) {
+                window.CUSDIS.renderTo(cusdisThread);
+              }
             };
 
             document.body.appendChild(script);
+          }
         }
-    }
-}
-  const swup = new Swup({
-    containers: ["#main"], 
-    plugins: [
-      new SwupHeadPlugin(),
-      new SwupPreloadPlugin({ preloadVisibleLinks: true }),
-      new SwupProgressPlugin(),
-    ],
-  });
+      }
 
-  swup.hooks.on('content:replace', () => {
-      console.log("Swup content replaced. Reloading Cusdis comments...");
-      loadCusdisComments(); 
-  });
-</script>
+      const swup = new Swup({
+        containers: ["#main"], 
+        plugins: [
+          new SwupHeadPlugin(),
+          new SwupPreloadPlugin({ preloadVisibleLinks: true }),
+          new SwupProgressPlugin(),
+        ],
+      });
 
-
+      swup.hooks.on("content:replace", () => {
+        console.log("Swup content replaced. Reloading Cusdis comments...");
+        loadCusdisComments();
+      });
+    </script>
   </body>
 </html>

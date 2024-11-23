@@ -123,66 +123,71 @@
   ></script>
   {{ end }}
 
- <!-- cusdis comment -->
+<!-- cusdis comment -->
 <br>
 <h3>评论</h3>
-<div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
-<br/>
+<div
+  style="
+    width: 35px;
+    height: 3px;
+    background-color: rgb(42, 77, 208);
+    margin-top: 10px;
+    border-radius: 10px;
+  "
+></div>
+<br />
 {{ if and (.Params.comments | default true) (.Site.Params.cusdis.enable) }}
-<div id="cusdis_thread"
-    data-host="{{ .Site.Params.cusdis.host }}"
-    data-app-id="{{ .Site.Params.cusdis.app_id }}"
-    data-page-id="{{ .RelPermalink }}"
-    data-page-url="{{ .RelPermalink }}"
-    data-page-title="{{ .Title }}"
+<div
+  id="cusdis_thread"
+  data-host="{{ .Site.Params.cusdis.host }}"
+  data-app-id="{{ .Site.Params.cusdis.app_id }}"
+  data-page-id="{{ .RelPermalink }}"
+  data-page-url="{{ .RelPermalink }}"
+  data-page-title="{{ .Title }}"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <script>
-  // 保持现有评论区逻辑不变
   window.CUSDIS_LOCALE = {
-      "powered_by": "Powered By Cusdis",
-      "post_comment": "发送",
-      "loading": "加载中",
-      "email": "邮箱地址 (可选)",
-      "nickname": "昵称",
-      "reply_placeholder": "回复内容...",
-      "reply_btn": "回复",
-      "sending": "发送中...",
-      "mod_badge": "管理员",
-      "content_is_required": "内容不能为空",
-      "nickname_is_required": "昵称不能为空",
-      "comment_has_been_sent": "评论已发送，管理员审核通过后会展示"
+    "powered_by": "Powered By Cusdis",
+    "post_comment": "发送",
+    "loading": "加载中",
+    "email": "邮箱地址 (可选)",
+    "nickname": "昵称",
+    "reply_placeholder": "回复内容...",
+    "reply_btn": "回复",
+    "sending": "发送中...",
+    "mod_badge": "管理员",
+    "content_is_required": "内容不能为空",
+    "nickname_is_required": "昵称不能为空",
+    "comment_has_been_sent": "评论已发送，管理员审核通过后会展示"
   };
 
-  // 调整 Cusdis 高度的逻辑
   function adjustCusdisHeight() {
-      const cusdisIframe = document.querySelector('#cusdis_thread iframe');
-      if (cusdisIframe) {
-          const height = cusdisIframe.contentWindow.document.body.scrollHeight;
-          cusdisIframe.style.height = height + 'px';
-          document.getElementById('cusdis_thread').style.height = height + 'px';
-      }
+    const cusdisIframe = document.querySelector("#cusdis_thread iframe");
+    if (cusdisIframe) {
+      const height = cusdisIframe.contentWindow.document.body.scrollHeight;
+      cusdisIframe.style.height = height + "px";
+      document.getElementById("cusdis_thread").style.height = height + "px";
+    }
   }
 
-  window.addEventListener('load', () => {
-      const target = document.querySelector('#cusdis_thread iframe');
-      if (target) {
-          target.onload = adjustCusdisHeight;
-      }
-      adjustCusdisHeight();
+  window.addEventListener("load", () => {
+    const target = document.querySelector("#cusdis_thread iframe");
+    if (target) {
+      target.onload = adjustCusdisHeight;
+    }
+    adjustCusdisHeight();
   });
 
   const observer = new MutationObserver(adjustCusdisHeight);
-  observer.observe(document.getElementById('cusdis_thread'), { childList: true, subtree: true });
+  observer.observe(document.getElementById("cusdis_thread"), {
+    childList: true,
+    subtree: true,
+  });
   setInterval(adjustCusdisHeight, 1000);
-
-
-
-
 </script>
 {{ end }}
-
 </article>
 
 {{ end }}
