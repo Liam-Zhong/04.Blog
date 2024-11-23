@@ -53,7 +53,7 @@
   />
 
   
-  <title>Posts - Chlzhong</title>
+  <title>报告格式——通往知识的路上给你绊一跤 - Chlzhong</title>
 
   
   <meta name="theme-color" />
@@ -62,11 +62,9 @@
   
   
   
-  
-  <meta
-    name="description"
-    content="A personal blog"
-  />
+  <meta name="description" content="早在今年 6 月 3 号，我就已经被格式这东西折磨过一遍了。如果说大学的知识还能勉强算是人类进步的阶梯，那么格式就是这个阶梯的绊脚石，放着好好的 Markdown 不用，给一个 95 年的 .doc 修修改改（各种格式刷字号间距什么的），收齐给老师之后除了收到是什么都没得的一个东西。实在是反人类。
+幸好，还有 pandoc 。尽管博主只是第一次接触这个东西，但已经控制不住安利给同学们的冲动，因为你甚至不需要在饼子上搜索学习它的种种用法，只需要准备一个完成的样例.docx、你写好的 name.md，放在同一个目录下，终端敲一句简单的：
+pandoc name.md -o output.docx --reference-doc=样例.docx OK，去交作业吧 :P" />
   <meta name="author" content="Liam" />
   
 
@@ -103,6 +101,51 @@
 
   
   
+  <script
+    defer
+    src="https://chlzhong.org/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
 
   
   
@@ -130,33 +173,33 @@
 
   
   
-  <meta itemprop="name" content="Posts">
+  <meta itemprop="name" content="报告格式——通往知识的路上给你绊一跤">
+  <meta itemprop="description" content="pandoc 使用指南">
+  <meta itemprop="datePublished" content="2024-11-23T22:25:19+08:00">
   <meta itemprop="dateModified" content="2024-11-23T22:25:19+08:00">
-  <meta itemprop="keywords" content="Index">
+  <meta itemprop="wordCount" content="22">
   
-  <meta property="og:url" content="https://chlzhong.org/post/">
+  <meta property="og:url" content="https://chlzhong.org/post/report-format-complaints/">
   <meta property="og:site_name" content="Chlzhong">
-  <meta property="og:title" content="Posts">
+  <meta property="og:title" content="报告格式——通往知识的路上给你绊一跤">
+  <meta property="og:description" content="pandoc 使用指南">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-11-23T22:25:19+08:00">
+    <meta property="article:modified_time" content="2024-11-23T22:25:19+08:00">
 
   
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
+  <meta name="twitter:title" content="报告格式——通往知识的路上给你绊一跤">
+  <meta name="twitter:description" content="pandoc 使用指南">
 
   
   
-  <link
-    rel="alternate"
-    type="application/rss&#43;xml"
-    href="https://chlzhong.org/post/index.xml"
-    title="Chlzhong"
-  />
-  
 
   
-  <link rel="canonical" href="https://chlzhong.org/post/" />
+  <link rel="canonical" href="https://chlzhong.org/post/report-format-complaints/" />
   
   
 </head>
@@ -297,68 +340,128 @@
     >
       
 
+<article class="post special-page">
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">报告格式——通往知识的路上给你绊一跤</h1>
 
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Nov 23, 2024</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>Liam</span>
+      
+    </div>
+    
+  </header>
 
-
-
-
-
-
-
- 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0">淘音咩</h2>
-  <time class="text-xs antialiased opacity-60"
-    >Jul 22, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/short-video-that-needs-to-be-said/">淘音咩</a>
+  <section><p>早在今年 <a href="https://chlzhong.org/post/crazy-life_1/">6 月 3 号</a>，我就已经被格式这东西折磨过一遍了。如果说大学的知识还能勉强算是人类进步的阶梯，那么格式就是这个阶梯的绊脚石，放着好好的 Markdown 不用，给一个 95 年的 <code>.doc</code> 修修改改（各种格式刷字号间距什么的），收齐给老师之后除了收到是什么都没得的一个东西。实在是反人类。</p>
+<p>幸好，还有 <a href="https://github.com/jgm/pandoc/releases/tag/3.5">pandoc</a> 。尽管博主只是第一次接触这个东西，但已经控制不住安利给同学们的冲动，因为你甚至不需要在饼子上搜索学习它的种种用法，只需要准备一个完成的<code>样例.docx</code>、你写好的 <code>name.md</code>，放在同一个目录下，终端敲一句简单的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pandoc name.md -o output.docx --reference-doc<span style="color:#f92672">=</span>样例.docx
+</span></span></code></pre></div><p>OK，去交作业吧  :P</p>
 </section>
 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
   
-  <h2 class="!my-0">听歌系列之少年</h2>
-  <time class="text-xs antialiased opacity-60"
-    >Jul 20, 2024</time
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
   >
-  <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/songs_02/">听歌系列之少年</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0">😒</h2>
-  <time class="text-xs antialiased opacity-60"
-    >Jul 16, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/funny-day/">😒</a>
-</section>
-
-
-
-
-<nav class="mt-14 flex">
-  
-  <a class="btn" href="/post/page/9/">← Prev Page</a>
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3 no-special-link" href="https://chlzhong.org/post/nothing-but-sighs/"
+      ><span>无外乎叹息</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
   
   
-  <a class="btn ml-auto" href="/post/page/11/"
-    >Next Page →</a
-  >
-  
-</nav>
 
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+
+<br>
+<h3>评论</h3>
+<div
+  style="
+    width: 35px;
+    height: 3px;
+    background-color: rgb(42, 77, 208);
+    margin-top: 10px;
+    border-radius: 10px;
+  "
+></div>
+<br />
+
+<div
+  id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
+  data-page-id="/post/report-format-complaints/"
+  data-page-url="/post/report-format-complaints/"
+  data-page-title="报告格式——通往知识的路上给你绊一跤"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
+  window.CUSDIS_LOCALE = {
+    "powered_by": "Powered By Cusdis",
+    "post_comment": "发送",
+    "loading": "加载中",
+    "email": "邮箱地址 (可选)",
+    "nickname": "昵称",
+    "reply_placeholder": "回复内容...",
+    "reply_btn": "回复",
+    "sending": "发送中...",
+    "mod_badge": "管理员",
+    "content_is_required": "内容不能为空",
+    "nickname_is_required": "昵称不能为空",
+    "comment_has_been_sent": "评论已发送，管理员审核通过后会展示"
+  };
+
+  function adjustCusdisHeight() {
+    const cusdisIframe = document.querySelector("#cusdis_thread iframe");
+    if (cusdisIframe) {
+      const height = cusdisIframe.contentWindow.document.body.scrollHeight;
+      cusdisIframe.style.height = height + "px";
+      document.getElementById("cusdis_thread").style.height = height + "px";
+    }
+  }
+
+  window.addEventListener("load", () => {
+    const target = document.querySelector("#cusdis_thread iframe");
+    if (target) {
+      target.onload = adjustCusdisHeight;
+    }
+    adjustCusdisHeight();
+  });
+
+  const observer = new MutationObserver(adjustCusdisHeight);
+  observer.observe(document.getElementById("cusdis_thread"), {
+    childList: true,
+    subtree: true,
+  });
+  setInterval(adjustCusdisHeight, 1000);
+</script>
+
+</article>
 
 
     </main>

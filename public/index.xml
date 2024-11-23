@@ -5,7 +5,19 @@
     <link>https://chlzhong.org/</link>
       <atom:link href="https://chlzhong.org/index.xml" rel="self" type="application/rss+xml" />
     <description>Chlzhong</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Tue, 19 Nov 2024 12:04:29 +0800</lastBuildDate>  
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Sat, 23 Nov 2024 22:25:19 +0800</lastBuildDate>  
+    <item>
+      <title>报告格式——通往知识的路上给你绊一跤</title>
+      <link>https://chlzhong.org/post/report-format-complaints/</link>
+      <pubDate>Sat, 23 Nov 2024 22:25:19 +0800</pubDate>
+      <guid>https://chlzhong.org/post/report-format-complaints/</guid>
+      <description>&lt;p&gt;早在今年 &lt;a href=&#34;https://chlzhong.org/post/crazy-life_1/&#34;&gt;6 月 3 号&lt;/a&gt;，我就已经被格式这东西折磨过一遍了。如果说大学的知识还能勉强算是人类进步的阶梯，那么格式就是这个阶梯的绊脚石，放着好好的 Markdown 不用，给一个 95 年的 &lt;code&gt;.doc&lt;/code&gt; 修修改改（各种格式刷字号间距什么的），收齐给老师之后除了收到是什么都没得的一个东西。实在是反人类。&lt;/p&gt;
+&lt;p&gt;幸好，还有 &lt;a href=&#34;https://github.com/jgm/pandoc/releases/tag/3.5&#34;&gt;pandoc&lt;/a&gt; 。尽管博主只是第一次接触这个东西，但已经控制不住安利给同学们的冲动，因为你甚至不需要在饼子上搜索学习它的种种用法，只需要准备一个完成的&lt;code&gt;样例.docx&lt;/code&gt;、你写好的 &lt;code&gt;name.md&lt;/code&gt;，放在同一个目录下，终端敲一句简单的：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pandoc name.md -o output.docx --reference-doc&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;样例.docx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;OK，去交作业吧  :P&lt;/p&gt;
+</description>
+    </item>
+      
     <item>
       <title>无外乎叹息</title>
       <link>https://chlzhong.org/post/nothing-but-sighs/</link>
@@ -244,7 +256,7 @@ $&lt;/p&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;（1）写出路由算法收敛时序号①~⑥处的值。&lt;br&gt;
-（2）如果链路XZ的费用在某一时刻由 4 变为 80 ，路由算法在重新计算路由时可能会出现什么问题？&lt;br&gt;
+（2）如果链路 XZ 的费用在某一时刻由 4 变为 80 ，路由算法在重新计算路由时可能会出现什么问题？&lt;br&gt;
 （3）如果出现（2）所述问题，有哪些解决方案？&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
