@@ -9,28 +9,29 @@ description = "{{ .Summary }}"
 +++
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/中秋之三国。png" alt="晨起动征铎" class="img-apple">
+  <img src="/images/3k.png" alt="晨起动征铎" class="img-apple">
   <small style="text-align: center;">晨起动征铎</small>
 </div>
+
 
 <br>
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/中秋之老街。png" alt="褪色午后街" class="img-apple">
+  <img src="/images/中秋之老街.png" alt="褪色午后街" class="img-apple">
   <small style="text-align: center;">褪色午后街</small>
 </div>
 
 <br>
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/中秋之落日。png" alt="秋夕" class="img-apple">
+  <img src="/images/中秋之落日.png" alt="秋夕" class="img-apple">
   <small style="text-align: center;">秋夕</small>
 </div>
 
 <br>
 
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-  <img src="/images/中秋之开车。png" alt="caringclass"="img-apple">
+  <img src="/images/中秋之开车.png" alt="caringclass" class="img-apple">
   <small style="text-align: center;">caring</small>
 </div>
 

@@ -89,12 +89,12 @@ description = "{{ .Summary }}"
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
   <div style="text-align: center;">
-    <img src="/images/暗尖。jpeg" alt="暗尖们" class="img-apple" style="max-width: 100%; height: auto;">
+    <img src="/images/暗尖.jpeg" alt="暗尖们" class="img-apple" style="max-width: 100%; height: auto;">
     <small>暗尖们</small>
   </div>
 
   <div style="text-align: center;">
-    <img src="/images/明尖。jpeg" alt="明尖们" class="img-apple" style="max-width: 100%; height: auto;">
+    <img src="/images/明尖.jpeg" alt="明尖们" class="img-apple" style="max-width: 100%; height: auto;">
     <small>明尖们</small>
   </div>
 </div>
