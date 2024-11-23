@@ -139,16 +139,19 @@ code::before, code::after {
        url('../fonts/merriweather-v13-latin-regular.woff2') format('woff2'),
        url('../fonts/merriweather-v13-latin-regular.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Kai SC';
   font-style: normal;
   font-weight: 400;
-  src:  local('Kaiti'), local('Kaiti SC'), local('STKaiti'), local('楷体'), local('SimKai'), local('AR PL KaitiM GB'), local('DFKai-SB'), local('FandolKai'),
+  src: local('Kaiti'), local('Kaiti SC'), local('STKaiti'), local('楷体'), local('SimKai'), local('AR PL KaitiM GB'), local('DFKai-SB'), local('FandolKai'),
        url('https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2') format('woff2');
 }
+
 body {
   font-family: 'Merriweather', serif;
 }
+
 h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
   font-family: 'Lato', sans-serif;
 }

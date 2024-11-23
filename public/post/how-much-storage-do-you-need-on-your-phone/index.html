@@ -208,6 +208,11 @@
   
 </head>
 
+<head> 
+ <link rel="preload" as="script" href="https://unpkg.com/@swup/head-plugin@2">
+    <link rel="preload" as="script" href="https://unpkg.com/@swup/preload-plugin@3">
+    <link rel="preload" as="script" href="https://unpkg.com/swup@4">
+</head>
   <body class="text-black duration-200 ease-out dark:text-white">
     <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
   <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
@@ -332,6 +337,7 @@
 
 
     <main
+      id="main"
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
     >
       
@@ -459,21 +465,23 @@
 
   
 
+ 
+<br>
+<h3>评论</h3>
+<div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
+<br/>
+
+<div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
+    data-page-id="/post/how-much-storage-do-you-need-on-your-phone/"
+    data-page-url="/post/how-much-storage-do-you-need-on-your-phone/"
+    data-page-title="你需要多大「内存」的手机？"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
   
-  <br>
-  <h3>评论</h3>
-  <div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
-  <br/>
-  
-  <div id="cusdis_thread"
-      data-host="https://cusdis.com"
-      data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
-      data-page-id="/post/how-much-storage-do-you-need-on-your-phone/"
-      data-page-url="/post/how-much-storage-do-you-need-on-your-phone/"
-      data-page-title="你需要多大「内存」的手机？"
-  ></div>
-  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-  <script>
   window.CUSDIS_LOCALE = {
       "powered_by": "Powered By Cusdis",
       "post_comment": "发送",
@@ -487,8 +495,9 @@
       "content_is_required": "内容不能为空",
       "nickname_is_required": "昵称不能为空",
       "comment_has_been_sent": "评论已发送，管理员审核通过后会展示"
-  }
+  };
 
+  
   function adjustCusdisHeight() {
       const cusdisIframe = document.querySelector('#cusdis_thread iframe');
       if (cusdisIframe) {
@@ -497,6 +506,7 @@
           document.getElementById('cusdis_thread').style.height = height + 'px';
       }
   }
+
   window.addEventListener('load', () => {
       const target = document.querySelector('#cusdis_thread iframe');
       if (target) {
@@ -504,10 +514,41 @@
       }
       adjustCusdisHeight();
   });
+
   const observer = new MutationObserver(adjustCusdisHeight);
   observer.observe(document.getElementById('cusdis_thread'), { childList: true, subtree: true });
   setInterval(adjustCusdisHeight, 1000);
-  </script>
+
+function loadCusdisComments() {
+    const cusdisThread = document.getElementById('cusdis_thread');
+
+    if (cusdisThread) {
+        cusdisThread.innerHTML = '';
+        cusdisThread.setAttribute('data-page-id', window.location.pathname); 
+        cusdisThread.setAttribute('data-page-url', window.location.href);   
+        cusdisThread.setAttribute('data-page-title', document.title);     
+
+        if (window.CUSDIS) {
+            window.CUSDIS.renderTo(cusdisThread);
+        } else {
+            const script = document.createElement('script');
+            script.src = "https://cusdis.com/js/cusdis.es.js";
+            script.async = true;
+            script.defer = true;
+            script.onload = () => {
+                if (window.CUSDIS) {
+                    window.CUSDIS.renderTo(cusdisThread);
+                }
+            };
+
+            document.body.appendChild(script);
+        }
+    }
+}
+
+
+</script>
+
 
 </article>
 
@@ -533,6 +574,28 @@
     >hugo-paper</a
   >
 </footer>
+
+<script src="https://unpkg.com/@swup/head-plugin@2"></script>
+<script src="https://unpkg.com/@swup/preload-plugin@3"></script>
+<script src="https://unpkg.com/@swup/progress-plugin@3"></script>
+<script src="https://unpkg.com/swup@4"></script>
+
+  <script>
+  const swup = new Swup({
+    containers: ["#main"], 
+    plugins: [
+      new SwupHeadPlugin(),
+      new SwupPreloadPlugin({ preloadVisibleLinks: true }),
+      new SwupProgressPlugin(),
+    ],
+  });
+
+  swup.hooks.on('content:replace', () => {
+      console.log("Swup content replaced. Reloading Cusdis comments...");
+      loadCusdisComments(); 
+  });
+</script>
+
 
   </body>
 </html>

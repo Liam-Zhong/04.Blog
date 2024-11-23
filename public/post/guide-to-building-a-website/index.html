@@ -70,7 +70,7 @@
 1. 安装 Hugo 点击 Release v0.126.1 · gohugoio/hugo (github.com) 并下滑找到 hugo_0.126.1_windows-amd64.zip，点击下载。（本文写于 2024 年 5 月 26 号，你下载的时候版本可能已经更新。） 把下载好的 .zip 文件解压，并放置在你想放的文件夹中（我的路径：D:\DevTools\Hugo，也就是说现在 Hugo 目录下有一个名为 hugo_0.126.1_windows-amd64 的文件夹）。打开设置，搜索“编辑系统环境变量”，在弹出的“系统属性”窗口中点击“环境变量”，再在弹出的“环境变量”窗口的“系统变量”中选中 Path 路径，并点击编辑。通过右侧的“新建”按钮，将 D:\DevTools\Hugo\hugo_0.126.1_windows-amd64 添加到环境变量（根据自己的路径修改）。
 WIN&#43;D 回到桌面，右键选择“在终端中打开”。输入：
 hugo version 一切正常的话会显示你目前安装的版本号：
-2. 创建 GitHub 仓库 2.1 创建博客源仓库 命名博客源仓库（我使用的是demo）; 勾选 Public，设置为公开仓库； 勾选添加 README 文件。 2." />
+2. 创建 GitHub 仓库 2.1 创建博客源仓库 命名博客源仓库（我使用的是 demo）; 勾选 Public，设置为公开仓库； 勾选添加 README 文件。 2." />
   <meta name="author" content="Liam" />
   
 
@@ -144,7 +144,7 @@ hugo version 一切正常的话会显示你目前安装的版本号：
   <meta itemprop="description" content="{{ .Summary }}">
   <meta itemprop="datePublished" content="2024-05-26T11:20:57+08:00">
   <meta itemprop="dateModified" content="2024-05-26T11:20:57+08:00">
-  <meta itemprop="wordCount" content="414">
+  <meta itemprop="wordCount" content="415">
   
   <meta property="og:url" content="https://chlzhong.org/post/guide-to-building-a-website/">
   <meta property="og:site_name" content="Chlzhong">
@@ -171,6 +171,11 @@ hugo version 一切正常的话会显示你目前安装的版本号：
   
 </head>
 
+<head> 
+ <link rel="preload" as="script" href="https://unpkg.com/@swup/head-plugin@2">
+    <link rel="preload" as="script" href="https://unpkg.com/@swup/preload-plugin@3">
+    <link rel="preload" as="script" href="https://unpkg.com/swup@4">
+</head>
   <body class="text-black duration-200 ease-out dark:text-white">
     <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
   <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
@@ -295,6 +300,7 @@ hugo version 一切正常的话会显示你目前安装的版本号：
 
 
     <main
+      id="main"
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
     >
       
@@ -355,7 +361,7 @@ hugo version 一切正常的话会显示你目前安装的版本号：
 <h2 id="2-创建-github-仓库">2. 创建 GitHub 仓库</h2>
 <h3 id="21-创建博客源仓库">2.1 创建博客源仓库</h3>
 <ol>
-<li>命名<strong>博客源仓库</strong>（我使用的是<code>demo</code>）;</li>
+<li>命名<strong>博客源仓库</strong>（我使用的是 <code>demo</code>）;</li>
 <li>勾选 <strong>Public</strong>，设置为公开仓库；</li>
 <li>勾选添加 <strong>README</strong> 文件。</li>
 </ol>
@@ -566,21 +572,23 @@ hugo version 一切正常的话会显示你目前安装的版本号：
 
   
 
+ 
+<br>
+<h3>评论</h3>
+<div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
+<br/>
+
+<div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
+    data-page-id="/post/guide-to-building-a-website/"
+    data-page-url="/post/guide-to-building-a-website/"
+    data-page-title="建站指北"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
   
-  <br>
-  <h3>评论</h3>
-  <div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
-  <br/>
-  
-  <div id="cusdis_thread"
-      data-host="https://cusdis.com"
-      data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
-      data-page-id="/post/guide-to-building-a-website/"
-      data-page-url="/post/guide-to-building-a-website/"
-      data-page-title="建站指北"
-  ></div>
-  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-  <script>
   window.CUSDIS_LOCALE = {
       "powered_by": "Powered By Cusdis",
       "post_comment": "发送",
@@ -594,8 +602,9 @@ hugo version 一切正常的话会显示你目前安装的版本号：
       "content_is_required": "内容不能为空",
       "nickname_is_required": "昵称不能为空",
       "comment_has_been_sent": "评论已发送，管理员审核通过后会展示"
-  }
+  };
 
+  
   function adjustCusdisHeight() {
       const cusdisIframe = document.querySelector('#cusdis_thread iframe');
       if (cusdisIframe) {
@@ -604,6 +613,7 @@ hugo version 一切正常的话会显示你目前安装的版本号：
           document.getElementById('cusdis_thread').style.height = height + 'px';
       }
   }
+
   window.addEventListener('load', () => {
       const target = document.querySelector('#cusdis_thread iframe');
       if (target) {
@@ -611,10 +621,41 @@ hugo version 一切正常的话会显示你目前安装的版本号：
       }
       adjustCusdisHeight();
   });
+
   const observer = new MutationObserver(adjustCusdisHeight);
   observer.observe(document.getElementById('cusdis_thread'), { childList: true, subtree: true });
   setInterval(adjustCusdisHeight, 1000);
-  </script>
+
+function loadCusdisComments() {
+    const cusdisThread = document.getElementById('cusdis_thread');
+
+    if (cusdisThread) {
+        cusdisThread.innerHTML = '';
+        cusdisThread.setAttribute('data-page-id', window.location.pathname); 
+        cusdisThread.setAttribute('data-page-url', window.location.href);   
+        cusdisThread.setAttribute('data-page-title', document.title);     
+
+        if (window.CUSDIS) {
+            window.CUSDIS.renderTo(cusdisThread);
+        } else {
+            const script = document.createElement('script');
+            script.src = "https://cusdis.com/js/cusdis.es.js";
+            script.async = true;
+            script.defer = true;
+            script.onload = () => {
+                if (window.CUSDIS) {
+                    window.CUSDIS.renderTo(cusdisThread);
+                }
+            };
+
+            document.body.appendChild(script);
+        }
+    }
+}
+
+
+</script>
+
 
 </article>
 
@@ -640,6 +681,28 @@ hugo version 一切正常的话会显示你目前安装的版本号：
     >hugo-paper</a
   >
 </footer>
+
+<script src="https://unpkg.com/@swup/head-plugin@2"></script>
+<script src="https://unpkg.com/@swup/preload-plugin@3"></script>
+<script src="https://unpkg.com/@swup/progress-plugin@3"></script>
+<script src="https://unpkg.com/swup@4"></script>
+
+  <script>
+  const swup = new Swup({
+    containers: ["#main"], 
+    plugins: [
+      new SwupHeadPlugin(),
+      new SwupPreloadPlugin({ preloadVisibleLinks: true }),
+      new SwupProgressPlugin(),
+    ],
+  });
+
+  swup.hooks.on('content:replace', () => {
+      console.log("Swup content replaced. Reloading Cusdis comments...");
+      loadCusdisComments(); 
+  });
+</script>
+
 
   </body>
 </html>

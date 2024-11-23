@@ -62,7 +62,7 @@
   
   
   
-  <meta name="description" content="第一次作业 一、使用电路交换，要传送的报文共 10000 bit。从源点到终点共经过 5 段链路，每段链路的传播时延为 0.1 s，数据率为 10 kbit/s。在电路交换时电路的建立时间为 0.2 s。在分组交换时分组长度为 4000 bit，且各结点的排队等待时间可忽略不计。试比较分组交换与电路交换的时延大小。若报文长度为 $10^9$ bit，结果如何？
+  <meta name="description" content="第1次作业 一、使用电路交换，要传送的报文共 10000 bit。从源点到终点共经过 5 段链路，每段链路的传播时延为 0.1 s，数据率为 10 kbit/s。在电路交换时电路的建立时间为 0.2 s。在分组交换时分组长度为 4000 bit，且各结点的排队等待时间可忽略不计。试比较分组交换与电路交换的时延大小。若报文长度为 $10^9$ bit，结果如何？
 求解分组交换的时延 t分组交换 t分组时延 = t发送时延 &#43; t排队时延 &#43; t处理时延 &#43; t传播时延
 时延的分类
 发送时延 含义: 主机或路由器发送数据帧所需要的时间 t发送时延 = $\frac{数据帧长度}{数据率}$ 排队时延 含义: 数据包在路由器的输出队列中等待处理所耗费的时间 处理时延 含义: 路由器处理数据包所花费的时间。 举例: 比如说，路由器要解包，进行差错校验、查找下一条合适的路由；还有重新封装 传播时延 含义: 数据包走在路上花费的时间(在信道中传输所耗费的时间) 具体求解 值得注意的是,由题意可知，处理、排队所花费的时间不计。
@@ -177,15 +177,15 @@
   
   
   <meta itemprop="name" content="计算机网络习题">
-  <meta itemprop="description" content="{{ .Summary }}">
+  <meta itemprop="description" content="第8版计算机网络课后习题解答">
   <meta itemprop="datePublished" content="2024-10-31T22:43:43+08:00">
   <meta itemprop="dateModified" content="2024-10-31T22:43:43+08:00">
-  <meta itemprop="wordCount" content="357">
+  <meta itemprop="wordCount" content="457">
   
   <meta property="og:url" content="https://chlzhong.org/post/computer-network-train/">
   <meta property="og:site_name" content="Chlzhong">
   <meta property="og:title" content="计算机网络习题">
-  <meta property="og:description" content="{{ .Summary }}">
+  <meta property="og:description" content="第8版计算机网络课后习题解答">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
@@ -196,7 +196,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="计算机网络习题">
-  <meta name="twitter:description" content="{{ .Summary }}">
+  <meta name="twitter:description" content="第8版计算机网络课后习题解答">
 
   
   
@@ -207,6 +207,11 @@
   
 </head>
 
+<head> 
+ <link rel="preload" as="script" href="https://unpkg.com/@swup/head-plugin@2">
+    <link rel="preload" as="script" href="https://unpkg.com/@swup/preload-plugin@3">
+    <link rel="preload" as="script" href="https://unpkg.com/swup@4">
+</head>
   <body class="text-black duration-200 ease-out dark:text-white">
     <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
   <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
@@ -331,6 +336,7 @@
 
 
     <main
+      id="main"
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
     >
       
@@ -354,11 +360,11 @@
     
   </header>
 
-  <section><h2 id="第一次作业">第一次作业</h2>
+  <section><h2 id="第1次作业">第1次作业</h2>
 <blockquote>
 <p>一、使用电路交换，要传送的报文共 10000 bit。从源点到终点共经过 5 段链路，每段链路的传播时延为 0.1 s，数据率为 10 kbit/s。在电路交换时电路的建立时间为 0.2 s。在分组交换时分组长度为 4000 bit，且各结点的排队等待时间可忽略不计。试比较分组交换与电路交换的时延大小。若报文长度为 $10^9$ bit，结果如何？</p>
 </blockquote>
-<h3 id="求解分组交换的时延-t分组交换">求解分组交换的时延 <code>t分组交换</code></h3>
+<h4 id="求解分组交换的时延-tsub分组交换sub">求解分组交换的时延 <code>t</code><sub><code>分组交换</code></sub></h4>
 <blockquote>
 <p><code>t</code><sub><code>分组时延</code></sub> =  <code>t</code><sub><code>发送时延</code></sub> <code>+</code> <code>t</code><sub><code>排队时延</code></sub> <code>+</code> <code>t</code><sub><code>处理时延</code></sub> <code>+</code> <code>t</code><sub><code>传播时延</code></sub></p>
 </blockquote>
@@ -369,7 +375,7 @@
 <li>发送时延
 <ul>
 <li>含义: 主机或路由器发送数据帧所需要的时间</li>
-<li><code>t</code><sub><code>发送时延</code> =  <code>$\frac{数据帧长度}{数据率}$</code></li>
+<li><code>t</code><sub><code>发送时延</code></sub> =  <code>$\frac{数据帧长度}{数据率}$</code></li>
 </ul>
 </li>
 <li>排队时延
@@ -389,7 +395,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="具体求解">具体求解</h3>
+<h4 id="具体求解">具体求解</h4>
 <p>值得注意的是,由题意可知，处理、排队所花费的时间不计。</p>
 <p>不难理解，只有当 Host B 接收到 Host A 所发送的最后一个Bit时，传输才算结束！那我们不妨跟着最后一个 Bit 来进行一场旅行。</p>
 <ul>
@@ -398,18 +404,18 @@
 <li>不光在路上要花费时间,最后一个 Bit 还要过 <code>k-1</code> 道安检(路由器)。每次安检(路由器存储转发)，要花费 $\frac{p}{b}$ 这么多的时间(存储转发的时间，不计排队和处理的时间))</li>
 <li>算下来的话，一共需要花费  $\frac{x}{b} + k c\cdot d + (k-1) \cdot \frac{p}{b}$ 这么多的时间</li>
 </ul>
-<h3 id="求解电路交换的时延-t电路交换">求解电路交换的时延 <code>t电路交换</code></h3>
+<h4 id="求解电路交换的时延-t电路交换">求解电路交换的时延 <code>t电路交换</code></h4>
 <blockquote>
 <p>电路交换，传输报文的延时主要在于建立电路花费的时间、将报文发送到信道上花费的时间、以及报文走在路上花费的时间(传播时延)</p>
 </blockquote>
-<h3 id="具体求解-1">具体求解</h3>
+<h4 id="具体求解-1">具体求解</h4>
 <ul>
 <li>建立电路花费的时间是 $ s$</li>
 <li>将报文发送到信道上花费的时间是  $\frac{x}{b}$</li>
 <li>走在路上花费的时间是 $k \cdot d$</li>
 <li>所以，一共花费的时间是 $s + \frac{x}{b} + k \cdot d$</li>
 </ul>
-<h3 id="总结">总结</h3>
+<h4 id="总结">总结</h4>
 <p>回到问题上来，不难得到，只要代入数据便能得出最后的结果。</p>
 <blockquote>
 <p>二、在分组交换网中，设报文长度为 100000 bit, 分组长度包含数据部分长度和每个分组所带的控制信息固定长度，其中分组的控制信息固定长度为 160 bit。通信的两端共经过 5 段链路，链路的数据率为 10k bit/s，假设传播时延和结点排队时间均可忽略不计。若打算使总的时延为最小，问分组的数据部分长度应取为多大？试分析分组长度大小对时延的影响。</p>
@@ -430,21 +436,20 @@
 <p>链路的数据率为 b (bit/s)</p>
 </li>
 </ul>
-<p>则不难知道，要 Host A 要向 Host B 发送的总的数据大小为 $ \frac{x}{p} \cdot (p+h)$,那么 Host A 将所有的数据发送完，就需要 $\frac{x}{p} \cdot \frac{p+h}{b}
+<p>则不难知道，要 Host A 要向 Host B 发送的总的数据大小为 $ \frac{x}{p} \cdot (p+h)$，那么 Host A 将所有的数据发送完，就需要 $\frac{x}{p} \cdot \frac{p+h}{b}
 $</p>
 <p>依然以最后一个 Bit 作为参照,它需要经过 k 段链路，花费 $k \cdot d$ 这么多的时间</p>
 <p>需要经过 (k-1) 各路由，每次耽误 $\frac{p+h}{b}$ ；要经过这么多路由就要花 $(k-1) \cdot \frac{p+h}{b} $ 这么多的时间</p>
 <p>总的来说，花费了 $\frac{x}{p} \cdot \frac{p+h}{b} + k \cdot d + (k-1) \cdot \frac{p+h}{b}$ 这么多的时间</p>
-<h3 id="总结-1">总结</h3>
+<h4 id="总结-1">总结</h4>
 <p>不难知道,这是一个关于 p 的函数，只需要关于 p 进行求导，令其为零，就可以得到使总时延达到最小时 p 的取值。</p>
 <blockquote>
-<p>三、R1 → R2 → R3 → R1之间的传输距离为 2000 km，S1 → R1 和 S2 → R2 的距离忽略不计，信号在媒体上的传播速率为 2 × $ 10^8 $ m/s 。试计算S1 → S2 的最小发送时延和最小传播时延（忽略设备产生的处理时延和排队时延等）：</p>
+<p>三、R1 → R2 → R3 → R1之间的传输距离为 2000 km，S1 → R1 和 S2 → R2 的距离忽略不计，信号在媒体上的传播速率为 2 × $ 10^8 $ m/s 。试计算 S1 → S2 的最小发送时延和最小传播时延（忽略设备产生的处理时延和排队时延等）：</p>
 </blockquote>
 <div align="center">    
-<img src="https://picx.zhimg.com/80/v2-841090885f2b51e19d63f61889618860_1440w.png?source=d16d100b" alt="题目" width="120%" height="auto">
-<center><small></small></center>
+<img src="https://picx.zhimg.com/80/v2-841090885f2b51e19d63f61889618860_1440w.png?source=d16d100b" alt="题目" width="120%" height="auto"> </div>
 <blockquote>
-<p>四、长度为 500 字节的应用层数据交给传输层传送，需加上 20 字节的TCP 首部。再交给网络层传送，需加上 20 字节的 IP 首部。再交给数据链路层的以太网传送，加上首部和尾部共 18 字节。最后加载到物理层上，需加上同步码 8 字节。试求数据的传输效率。数据的传输效率是指发送的应用层数据除以所发送的总数据(即应用数据加上各种首部和尾部的额外开销)。若应用层数据长度为 1400 字节，数据的传输效率是多少？</p>
+<p>四、长度为 500 字节的应用层数据交给传输层传送，需加上 20 字节的 TCP 首部。再交给网络层传送，需加上 20 字节的 IP 首部。再交给数据链路层的以太网传送，加上首部和尾部共 18 字节。最后加载到物理层上，需加上同步码 8 字节。试求数据的传输效率。数据的传输效率是指发送的应用层数据除以所发送的总数据(即应用数据加上各种首部和尾部的额外开销)。若应用层数据长度为 1400 字节，数据的传输效率是多少？</p>
 </blockquote>
 <h2 id="第2次作业">第2次作业</h2>
 <blockquote>
@@ -464,18 +469,97 @@ $</p>
 <p>一、某一个数据通信系统采用 CRC 校验方式，待发送的数据比特序列是 101011，生成多项式是 $G(x)= x^4+x+1$ ，若没有产生传输错，则接收方收到的数据比特序列应该是多少? 如果目的结点接收到的二进制比特序列为 110111001，请判断传输过程中是否出现了差错?</p>
 </blockquote>
 <blockquote>
-<p>二、在 4800 m 长的总线上，数据传输率为 10 Mbps，信号传播速率为 200m/μs，采用 CSMA/CD 进行数据通信。（1）争用期是多少？（2）最小帧长应该为多少？（3）若 A 向 B 发送 1200 字节的数据，A 是否必须在数据发送期间一直进行冲突检测？为什么？</p>
+<p>二、在 4800 m 长的总线上，数据传输率为 10 Mbps，信号传播速率为 200 m/μs，采用 CSMA/CD 进行数据通信。（1）争用期是多少？（2）最小帧长应该为多少？（3）若 A 向 B 发送 1200 字节的数据，A 是否必须在数据发送期间一直进行冲突检测？为什么？</p>
 </blockquote>
 <blockquote>
 <p>三、有两台主机 A 和 B 接在 1000 m 长的电缆线的两端，并在 t = 0 时各自向对方发送一个帧，长度为 1500 bit（包括首部和前同步码）。假定在 A 和 B 之间有 4 个转发器，在转发帧时会产生 20 比特的时延。设传输速率为 100 Mbit/s，而  CSMA/CD 的退避时间是随机数 r 倍的争用期，争用期为 512 bit，在发生第一次碰撞后，在退避时 A 选择 r = 0 而 B 选择 r = 1。忽略发生碰撞后的人为干扰信号和帧间最小间隔。</p>
 <ol>
-<li>设信号的传播速率是 $2×10^8$ m/s。试计算从A到B（包括4个转发器）的传播时延。</li>
-<li>在什么时间（以秒为单位）B完全收到了A发送的帧？</li>
-<li>现在假定只有A发送帧，帧长仍为1500bit，但4个转发器都用交换机来代替。交换机在进行存储转发时还要产生额外的20bit的处理时延。在什么时间B完全收到了A发送的帧？</li>
+<li>设信号的传播速率是 $2×10^8$ m/s。试计算从 A 到 B（包括 4 个转发器）的传播时延。</li>
+<li>在什么时间（以秒为单位）B 完全收到了 A 发送的帧？</li>
+<li>现在假定只有A发送帧，帧长仍为 1500 bit，但 4 个转发器都用交换机来代替。交换机在进行存储转发时还要产生额外的 20 bit 的处理时延。在什么时间 B 完全收到了 A 发送的帧？</li>
 </ol>
 </blockquote>
 <blockquote>
-<p>四、使用集线器的10Mbit/s以太网中某个站在发送数据时检测到碰撞，执行退避算法时选择了随机数 r=10。试问这个站需要等待多长时间后才能再次发送数据？如果是100Mbit/s 的以太网呢？如果使用交换机还会有碰撞吗？为什么？</p>
+<p>四、使用集线器的 10 Mbit/s 以太网中某个站在发送数据时检测到碰撞，执行退避算法时选择了随机数 r = 10。试问这个站需要等待多长时间后才能再次发送数据？如果是 100 Mbit/s 的以太网呢？如果使用交换机还会有碰撞吗？为什么？</p>
+</blockquote>
+<h2 id="第4次作业">第4次作业</h2>
+<blockquote>
+<p>1、主机 H 1 发送 IP 数据报给主机 H 2，途中经过了下图所示的设备。试问在 IP 数据报的发送过程中总共使用了几次 ARP ？<img src="https://picx.zhimg.com/80/v2-94c2085349579e9c9c8454cf35acee9e_1440w.png" alt="4.1"></p>
+</blockquote>
+<blockquote>
+<p>2、一个数据报长度为 2980 字节（固定首部长度）。现在经过一个网络传送，但此网络能够传送的最大数据长度为 1180 字节。试问应当划分为几个短些的数据报片？各数据报片的数据字段长度、片偏移字段和 MF 标志应为何数值？</p>
+</blockquote>
+<blockquote>
+<p>3、地址聚合能够有效提升路由器转发效率，有如下 4 个 /25地址块：206.0.68.0/25、206.0.68.128/25、206.0.69.0/25、206.0.69.128/25。试问能否进行地址聚合？如果能，请进行最大可能的聚合；如果不能，请说明理由。</p>
+</blockquote>
+<blockquote>
+<p>4、以下地址前缀中的哪一个地址与 23.52.90.140 匹配？请说明理由。</p>
+<p>(1) 0/5； (2) 32/6； (3) 20/6； (4) 80/6。</p>
+</blockquote>
+<blockquote>
+<p>5、路由器R收到一个分组，其目的地址D=13.1.2.5。如果R的路由表中有这样三项：</p>
+<table>
+<thead>
+<tr>
+<th>路由1</th>
+<th>13.0.0.0/8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>路由2</td>
+<td><strong>13.1.0.0/16</strong></td>
+</tr>
+<tr>
+<td>路由3</td>
+<td><strong>13.1.2.0/24</strong></td>
+</tr>
+<tr>
+<td>试问在转发这个分组时应当选择哪一个路由？为什么？</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<blockquote>
+<p>6、 某通信子网如下图所示，请依据距离矢量路由算法回答如下问题：
+<img src="https://picx.zhimg.com/80/v2-f0c6fc869fe3b6f7838568a69ec9de65_1440w.png" alt="">
+表1.路由器 XYZ 的距离矢量表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>目的</th>
+<th>X的距离矢量（DV）</th>
+<th>Y的距离矢量（DV）</th>
+<th>Z的距离矢量（DV）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td>0</td>
+<td>①</td>
+<td>②</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>③</td>
+<td>0</td>
+<td>④</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>⑤</td>
+<td>⑥</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>（1）写出路由算法收敛时序号①~⑥处的值。<br>
+（2）如果链路XZ的费用在某一时刻由 4 变为 80 ，路由算法在重新计算路由时可能会出现什么问题？<br>
+（3）如果出现（2）所述问题，有哪些解决方案？</p>
 </blockquote>
 </section>
 
@@ -512,21 +596,23 @@ $</p>
 
   
 
+ 
+<br>
+<h3>评论</h3>
+<div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
+<br/>
+
+<div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
+    data-page-id="/post/computer-network-train/"
+    data-page-url="/post/computer-network-train/"
+    data-page-title="计算机网络习题"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+<script>
   
-  <br>
-  <h3>评论</h3>
-  <div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
-  <br/>
-  
-  <div id="cusdis_thread"
-      data-host="https://cusdis.com"
-      data-app-id="6c8fd496-b686-4bb1-aac6-8276c867aa7a"
-      data-page-id="/post/computer-network-train/"
-      data-page-url="/post/computer-network-train/"
-      data-page-title="计算机网络习题"
-  ></div>
-  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-  <script>
   window.CUSDIS_LOCALE = {
       "powered_by": "Powered By Cusdis",
       "post_comment": "发送",
@@ -540,8 +626,9 @@ $</p>
       "content_is_required": "内容不能为空",
       "nickname_is_required": "昵称不能为空",
       "comment_has_been_sent": "评论已发送，管理员审核通过后会展示"
-  }
+  };
 
+  
   function adjustCusdisHeight() {
       const cusdisIframe = document.querySelector('#cusdis_thread iframe');
       if (cusdisIframe) {
@@ -550,6 +637,7 @@ $</p>
           document.getElementById('cusdis_thread').style.height = height + 'px';
       }
   }
+
   window.addEventListener('load', () => {
       const target = document.querySelector('#cusdis_thread iframe');
       if (target) {
@@ -557,10 +645,41 @@ $</p>
       }
       adjustCusdisHeight();
   });
+
   const observer = new MutationObserver(adjustCusdisHeight);
   observer.observe(document.getElementById('cusdis_thread'), { childList: true, subtree: true });
   setInterval(adjustCusdisHeight, 1000);
-  </script>
+
+function loadCusdisComments() {
+    const cusdisThread = document.getElementById('cusdis_thread');
+
+    if (cusdisThread) {
+        cusdisThread.innerHTML = '';
+        cusdisThread.setAttribute('data-page-id', window.location.pathname); 
+        cusdisThread.setAttribute('data-page-url', window.location.href);   
+        cusdisThread.setAttribute('data-page-title', document.title);     
+
+        if (window.CUSDIS) {
+            window.CUSDIS.renderTo(cusdisThread);
+        } else {
+            const script = document.createElement('script');
+            script.src = "https://cusdis.com/js/cusdis.es.js";
+            script.async = true;
+            script.defer = true;
+            script.onload = () => {
+                if (window.CUSDIS) {
+                    window.CUSDIS.renderTo(cusdisThread);
+                }
+            };
+
+            document.body.appendChild(script);
+        }
+    }
+}
+
+
+</script>
+
 
 </article>
 
@@ -586,6 +705,28 @@ $</p>
     >hugo-paper</a
   >
 </footer>
+
+<script src="https://unpkg.com/@swup/head-plugin@2"></script>
+<script src="https://unpkg.com/@swup/preload-plugin@3"></script>
+<script src="https://unpkg.com/@swup/progress-plugin@3"></script>
+<script src="https://unpkg.com/swup@4"></script>
+
+  <script>
+  const swup = new Swup({
+    containers: ["#main"], 
+    plugins: [
+      new SwupHeadPlugin(),
+      new SwupPreloadPlugin({ preloadVisibleLinks: true }),
+      new SwupProgressPlugin(),
+    ],
+  });
+
+  swup.hooks.on('content:replace', () => {
+      console.log("Swup content replaced. Reloading Cusdis comments...");
+      loadCusdisComments(); 
+  });
+</script>
+
 
   </body>
 </html>

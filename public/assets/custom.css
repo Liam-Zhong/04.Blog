@@ -144,12 +144,13 @@ code::after {
 }
 
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'Source Han Serif CN';
   font-style: normal;
   font-weight: 400;
-  src: local('Merriweather'), local('Merriweather-Regular'),
-       url('../fonts/merriweather-v13-latin-regular.woff2') format('woff2'),
-       url('../fonts/merriweather-v13-latin-regular.woff') format('woff');
+  src: local('Source Han Serif CN'), local('Source Han Serif SC'),
+       local('Source Han Serif TC'), local('Source Han Serif TW'),
+       local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
+       url('https://cdn.jsdelivr.net/gh/yihui/cron/fonts/SourceHanSerifCN-Regular-yihui.woff2') format('woff2');
 }
 
 @font-face {
@@ -161,7 +162,7 @@ code::after {
 }
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family:'Source Han Serif CN', serif;
 }
 
 h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
