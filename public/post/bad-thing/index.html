@@ -454,32 +454,7 @@
   observer.observe(document.getElementById('cusdis_thread'), { childList: true, subtree: true });
   setInterval(adjustCusdisHeight, 1000);
 
-function loadCusdisComments() {
-    const cusdisThread = document.getElementById('cusdis_thread');
 
-    if (cusdisThread) {
-        cusdisThread.innerHTML = '';
-        cusdisThread.setAttribute('data-page-id', window.location.pathname); 
-        cusdisThread.setAttribute('data-page-url', window.location.href);   
-        cusdisThread.setAttribute('data-page-title', document.title);     
-
-        if (window.CUSDIS) {
-            window.CUSDIS.renderTo(cusdisThread);
-        } else {
-            const script = document.createElement('script');
-            script.src = "https://cusdis.com/js/cusdis.es.js";
-            script.async = true;
-            script.defer = true;
-            script.onload = () => {
-                if (window.CUSDIS) {
-                    window.CUSDIS.renderTo(cusdisThread);
-                }
-            };
-
-            document.body.appendChild(script);
-        }
-    }
-}
 
 
 </script>
@@ -516,6 +491,32 @@ function loadCusdisComments() {
 <script src="https://unpkg.com/swup@4"></script>
 
   <script>
+  function loadCusdisComments() {
+    const cusdisThread = document.getElementById('cusdis_thread');
+
+    if (cusdisThread) {
+        cusdisThread.innerHTML = '';
+        cusdisThread.setAttribute('data-page-id', window.location.pathname); 
+        cusdisThread.setAttribute('data-page-url', window.location.href);   
+        cusdisThread.setAttribute('data-page-title', document.title);     
+
+        if (window.CUSDIS) {
+            window.CUSDIS.renderTo(cusdisThread);
+        } else {
+            const script = document.createElement('script');
+            script.src = "https://cusdis.com/js/cusdis.es.js";
+            script.async = true;
+            script.defer = true;
+            script.onload = () => {
+                if (window.CUSDIS) {
+                    window.CUSDIS.renderTo(cusdisThread);
+                }
+            };
+
+            document.body.appendChild(script);
+        }
+    }
+}
   const swup = new Swup({
     containers: ["#main"], 
     plugins: [
