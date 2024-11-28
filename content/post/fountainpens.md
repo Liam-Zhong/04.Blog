@@ -5,12 +5,14 @@ date = 2024-09-10T21:15:28+08:00
 math = true 
 draft = false
 comments = true
-description = "{{ .Summary }}"
+weight = 10
+description = "{钢笔推荐，五大，龙鸟派犀牛水}"
+
 +++
 
 1. #### 1883 [Waterman](https://www.waterman-zh.cn/)
 
-~~梦中情笔，入坑起源。~~ 整天吹嘘法产的美国品牌，**不买**
+~~梦中情笔，入坑起源。~~ 整天吹嘘法产的美国品牌，**不买**。
 
 [智尊](https://www.waterman-zh.cn/exception-pens-china.html)
 
@@ -38,7 +40,7 @@ description = "{{ .Summary }}"
 
 4. #### 1838 [Pelikan](https://www.pelikan.com/)
 
-国内没有官网，且发邮件回太慢，**不买**。
+德产法国钢笔。国内没有官网，且发邮件回太慢，**不买**。
 
 [400](https://detail.tmall.com/item.htm?id=656546423243&scene=taobao_shop&spm=a1z10.1-b.w5003-24574726500.2.4e49341eL0V4EQ&skuId=4730612692269)
 
@@ -64,13 +66,14 @@ description = "{{ .Summary }}"
 
 6. #### 1846 [Cross](https://cross.com/)
 
-国内没有官网，颜值很高。 **不买**。
+可能是美国死得最晚的传统笔厂。国内没有官网，颜值很高。 **不买**。
 
 
 
-7. #### 1761 [Faber-Castell](https://www.faber-castell.cn/)
+7. #### 1761 <a href="https://www.faber-castell.cn/" style="color:red;">Faber-Castell</a>
 
-国内约等于没有官网（算上 1993 [伯爵](http://www.graf-von-faber-castell.com.cn/)），**不买**。
+
+密恐笔尖。国内约等于没有官网（算上 1993 [伯爵](http://www.graf-von-faber-castell.com.cn/)），**不买**。
 
 
 
@@ -82,11 +85,11 @@ description = "{{ .Summary }}"
 
 9. #### 中国钢笔
 
-1959 [三文堂](https://www.twsbi.com/) 台湾产，**丑**，品牌名字没有我悠久 **不买**
+2009 [三文堂](https://www.twsbi.com/) 台湾产，**丑**，品牌名字没有我悠久 **不买**
 
 1981 [劳彭](https://laban.com/) 台湾产，台独钢笔 **不买**
 
-1931 [英雄](https://hero.com.cn/) 616 和 100 做得不错 别的纪念太重且贵 **不买**
+1931 <a href="https://hero.com.cn/" style="color:red;">英雄</a> 616 和 100 做得不错 别的纪念太重且贵 **不买**
 
 1997 [弘典](http://www.winwinsky.com/index.asp) 不厚道 **不买**
 
@@ -102,11 +105,11 @@ description = "{{ .Summary }}"
 
 10. #### 日本钢笔
 
-1918 [百乐](https://www.pilotpen.com.cn/) 笔夹丑 造型太日常 **不买**
+1918 <a href="https://www.pilotpen.com.cn/" style="color:red;">百乐</a> 笔夹丑 造型太日常 **不买**
 
 1925 [并木](https://www.pilot-namiki.com/en/) 国内没有官网 不喜欢莳绘 **不买**
 
-1919 [白金](https://www.platinum-pen.co.jp/) 国内没有官网 老 3776 丑得别致 鱼雷造型乏善可陈 **不买**
+1919 [白金](https://www.platinum-pen.co.jp/) 台独钢笔。国内没有官网 老 3776 丑得别致 鱼雷造型乏善可陈 **不买**
 
 1999 [中屋](https://www.nakaya.org/) 国内没有官网 背鳍和十角好看 笔尖 3776 同款 **不买**
 

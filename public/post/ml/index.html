@@ -62,7 +62,7 @@
   
   
   
-  <meta name="description" content="st=&gt;start: 开始op1=&gt;operation: 载入数据集op2=&gt;operation: 生成单词列表op3=&gt;operation: 构建词向量矩阵op4=&gt;operation: 训练朴素贝叶斯分类器op5=&gt;operation: 对测试数据进行分类op6=&gt;operation: 输出分类结果e=&gt;end: 结束st-&gt;op1-&gt;op2-&gt;op3-&gt;op4-&gt;op5-&gt;op6-&gt;e " />
+  <meta name="description" content="$\begin{split}\begin{aligned} w_1 &amp;\leftarrow w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} = w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}x_1^{(i)} \left(x_1^{(i)} w_1 &#43; x_2^{(i)} w_2 &#43; b - y^{(i)}\right),\ w_2 &amp;\leftarrow w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} = w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}x_2^{(i)} \left(x_1^{(i)} w_1 &#43; x_2^{(i)} w_2 &#43; b - y^{(i)}\right),\ b &amp;\leftarrow b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} = b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}\left(x_1^{(i)} w_1 &#43; x_2^{(i)} w_2 &#43; b - y^{(i)}\right)." />
   <meta name="author" content="Liam" />
   
 
@@ -175,7 +175,7 @@
   <meta itemprop="description" content="机器学习">
   <meta itemprop="datePublished" content="2024-09-30T16:33:11+08:00">
   <meta itemprop="dateModified" content="2024-09-30T16:33:11+08:00">
-  <meta itemprop="wordCount" content="17">
+  <meta itemprop="wordCount" content="291">
   
   <meta property="og:url" content="https://chlzhong.org/post/ml/">
   <meta property="og:site_name" content="Chlzhong">
@@ -357,17 +357,21 @@
     
   </header>
 
-  <section><pre tabindex="0"><code class="language-flow" data-lang="flow">st=&gt;start: 开始
-op1=&gt;operation: 载入数据集
-op2=&gt;operation: 生成单词列表
-op3=&gt;operation: 构建词向量矩阵
-op4=&gt;operation: 训练朴素贝叶斯分类器
-op5=&gt;operation: 对测试数据进行分类
-op6=&gt;operation: 输出分类结果
-e=&gt;end: 结束
-
-st-&gt;op1-&gt;op2-&gt;op3-&gt;op4-&gt;op5-&gt;op6-&gt;e
-</code></pre></section>
+  <section><p>$\begin{split}\begin{aligned} w_1 &amp;\leftarrow w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} = w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}x_1^{(i)} \left(x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\right),\ w_2 &amp;\leftarrow w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} = w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}x_2^{(i)} \left(x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\right),\ b &amp;\leftarrow b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} = b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}\left(x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\right). \end{aligned}\end{split}$</p>
+<p>超参：$|\mathcal{B}|$、$\eta$</p>
+<p>$\begin{split}\begin{aligned} \hat{y}^{(1)} &amp;= x_1^{(1)} w_1 + x_2^{(1)} w_2 + b,\ \hat{y}^{(2)} &amp;= x_1^{(2)} w_1 + x_2^{(2)} w_2 + b,\ \hat{y}^{(3)} &amp;= x_1^{(3)} w_1 + x_2^{(3)} w_2 + b. \end{aligned}\end{split}$</p>
+<p>$\begin{split}\boldsymbol{\hat{y}} = \begin{bmatrix} \hat{y}^{(1)} \ \hat{y}^{(2)} \ \hat{y}^{(3)} \end{bmatrix},\quad \boldsymbol{X} = \begin{bmatrix} x_1^{(1)} &amp; x_2^{(1)} \ x_1^{(2)} &amp; x_2^{(2)} \ x_1^{(3)} &amp; x_2^{(3)} \end{bmatrix},\quad \boldsymbol{w} = \begin{bmatrix} w_1 \ w_2 \end{bmatrix}.\end{split}$</p>
+<p>$\boldsymbol{\hat{y}} = \boldsymbol{X} \boldsymbol{w} + b$</p>
+<p>$\boldsymbol{\hat{y}} = \boldsymbol{X} \boldsymbol{w} + b,$</p>
+<p>$\boldsymbol{\hat{y}} \in \mathbb{R}^{n \times 1}$</p>
+<p>$\boldsymbol{\hat{y}} = \boldsymbol{X} \boldsymbol{w} + b$,</p>
+<p>其中模型输出$\boldsymbol{\hat{y}} \in \mathbb{R}^{n \times 1}$， 批量数据样本特征$\boldsymbol{X} \in \mathbb{R}^{n \times d}$，权重$\boldsymbol{w} \in \mathbb{R}^{d \times 1}$， 偏差$b \in \mathbb{R}$。相应地，批量数据样本标签$$\boldsymbol{y} \in \mathbb{R}^{n \times 1}$。设模型参数 $ \boldsymbol{\theta} = [w_1, w_2, b]^\top $，我们可以重写损失函数为</p>
+<p>$\ell(\boldsymbol{\theta})=\frac{1}{2n}(\boldsymbol{\hat{y}}-\boldsymbol{y})^\top(\boldsymbol{\hat{y}}-\boldsymbol{y}).$</p>
+<p>小批量随机梯度下降的迭代步骤为</p>
+<p>$\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \nabla_{\boldsymbol{\theta}} \ell^{(i)}(\boldsymbol{\theta})$,</p>
+<p>其中梯度是损失有关3个为标量的模型参数的偏导数组成的向量：</p>
+<p>$\begin{split}\nabla_{\boldsymbol{\theta}} \ell^{(i)}(\boldsymbol{\theta})= \begin{bmatrix} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} \ \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} \ \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} \end{bmatrix} = \begin{bmatrix} x_1^{(i)} (x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}) \ x_2^{(i)} (x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}) \ x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)} \end{bmatrix} = \begin{bmatrix} x_1^{(i)} \ x_2^{(i)} \ 1 \end{bmatrix} (\hat{y}^{(i)} - y^{(i)}).\end{split}$</p>
+</section>
 
   
   
