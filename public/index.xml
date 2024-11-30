@@ -129,6 +129,16 @@
     </item>
       
     <item>
+      <title>小组作业那些事儿</title>
+      <link>https://chlzhong.org/post/group-work/</link>
+      <pubDate>Tue, 05 Nov 2024 16:13:16 +0800</pubDate>
+      <guid>https://chlzhong.org/post/group-work/</guid>
+      <description>&lt;p&gt;一年一度，小组作业。&lt;/p&gt;
+&lt;p&gt;hhahahhaha&lt;/p&gt;
+</description>
+    </item>
+      
+    <item>
       <title>头发二辑</title>
       <link>https://chlzhong.org/post/my-hair_2/</link>
       <pubDate>Sun, 03 Nov 2024 23:23:19 +0800</pubDate>
@@ -576,20 +586,95 @@ Best regards, 赵连硕&lt;/p&gt;
       <link>https://chlzhong.org/post/ml/</link>
       <pubDate>Mon, 30 Sep 2024 16:33:11 +0800</pubDate>
       <guid>https://chlzhong.org/post/ml/</guid>
-      <description>&lt;p&gt;$\begin{split}\begin{aligned} w_1 &amp;amp;\leftarrow w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} = w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}x_1^{(i)} \left(x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\right),\ w_2 &amp;amp;\leftarrow w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} = w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}x_2^{(i)} \left(x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\right),\ b &amp;amp;\leftarrow b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} = b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}\left(x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}\right). \end{aligned}\end{split}$&lt;/p&gt;
+      <description>&lt;p&gt;$\begin{split}\begin{aligned} w_1 &amp;amp;\leftarrow w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} = w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}train_1^{(i)} \left(train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}\right),\ w_2 &amp;amp;\leftarrow w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} = w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}train_2^{(i)} \left(train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}\right),\ b &amp;amp;\leftarrow b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} = b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}\left(train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}\right). \end{aligned}\end{split}$&lt;/p&gt;
 &lt;p&gt;超参：$|\mathcal{B}|$、$\eta$&lt;/p&gt;
-&lt;p&gt;$\begin{split}\begin{aligned} \hat{y}^{(1)} &amp;amp;= x_1^{(1)} w_1 + x_2^{(1)} w_2 + b,\ \hat{y}^{(2)} &amp;amp;= x_1^{(2)} w_1 + x_2^{(2)} w_2 + b,\ \hat{y}^{(3)} &amp;amp;= x_1^{(3)} w_1 + x_2^{(3)} w_2 + b. \end{aligned}\end{split}$&lt;/p&gt;
-&lt;p&gt;$\begin{split}\boldsymbol{\hat{y}} = \begin{bmatrix} \hat{y}^{(1)} \ \hat{y}^{(2)} \ \hat{y}^{(3)} \end{bmatrix},\quad \boldsymbol{X} = \begin{bmatrix} x_1^{(1)} &amp;amp; x_2^{(1)} \ x_1^{(2)} &amp;amp; x_2^{(2)} \ x_1^{(3)} &amp;amp; x_2^{(3)} \end{bmatrix},\quad \boldsymbol{w} = \begin{bmatrix} w_1 \ w_2 \end{bmatrix}.\end{split}$&lt;/p&gt;
-&lt;p&gt;$\boldsymbol{\hat{y}} = \boldsymbol{X} \boldsymbol{w} + b$&lt;/p&gt;
-&lt;p&gt;$\boldsymbol{\hat{y}} = \boldsymbol{X} \boldsymbol{w} + b,$&lt;/p&gt;
-&lt;p&gt;$\boldsymbol{\hat{y}} \in \mathbb{R}^{n \times 1}$&lt;/p&gt;
-&lt;p&gt;$\boldsymbol{\hat{y}} = \boldsymbol{X} \boldsymbol{w} + b$,&lt;/p&gt;
-&lt;p&gt;其中模型输出$\boldsymbol{\hat{y}} \in \mathbb{R}^{n \times 1}$， 批量数据样本特征$\boldsymbol{X} \in \mathbb{R}^{n \times d}$，权重$\boldsymbol{w} \in \mathbb{R}^{d \times 1}$， 偏差$b \in \mathbb{R}$。相应地，批量数据样本标签$$\boldsymbol{y} \in \mathbb{R}^{n \times 1}$。设模型参数 $ \boldsymbol{\theta} = [w_1, w_2, b]^\top $，我们可以重写损失函数为&lt;/p&gt;
-&lt;p&gt;$\ell(\boldsymbol{\theta})=\frac{1}{2n}(\boldsymbol{\hat{y}}-\boldsymbol{y})^\top(\boldsymbol{\hat{y}}-\boldsymbol{y}).$&lt;/p&gt;
+&lt;p&gt;$\begin{split}\begin{aligned} \hat{target}^{(1)} &amp;amp;= train_1^{(1)} w_1 + train_2^{(1)} w_2 + b,\ \hat{target}^{(2)} &amp;amp;= train_1^{(2)} w_1 + train_2^{(2)} w_2 + b,\ \hat{target}^{(3)} &amp;amp;= train_1^{(3)} w_1 + train_2^{(3)} w_2 + b. \end{aligned}\end{split}$&lt;/p&gt;
+&lt;p&gt;$\begin{split}\boldstargetmbol{\hat{target}} = \begin{bmatritrain} \hat{target}^{(1)} \ \hat{target}^{(2)} \ \hat{target}^{(3)} \end{bmatritrain},\quad \boldstargetmbol{train} = \begin{bmatritrain} train_1^{(1)} &amp;amp; train_2^{(1)} \ train_1^{(2)} &amp;amp; train_2^{(2)} \ train_1^{(3)} &amp;amp; train_2^{(3)} \end{bmatritrain},\quad \boldstargetmbol{w} = \begin{bmatritrain} w_1 \ w_2 \end{bmatritrain}.\end{split}$&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\hat{target}} = \boldstargetmbol{train} \boldstargetmbol{w} + b$&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\hat{target}} = \boldstargetmbol{train} \boldstargetmbol{w} + b,$&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\hat{target}} \in \mathbb{R}^{n \times 1}$&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\hat{target}} = \boldstargetmbol{train} \boldstargetmbol{w} + b$,&lt;/p&gt;
+&lt;p&gt;其中模型输出$\boldstargetmbol{\hat{target}} \in \mathbb{R}^{n \times 1}$， 批量数据样本特征$\boldstargetmbol{train} \in \mathbb{R}^{n \times d}$，权重$\boldstargetmbol{w} \in \mathbb{R}^{d \times 1}$， 偏差$b \in \mathbb{R}$。相应地，批量数据样本标签$$\boldstargetmbol{target} \in \mathbb{R}^{n \times 1}$。设模型参数 $ \boldstargetmbol{\theta} = [w_1, w_2, b]^\top $，我们可以重写损失函数为&lt;/p&gt;
+&lt;p&gt;$\ell(\boldstargetmbol{\theta})=\frac{1}{2n}(\boldstargetmbol{\hat{target}}-\boldstargetmbol{target})^\top(\boldstargetmbol{\hat{target}}-\boldstargetmbol{target}).$&lt;/p&gt;
 &lt;p&gt;小批量随机梯度下降的迭代步骤为&lt;/p&gt;
-&lt;p&gt;$\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \nabla_{\boldsymbol{\theta}} \ell^{(i)}(\boldsymbol{\theta})$,&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\theta} \leftarrow \boldstargetmbol{\theta} - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \nabla_{\boldstargetmbol{\theta}} \ell^{(i)}(\boldstargetmbol{\theta})$,&lt;/p&gt;
 &lt;p&gt;其中梯度是损失有关3个为标量的模型参数的偏导数组成的向量：&lt;/p&gt;
-&lt;p&gt;$\begin{split}\nabla_{\boldsymbol{\theta}} \ell^{(i)}(\boldsymbol{\theta})= \begin{bmatrix} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} \ \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} \ \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} \end{bmatrix} = \begin{bmatrix} x_1^{(i)} (x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}) \ x_2^{(i)} (x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)}) \ x_1^{(i)} w_1 + x_2^{(i)} w_2 + b - y^{(i)} \end{bmatrix} = \begin{bmatrix} x_1^{(i)} \ x_2^{(i)} \ 1 \end{bmatrix} (\hat{y}^{(i)} - y^{(i)}).\end{split}$&lt;/p&gt;
+&lt;p&gt;$\begin{split}\nabla_{\boldstargetmbol{\theta}} \ell^{(i)}(\boldstargetmbol{\theta})= \begin{bmatritrain} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} \ \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} \ \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} \end{bmatritrain} = \begin{bmatritrain} train_1^{(i)} (train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}) \ train_2^{(i)} (train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}) \ train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)} \end{bmatritrain} = \begin{bmatritrain} train_1^{(i)} \ train_2^{(i)} \ 1 \end{bmatritrain} (\hat{target}^{(i)} - target^{(i)}).\end{split}$&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;#&lt;/th&gt;
+&lt;th&gt;sepal length in cm&lt;/th&gt;
+&lt;th&gt;sepal width in cm&lt;/th&gt;
+&lt;th&gt;petal length in cm&lt;/th&gt;
+&lt;th&gt;petal width in cm&lt;/th&gt;
+&lt;th&gt;Iris_Ttargetpe&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
+    A[2] --&amp;gt;|1.0| B[0]
+    A[2] --&amp;gt;|1.1| B[0]
+    A[2] --&amp;gt;|1.2| B[0]
+    A[2] --&amp;gt;|1.3| B[0]
+    A[2] --&amp;gt;|1.4| B[0]
+    A[2] --&amp;gt;|1.5| B[0]
+    A[2] --&amp;gt;|1.6| B[0]
+    A[2] --&amp;gt;|1.7| B[0]
+    A[2] --&amp;gt;|1.9| B[0]
+    A[2] --&amp;gt;|3.0| C[1]
+    A[2] --&amp;gt;|3.3| C[1]
+    A[2] --&amp;gt;|3.5| C[1]
+    A[2] --&amp;gt;|3.6| C[1]
+    A[2] --&amp;gt;|3.7| C[1]
+    A[2] --&amp;gt;|3.8| C[1]
+    A[2] --&amp;gt;|3.9| C[1]
+    A[2] --&amp;gt;|4.0| C[1]
+    A[2] --&amp;gt;|4.1| C[1]
+    A[2] --&amp;gt;|4.2| C[1]
+    A[2] --&amp;gt;|4.3| C[1]
+    A[2] --&amp;gt;|4.4| C[1]
+    A[2] --&amp;gt;|4.5| D[0]
+    A[2] --&amp;gt;|4.6| C[1]
+    A[2] --&amp;gt;|4.7| C[1]
+    A[2] --&amp;gt;|4.8| D[0]
+    A[2] --&amp;gt;|4.9| D[1]
+    A[2] --&amp;gt;|5.0| E[0]
+    A[2] --&amp;gt;|5.1| F[0]
+    A[2] --&amp;gt;|5.2| G[2]
+    A[2] --&amp;gt;|5.3| G[2]
+    A[2] --&amp;gt;|5.4| G[2]
+    A[2] --&amp;gt;|5.5| G[2]
+    A[2] --&amp;gt;|5.6| G[2]
+    A[2] --&amp;gt;|5.7| G[2]
+    A[2] --&amp;gt;|5.8| G[2]
+    A[2] --&amp;gt;|5.9| G[2]
+    A[2] --&amp;gt;|6.0| G[2]
+    A[2] --&amp;gt;|6.1| G[2]
+    A[2] --&amp;gt;|6.2| G[2]
+    A[2] --&amp;gt;|6.3| G[2]
+    A[2] --&amp;gt;|6.4| G[2]
+    A[2] --&amp;gt;|6.5| G[2]
+    A[2] --&amp;gt;|6.6| G[2]
+    A[2] --&amp;gt;|6.7| G[2]
+    A[2] --&amp;gt;|6.8| G[2]
+    A[2] --&amp;gt;|6.9| G[2]
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
+   2[sepal width in cm] --&amp;gt; 3[petal length in cm]
+   2[sepal width in cm] --&amp;gt; 0[sepal length in cm]
+   3[petal length in cm] --&amp;gt; 1[petal width in cm]
+   3[petal length in cm] --&amp;gt; 1[petal width in cm]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;H(S)=−i=1∑npi⋅log2(pi)&lt;/p&gt;
 </description>
     </item>
       
@@ -3072,7 +3157,7 @@ $\max {33.6, 18, 10} = 33.6 $&lt;/p&gt;
 &lt;h4 id=&#34;整个过程基于-windows11&#34;&gt;整个过程基于 Windows11&lt;/h4&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;0部落格&#34;&gt;0.部落格&lt;/h2&gt;
-&lt;p&gt;部落格是什么？&lt;/p&gt;
+&lt;h3 id=&#34;部落格是什么&#34;&gt;部落格是什么？&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;部落格（博客）是一种在线日记型式的个人网站，借由张帖子章、图片或影片来记录生活、抒发情感或分享信息。博客上的文章通常根据张贴时间，以倒序方式由新到旧排列。许多博客作者专注评论特定的课题或新闻，其他则作为个人日记。一个典型的博客结合了文字、图像、其他博客或网站的超链接、及其它与主题相关的媒体。能够让读者以互动的方式留下意见，是许多博客的重要要素。大部分的博客内容以文字为主，也有一些博客专注艺术、摄影、视频、音乐、播客等各种主题。博客是社会媒体网络的一部分。——&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E7%B6%B2%E8%AA%8C&#34;&gt;维基百科&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
