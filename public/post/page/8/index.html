@@ -89,7 +89,7 @@
   
   
   
-  <link rel="preload" as="image" href="https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c" />
+  <link rel="preload" as="image" href="https://picx.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_xll.jpg?source=32738c0c&amp;needBackground=1" />
   
   
 
@@ -131,7 +131,7 @@
   
   
   <meta itemprop="name" content="Posts">
-  <meta itemprop="dateModified" content="2024-12-05T12:32:24+08:00">
+  <meta itemprop="dateModified" content="2024-12-05T18:18:22+08:00">
   <meta itemprop="keywords" content="Index">
   
   <meta property="og:url" content="https://chlzhong.org/post/">
@@ -312,6 +312,19 @@
 
 <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
   
+  <h2 class="!my-0">日寄</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Sep 28, 2024</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/dieary/">日寄</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
   <h2 class="!my-0">你所不知道的明志苑之内部装修</h2>
   <time class="text-xs antialiased opacity-60"
     >Sep 19, 2024</time
@@ -330,19 +343,6 @@
     >Sep 18, 2024</time
   >
   <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/eudemonia-05/">中秋记忆</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0">【转】过中秋</h2>
-  <time class="text-xs antialiased opacity-60"
-    >Sep 17, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/mid-autumn-festivial/">【转】过中秋</a>
 </section>
 
 
@@ -416,6 +416,12 @@
         }
       }
 
+      function renderMath() {
+        if (typeof renderMathInElement === "function") {
+          renderMathInElement(document.body);
+        }
+      }
+
       const swup = new Swup({
         containers: ["#main"], 
         plugins: [
@@ -427,6 +433,7 @@
 
       swup.hooks.on("content:replace", () => {
         console.log("Swup content replaced. Reloading Cusdis comments...");
+	  renderMath
         loadCusdisComments();
       });
     </script>

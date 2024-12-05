@@ -97,7 +97,7 @@ $\nabla f = \left( \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x
   
   
   
-  <link rel="preload" as="image" href="https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c" />
+  <link rel="preload" as="image" href="https://picx.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_xll.jpg?source=32738c0c&amp;needBackground=1" />
   
   
 
@@ -534,7 +534,7 @@ $\theta_{k+1} = \theta_k - \eta \nabla f(\theta_k)θk+1=θk−η∇f(θk)$</li>
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
   >
     
-     <a class="ltr:pr-3 rtl:pl-3 no-special-link" href="https://chlzhong.org/post/fountainpens/"><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>印象中的钢笔们</span></a>
+     <a class="ltr:pr-3 rtl:pl-3 no-special-link" href="https://chlzhong.org/post/svm/"><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>SVM 支持向量机</span></a>
     
     
     <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3 no-special-link" href="https://chlzhong.org/post/navie-bayes-classifer/"
@@ -679,6 +679,12 @@ $\theta_{k+1} = \theta_k - \eta \nabla f(\theta_k)θk+1=θk−η∇f(θk)$</li>
         }
       }
 
+      function renderMath() {
+        if (typeof renderMathInElement === "function") {
+          renderMathInElement(document.body);
+        }
+      }
+
       const swup = new Swup({
         containers: ["#main"], 
         plugins: [
@@ -690,6 +696,7 @@ $\theta_{k+1} = \theta_k - \eta \nabla f(\theta_k)θk+1=θk−η∇f(θk)$</li>
 
       swup.hooks.on("content:replace", () => {
         console.log("Swup content replaced. Reloading Cusdis comments...");
+	  renderMath
         loadCusdisComments();
       });
     </script>

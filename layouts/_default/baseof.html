@@ -92,6 +92,12 @@
         }
       }
 
+      function renderMath() {
+        if (typeof renderMathInElement === "function") {
+          renderMathInElement(document.body);
+        }
+      }
+
       const swup = new Swup({
         containers: ["#main"], // 替换主内容区域
         plugins: [
@@ -103,6 +109,7 @@
 
       swup.hooks.on("content:replace", () => {
         console.log("Swup content replaced. Reloading Cusdis comments...");
+	  renderMath
         loadCusdisComments();
       });
     </script>

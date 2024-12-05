@@ -89,7 +89,7 @@
   
   
   
-  <link rel="preload" as="image" href="https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c" />
+  <link rel="preload" as="image" href="https://picx.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_xll.jpg?source=32738c0c&amp;needBackground=1" />
   
   
 
@@ -131,7 +131,7 @@
   
   
   <meta itemprop="name" content="Chlzhong">
-  <meta itemprop="dateModified" content="2024-12-05T12:32:24+08:00">
+  <meta itemprop="dateModified" content="2024-12-05T18:18:22+08:00">
   
   <meta property="og:url" content="https://chlzhong.org/">
   <meta property="og:site_name" content="Chlzhong">
@@ -313,6 +313,19 @@
 
 <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
   
+  <h2 class="!my-0">你需要多大「内存」的手机？</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Oct 8, 2024</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/how-much-storage-do-you-need-on-your-phone/">你需要多大「内存」的手机？</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
   <h2 class="!my-0">【转】国庆日之朝</h2>
   <time class="text-xs antialiased opacity-60"
     >Oct 7, 2024</time
@@ -331,19 +344,6 @@
     >Oct 5, 2024</time
   >
   <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/rong-chuang-town-day/">融创小镇：渝西南游乐行</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0">舞动身体的羞耻感</h2>
-  <time class="text-xs antialiased opacity-60"
-    >Sep 30, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://chlzhong.org/post/the-shame-of-moving-the-body/">舞动身体的羞耻感</a>
 </section>
 
 
@@ -417,6 +417,12 @@
         }
       }
 
+      function renderMath() {
+        if (typeof renderMathInElement === "function") {
+          renderMathInElement(document.body);
+        }
+      }
+
       const swup = new Swup({
         containers: ["#main"], 
         plugins: [
@@ -428,6 +434,7 @@
 
       swup.hooks.on("content:replace", () => {
         console.log("Swup content replaced. Reloading Cusdis comments...");
+	  renderMath
         loadCusdisComments();
       });
     </script>

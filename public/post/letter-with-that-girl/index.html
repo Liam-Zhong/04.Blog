@@ -124,7 +124,7 @@
   
   
   
-  <link rel="preload" as="image" href="https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c" />
+  <link rel="preload" as="image" href="https://picx.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_xll.jpg?source=32738c0c&amp;needBackground=1" />
   
   
 
@@ -1114,6 +1114,12 @@ copyright.<br></p>
         }
       }
 
+      function renderMath() {
+        if (typeof renderMathInElement === "function") {
+          renderMathInElement(document.body);
+        }
+      }
+
       const swup = new Swup({
         containers: ["#main"], 
         plugins: [
@@ -1125,6 +1131,7 @@ copyright.<br></p>
 
       swup.hooks.on("content:replace", () => {
         console.log("Swup content replaced. Reloading Cusdis comments...");
+	  renderMath
         loadCusdisComments();
       });
     </script>

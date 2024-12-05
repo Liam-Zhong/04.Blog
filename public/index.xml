@@ -5,7 +5,7 @@
     <link>https://chlzhong.org/</link>
       <atom:link href="https://chlzhong.org/index.xml" rel="self" type="application/rss+xml" />
     <description>Chlzhong</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Thu, 05 Dec 2024 12:32:24 +0800</lastBuildDate>  
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Thu, 05 Dec 2024 18:18:22 +0800</lastBuildDate>  
     <item>
       <title>印象中的钢笔们</title>
       <link>https://chlzhong.org/post/fountainpens/</link>
@@ -103,6 +103,78 @@
 &lt;p&gt;1919 &lt;a href=&#34;https://www.aurorapen.it/&#34;&gt;Aurora&lt;/a&gt; 国内没有官网， &lt;strong&gt;不买&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;1925 &lt;a href=&#34;https://omasofficial.com/&#34;&gt;OMAS&lt;/a&gt; 国内没有官网。台湾有店大陆没有， &lt;strong&gt;不买&lt;/strong&gt;&lt;/p&gt;
 &lt;h4 id=&#34;总结别买&#34;&gt;总结：别买&lt;/h4&gt;
+</description>
+    </item>
+      
+    <item>
+      <title>SVM 支持向量机</title>
+      <link>https://chlzhong.org/post/svm/</link>
+      <pubDate>Thu, 05 Dec 2024 18:18:22 +0800</pubDate>
+      <guid>https://chlzhong.org/post/svm/</guid>
+      <description>&lt;p&gt;写这篇博客时看到知乎一篇 16 年的&lt;a href=&#34;https://www.zhihu.com/question/41066458/answer/102865064&#34;&gt;文章&lt;/a&gt;，作者指出传统 SVM 在对一些稀奇古怪的样本进行分类时有比较好的效果，但是评论区纷纷表示：多来几层神经网络就搞定了。由于我知识储备有限，在此就简单讲讲我的理解。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;svm基本形式求解&#34;&gt;SVM基本形式求解&lt;/h3&gt;
+&lt;p&gt;给定一个二分类问题的训练样本集：&lt;/p&gt;
+&lt;p&gt;$D=(x_1,y_1),(x_2,y_2),…,(x_m,y_m),y_i∈−1,+1$&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，&lt;/p&gt;
+&lt;p&gt;我们的目标是找到一条分界线/超平面&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;来将两类区分开，如下图：&lt;/p&gt;
+&lt;div style=&#34;display: flex; justify-content: center; flex-direction: column; align-items: center;&#34;&gt;
+  &lt;!-- 图片部分 --&gt;
+  &lt;img src=&#34;https://pic1.zhimg.com/80/v2-37649244ba89c6387a151e8c0937f019_1440w.png&#34; alt=&#34;晨起动征铎&#34; class=&#34;img-apple&#34;&gt;
+  &lt;!-- 文字说明 --&gt;
+  &lt;small style=&#34;text-align: center;&#34;&gt;&lt;/small&gt;
+&lt;/div&gt;
+在样本空间中，用 $w^{T}x+b=0$​ 来描述超平面。其中：
+&lt;ul&gt;
+&lt;li&gt;$w=(w_1,w_2,…,w_d)$ 为法向量，决定了超平面的方向&lt;/li&gt;
+&lt;li&gt;$b$ 为位移项，决定了超平面与原点的距离。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果一个超平面能够将训练样本正确分类，则我们希望这个超平面具有的性质是，对于 $(x_i,y_i)∈D$，有：
+$$
+f(x) =
+\begin{cases}
+w^T x + b \geq 0, &amp;amp; y_i = +1; \
+w^T x + b \leq 0, &amp;amp; y_i = -1.
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;换言之，在进行分类的时候，遇到一个新的数据点 $x$，将 $x$ 代入 $f(x)$ 中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果 $f(x)$ 小于 $0$ ，则将 $x$ 的类别赋为 $-1$&lt;/li&gt;
+&lt;li&gt;如果 $f(x)$ 大于 $0$ ，则将 $x$ 的类别赋为 $1$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;接下来的问题是，如何确定这个超平面呢? SVM 算法的标准是使直线离两边的点间隔最大。&lt;/p&gt;
+&lt;h3 id=&#34;间距计算&#34;&gt;间距计算&lt;/h3&gt;
+&lt;p&gt;点到超平面的距离公式&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;为：&lt;/p&gt;
+&lt;p&gt;$$\text{distance} = \frac{|w^T x + b|}{||w||}$$&lt;/p&gt;
+&lt;p&gt;注意到这个距离并未区分样本类别，于是令支持向量满足：&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;red&#34;&gt;$y_i(w^T x_i + b) = λ = 1$&lt;/font&gt;&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;此时得到间距：$\gamma =\frac{2}{||w||}$&lt;/p&gt;
+&lt;h3 id=&#34;最优化问题&#34;&gt;最优化问题&lt;/h3&gt;
+&lt;p&gt;$$\begin{aligned} \max  &amp;amp; \frac{2}{||w||} \ ,\quad\text{s.t.} \quad y_i(w^T x_i + b) \geq 1, \quad i = 1,\ldots,n \end{aligned}$$&lt;/p&gt;
+&lt;p&gt;等价地，可以转化为：&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;red&#34;&gt;$\begin{aligned} \min  &amp;amp; \frac{1}{2}||w||^2 \ \quad\text{s.t.}  \quad y_i(w^T x_i + b) \geq 1, \quad i = 1,\ldots,n \end{aligned}$ &lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;这是一个凸二次规划问题，可以使用拉格朗日对偶理论求解&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;求得模型&#34;&gt;求得模型&lt;/h3&gt;
+&lt;p&gt;具体过程此处不题，得：&lt;strong&gt;$f(x)=w^{T}x+b= \sum_{i=1}^m\alpha_i y_i x_i^{T}x+b$&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;这里的一个问题是为什么 $y$ 取值在 $1$ 和 $-1$ 之间，实际上是随便取的，只不过这样取值比较好计算。&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;此处也不对 &lt;code&gt;超平面&lt;/code&gt; 这个词作过多讨论，大概是来源于逻辑回归。&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;$||\omega||$ 表示的就是 $\omega$ 的欧几里得范数或向量的长度（模） 。&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;本质上，这是一个数学技巧，$\lambda$ 也可以取别的值。&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;那什么是拉格朗日对偶性呢?简单来讲，通过给每一一个约束条件加 $\alpha$，定义拉格朗日函数，最终只对一个式子求最值。&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
       
