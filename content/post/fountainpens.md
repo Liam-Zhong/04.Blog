@@ -28,7 +28,7 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 3. **1906** [Montblanc](https://www.montblanc.cn/cn/zh-cn/home.html)
 
-奢侈品，**不买**。
+德产瑞士奢侈品，**不买**。
 
 [145](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132464-meisterstueck-gold-coated-classique-fountain-pen-m.html)
 
@@ -87,9 +87,9 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 2009 [三文堂](https://www.twsbi.com/) 台湾产，**丑**，品牌名字没有我悠久 **不买**
 
-1981 [劳彭](https://laban.com/) 台湾产，台独钢笔 **不买**
+1981 [劳彭](https://laban.com/) 台湾产，港独钢笔 **不买**
 
-1931 <a href="https://hero.com.cn/" style="color:red;">英雄</a> 616 和 100 做得不错 别的纪念太重且贵 **不买**
+1931 [英雄](https://hero.com.cn/) 616 和 100 做得不错 别的纪念太重且贵 **不买**
 
 1997 [弘典](http://www.winwinsky.com/index.asp) 不厚道 **不买**
 
@@ -109,7 +109,7 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 1925 [并木](https://www.pilot-namiki.com/en/) 国内没有官网 不喜欢莳绘 **不买**
 
-1919 [白金](https://www.platinum-pen.co.jp/) 台独钢笔。国内没有官网 老 3776 丑得别致 鱼雷造型乏善可陈 **不买**
+1919 <a href="https://www.platinum-pen.co.jp/" style="color:red;">白金</a> 港独钢笔。国内没有官网 老 3776 丑得别致 鱼雷造型乏善可陈 **不买**
 
 1999 [中屋](https://www.nakaya.org/) 国内没有官网 背鳍和十角好看 笔尖 3776 同款 **不买**
 
@@ -123,7 +123,7 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 1912 [Montegrappa](https://www.montegrappa.com/) 国内没有官网  **不买**
 
-1988 [Visconti](https://www.visconti.it/) 国内没有官网 好看的台独钢笔 **不买**
+1988 [Visconti](https://www.visconti.it/) 国内没有官网 好看的港独钢笔 **不买**
 
 1919 [Aurora](https://www.aurorapen.it/) 国内没有官网 **不买**
 
