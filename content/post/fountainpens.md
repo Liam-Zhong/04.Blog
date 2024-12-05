@@ -54,7 +54,7 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 5. #### 1888 [Parker](https://www.parkerpen.cn/)
 
-吃相难看，**不买**。
+历史上最成功的钢笔厂。现产吃相难看，**不买**。
 
 [世纪经典](https://www.parkerpen.cn/duofold-pens-cn.html)
 
