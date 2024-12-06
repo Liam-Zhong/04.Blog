@@ -426,7 +426,7 @@ $\theta_{k+1} = \theta_k - \eta \nabla f_i(\theta_k)$</li>
 <p>小批量梯度下降是全批量梯度下降和随机梯度下降的折中方法。每次迭代时，它会从所有100个样本中随机选取一个<strong>小批量</strong>（例如，10个样本），用这些样本来计算梯度并更新参数。</p>
 <blockquote>
 <ol>
-<li>从初始参数 θ0\theta_0 开始。<br></li>
+<li>从初始参数 \theta_0 开始。<br></li>
 <li>随机选择一个小批量样本，假设这个小批量包含10个样本 $i_1, i_2, \dots, i_{10}$。<br></li>
 <li>计算这10个样本的梯度平均值：<br>
 $\nabla f(\theta) = \frac{1}{10} \sum_{i=1}^{10} \nabla f_{i}(\theta)$</li>
