@@ -187,7 +187,7 @@ $\nabla f = \left( \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x
   <meta itemprop="description" content="{线性回归}">
   <meta itemprop="datePublished" content="2024-12-05T12:32:24+08:00">
   <meta itemprop="dateModified" content="2024-12-05T12:32:24+08:00">
-  <meta itemprop="wordCount" content="470">
+  <meta itemprop="wordCount" content="483">
   
   <meta property="og:url" content="https://chlzhong.org/post/linear-regression/">
   <meta property="og:site_name" content="Chlzhong">
@@ -401,18 +401,18 @@ $\nabla f = \left( \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x
 <p>接下来通过一个具体的例子来解释如何理解<strong>批量梯度下降</strong>、<strong>小批量梯度下降</strong>和<strong>随机梯度下降</strong>。</p>
 <p>假设我们有一个三元函数（即目标函数是有三个参数的函数），并且我们有100个样本数据。我们希望通过这些数据来优化函数的参数。</p>
 <h5 id="1-全批量梯度下降batch-gradient-descent">1. 全批量梯度下降（Batch Gradient Descent）</h5>
-<p>全批量梯度下降会在每次迭代中使用<strong>所有100个样本</strong>来计算梯度，并更新参数。</p>
+<p>全批量梯度下降会在每次迭代中使用<strong>所有 100 个样本</strong>来计算梯度，并更新参数。</p>
 <blockquote>
 <ol>
 <li>从初始参数 $\theta_0$ 开始。<br></li>
-<li>计算所有100个样本点的梯度，得到梯度平均值：<br>
+<li>计算所有 100 个样本点的梯度，得到梯度平均值：<br>
 $\nabla f(\theta) = \frac{1}{100} \sum_{i=1}^{100} \nabla f_i(\theta)$<br></li>
 <li>更新参数：<br>
 $\theta_{k+1} = \theta_k - \eta \nabla f(\theta_k)$</li>
 </ol>
 </blockquote>
 <h5 id="2-随机梯度下降stochastic-gradient-descent-sgd">2. 随机梯度下降（Stochastic Gradient Descent, SGD）</h5>
-<p>与全批量梯度下降不同，随机梯度下降每次迭代仅使用<strong>一个样本</strong>来计算梯度并更新参数。对于100个样本，随机梯度下降每次只随机选择一个样本进行参数更新。</p>
+<p>与全批量梯度下降不同，随机梯度下降每次迭代仅使用<strong>一个样本</strong>来计算梯度并更新参数。对于 100 个样本，随机梯度下降每次只随机选择一个样本进行参数更新。</p>
 <blockquote>
 <ol>
 <li>从初始参数 $\theta_0$  开始。<br></li>
@@ -423,12 +423,12 @@ $\theta_{k+1} = \theta_k - \eta \nabla f_i(\theta_k)$</li>
 </ol>
 </blockquote>
 <h5 id="3-小批量梯度下降mini-batch-gradient-descent">3. 小批量梯度下降（Mini-batch Gradient Descent）</h5>
-<p>小批量梯度下降是全批量梯度下降和随机梯度下降的折中方法。每次迭代时，它会从所有100个样本中随机选取一个<strong>小批量</strong>（例如，10个样本），用这些样本来计算梯度并更新参数。</p>
+<p>小批量梯度下降是全批量梯度下降和随机梯度下降的折中方法。每次迭代时，它会从所有 100 个样本中随机选取一个<strong>小批量</strong>（例如，10 个样本），用这些样本来计算梯度并更新参数。</p>
 <blockquote>
 <ol>
 <li>从初始参数 $\theta_0$ 开始。<br></li>
-<li>随机选择一个小批量样本，假设这个小批量包含10个样本 $i_1, i_2, \dots, i_{10}$。<br></li>
-<li>计算这10个样本的梯度平均值：<br>
+<li>随机选择一个小批量样本，假设这个小批量包含 10 个样本 $i_1, i_2, \dots, i_{10}$。<br></li>
+<li>计算这 10 个样本的梯度平均值：<br>
 $\nabla f(\theta) = \frac{1}{10} \sum_{i=1}^{10} \nabla f_{i}(\theta)$</li>
 <li>使用这个平均梯度更新参数：<br>
 $\theta_{k+1} = \theta_k - \eta \nabla f(\theta_k)θk+1=θk−η∇f(θk)$</li>
