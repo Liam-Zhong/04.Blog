@@ -5,7 +5,7 @@
     <link>https://chlzhong.org/</link>
       <atom:link href="https://chlzhong.org/index.xml" rel="self" type="application/rss+xml" />
     <description>Chlzhong</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Sat, 14 Dec 2024 11:48:25 +0800</lastBuildDate>  
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Sun, 15 Dec 2024 20:59:13 +0800</lastBuildDate>  
     <item>
       <title>印象中的钢笔们</title>
       <link>https://chlzhong.org/post/fountainpens/</link>
@@ -103,6 +103,44 @@
 &lt;p&gt;1919 &lt;a href=&#34;https://www.aurorapen.it/&#34;&gt;Aurora&lt;/a&gt; 国内没有官网， &lt;strong&gt;不买&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;1925 &lt;a href=&#34;https://omasofficial.com/&#34;&gt;OMAS&lt;/a&gt; 国内没有官网。台湾有店大陆没有， &lt;strong&gt;不买&lt;/strong&gt;&lt;/p&gt;
 &lt;h4 id=&#34;总结别买&#34;&gt;总结：别买&lt;/h4&gt;
+</description>
+    </item>
+      
+    <item>
+      <title>How to Stop Windows 11 Update</title>
+      <link>https://chlzhong.org/post/how-to-stop-windows-11-update/</link>
+      <pubDate>Sun, 15 Dec 2024 20:59:13 +0800</pubDate>
+      <guid>https://chlzhong.org/post/how-to-stop-windows-11-update/</guid>
+      <description>&lt;p&gt;Hey, Are You Frustrated with Windows Automatic Updates? Here Are Some Methods to Stop Them :&lt;/p&gt;
+&lt;p&gt;Via Services Settings&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &amp;ldquo;Run&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;services.msc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Find &amp;ldquo;Windows Update&amp;rdquo; service&lt;/li&gt;
+&lt;li&gt;Set Startup Type to &amp;ldquo;Disabled&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using Group Policy&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Press Win + R to open &amp;ldquo;Run&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;gpedit.msc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to: Computer Configuration &amp;gt; Administrative Templates &amp;gt; Windows Components &amp;gt; Windows Update&lt;/li&gt;
+&lt;li&gt;Configure &amp;ldquo;Configure Automatic Updates&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Temporarily Pause Updates&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Settings &amp;gt; Update &amp;amp; Security &amp;gt; Windows Update&lt;/li&gt;
+&lt;li&gt;Choose &amp;ldquo;Pause Updates&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Can pause up to 35 days&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Using Registry&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Press Win + R to open &amp;ldquo;Run&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;regedit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to &lt;code&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create DWORD value &lt;code&gt;NoAutoUpdate&lt;/code&gt;, set to 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And you do like this,when you restart,you may say &amp;ldquo;what f**k man?&amp;quot;,So Don&amp;rsquo;t Do Like Above.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Just press &lt;code&gt;田&lt;/code&gt; , then input &lt;code&gt;services&lt;/code&gt; , find the &lt;code&gt;Update Orchestrator Service&lt;/code&gt; , change the status to &lt;code&gt;disabled&lt;/code&gt; and set the &lt;code&gt;Recovery&lt;/code&gt; always &lt;code&gt;Take No Action&lt;/code&gt;&lt;/strong&gt;. :P&lt;/p&gt;
 </description>
     </item>
       
@@ -553,6 +591,16 @@ $\theta_{k+1} = \theta_k - \eta \nabla f(\theta_k)θk+1=θk−η∇f(θk)$&lt;/l
     </item>
       
     <item>
+      <title>小组作业那些事儿</title>
+      <link>https://chlzhong.org/post/group-work/</link>
+      <pubDate>Tue, 05 Nov 2024 16:13:16 +0800</pubDate>
+      <guid>https://chlzhong.org/post/group-work/</guid>
+      <description>&lt;p&gt;一年一度，小组作业。&lt;/p&gt;
+&lt;p&gt;hhahahhaha&lt;/p&gt;
+</description>
+    </item>
+      
+    <item>
       <title>头发二辑</title>
       <link>https://chlzhong.org/post/my-hair_2/</link>
       <pubDate>Sun, 03 Nov 2024 23:23:19 +0800</pubDate>
@@ -992,6 +1040,103 @@ Best regards, 赵连硕&lt;/p&gt;
 &lt;p&gt;融创文旅城去南山二十里路，地铁不可直达，其地无高岩弯道，近大学城而又平，且逢假日，故人声鼎沸，无日无之。门多摊贩，初极香，愈深愈浓，至门口时堪称臭味熏人。入至，左一排为所谓特色商贩，行至底可换票。右则见一小瀑，声若惊雷，所见如连环、如带、如佩环、色则无可记。行不久为碰碰车，大人小孩莫不连臂而至，情侣则靓妆丽服，望之若神肤。此项与后所叙皆约一刻：排排队时摩肩接踵，为何为欢只几何？&lt;/p&gt;
 &lt;p&gt;巨摆锤者，未排而不知其感觉尽失，游尽而顿首挂笑者，所见唯数十人而已。器械不高，入座则似公交。人未察，已而明月浮空，宇宙摇摆，&lt;del&gt;称霸比基尼海滩&lt;/del&gt;，雷击电掣，此时形无可状只有惊声不绝。然后吃饭，小面味不佳，不记。山城之光者，其实无聊。徒有摩天之名，参次错落，颇有次第，蓝牙连疯，原神可爱。海盗船最可肾客，不堪久坐。五人一排，四座屏息，栏杆响，声破天，每旋一圈，几近垂空，龟言此地之寒，鹤讶飞绝之险，游者呼，观者惧，壮士下泪，鱼虾徘徊。而后则激流飘荡，水波飘摇者不若浮萍，此时最喜派大星。&lt;/p&gt;
 &lt;p&gt;甲辰九月，同游者一舍友，一舍友友。趣归衍记。&lt;/p&gt;
+</description>
+    </item>
+      
+    <item>
+      <title>跟着星宇学毫升</title>
+      <link>https://chlzhong.org/post/ml/</link>
+      <pubDate>Mon, 30 Sep 2024 16:33:11 +0800</pubDate>
+      <guid>https://chlzhong.org/post/ml/</guid>
+      <description>&lt;p&gt;$\begin{split}\begin{aligned} w_1 &amp;amp;\leftarrow w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} = w_1 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}train_1^{(i)} \left(train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}\right),\ w_2 &amp;amp;\leftarrow w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} = w_2 - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}train_2^{(i)} \left(train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}\right),\ b &amp;amp;\leftarrow b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} = b - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}}\left(train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}\right). \end{aligned}\end{split}$&lt;/p&gt;
+&lt;p&gt;超参：$|\mathcal{B}|$、$\eta$&lt;/p&gt;
+&lt;p&gt;$\begin{split}\begin{aligned} \hat{target}^{(1)} &amp;amp;= train_1^{(1)} w_1 + train_2^{(1)} w_2 + b,\ \hat{target}^{(2)} &amp;amp;= train_1^{(2)} w_1 + train_2^{(2)} w_2 + b,\ \hat{target}^{(3)} &amp;amp;= train_1^{(3)} w_1 + train_2^{(3)} w_2 + b. \end{aligned}\end{split}$&lt;/p&gt;
+&lt;p&gt;$\begin{split}\boldstargetmbol{\hat{target}} = \begin{bmatritrain} \hat{target}^{(1)} \ \hat{target}^{(2)} \ \hat{target}^{(3)} \end{bmatritrain},\quad \boldstargetmbol{train} = \begin{bmatritrain} train_1^{(1)} &amp;amp; train_2^{(1)} \ train_1^{(2)} &amp;amp; train_2^{(2)} \ train_1^{(3)} &amp;amp; train_2^{(3)} \end{bmatritrain},\quad \boldstargetmbol{w} = \begin{bmatritrain} w_1 \ w_2 \end{bmatritrain}.\end{split}$&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\hat{target}} = \boldstargetmbol{train} \boldstargetmbol{w} + b$&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\hat{target}} = \boldstargetmbol{train} \boldstargetmbol{w} + b,$&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\hat{target}} \in \mathbb{R}^{n \times 1}$&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\hat{target}} = \boldstargetmbol{train} \boldstargetmbol{w} + b$,&lt;/p&gt;
+&lt;p&gt;其中模型输出$\boldstargetmbol{\hat{target}} \in \mathbb{R}^{n \times 1}$， 批量数据样本特征$\boldstargetmbol{train} \in \mathbb{R}^{n \times d}$，权重$\boldstargetmbol{w} \in \mathbb{R}^{d \times 1}$， 偏差$b \in \mathbb{R}$。相应地，批量数据样本标签$$\boldstargetmbol{target} \in \mathbb{R}^{n \times 1}$。设模型参数 $ \boldstargetmbol{\theta} = [w_1, w_2, b]^\top $，我们可以重写损失函数为&lt;/p&gt;
+&lt;p&gt;$\ell(\boldstargetmbol{\theta})=\frac{1}{2n}(\boldstargetmbol{\hat{target}}-\boldstargetmbol{target})^\top(\boldstargetmbol{\hat{target}}-\boldstargetmbol{target}).$&lt;/p&gt;
+&lt;p&gt;小批量随机梯度下降的迭代步骤为&lt;/p&gt;
+&lt;p&gt;$\boldstargetmbol{\theta} \leftarrow \boldstargetmbol{\theta} - \frac{\eta}{|\mathcal{B}|} \sum_{i \in \mathcal{B}} \nabla_{\boldstargetmbol{\theta}} \ell^{(i)}(\boldstargetmbol{\theta})$,&lt;/p&gt;
+&lt;p&gt;其中梯度是损失有关3个为标量的模型参数的偏导数组成的向量：&lt;/p&gt;
+&lt;p&gt;$\begin{split}\nabla_{\boldstargetmbol{\theta}} \ell^{(i)}(\boldstargetmbol{\theta})= \begin{bmatritrain} \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_1} \ \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial w_2} \ \frac{ \partial \ell^{(i)}(w_1, w_2, b) }{\partial b} \end{bmatritrain} = \begin{bmatritrain} train_1^{(i)} (train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}) \ train_2^{(i)} (train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)}) \ train_1^{(i)} w_1 + train_2^{(i)} w_2 + b - target^{(i)} \end{bmatritrain} = \begin{bmatritrain} train_1^{(i)} \ train_2^{(i)} \ 1 \end{bmatritrain} (\hat{target}^{(i)} - target^{(i)}).\end{split}$&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;#&lt;/th&gt;
+&lt;th&gt;sepal length in cm&lt;/th&gt;
+&lt;th&gt;sepal width in cm&lt;/th&gt;
+&lt;th&gt;petal length in cm&lt;/th&gt;
+&lt;th&gt;petal width in cm&lt;/th&gt;
+&lt;th&gt;Iris_Ttargetpe&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
+    A[2] --&amp;gt;|1.0| B[0]
+    A[2] --&amp;gt;|1.1| B[0]
+    A[2] --&amp;gt;|1.2| B[0]
+    A[2] --&amp;gt;|1.3| B[0]
+    A[2] --&amp;gt;|1.4| B[0]
+    A[2] --&amp;gt;|1.5| B[0]
+    A[2] --&amp;gt;|1.6| B[0]
+    A[2] --&amp;gt;|1.7| B[0]
+    A[2] --&amp;gt;|1.9| B[0]
+    A[2] --&amp;gt;|3.0| C[1]
+    A[2] --&amp;gt;|3.3| C[1]
+    A[2] --&amp;gt;|3.5| C[1]
+    A[2] --&amp;gt;|3.6| C[1]
+    A[2] --&amp;gt;|3.7| C[1]
+    A[2] --&amp;gt;|3.8| C[1]
+    A[2] --&amp;gt;|3.9| C[1]
+    A[2] --&amp;gt;|4.0| C[1]
+    A[2] --&amp;gt;|4.1| C[1]
+    A[2] --&amp;gt;|4.2| C[1]
+    A[2] --&amp;gt;|4.3| C[1]
+    A[2] --&amp;gt;|4.4| C[1]
+    A[2] --&amp;gt;|4.5| D[0]
+    A[2] --&amp;gt;|4.6| C[1]
+    A[2] --&amp;gt;|4.7| C[1]
+    A[2] --&amp;gt;|4.8| D[0]
+    A[2] --&amp;gt;|4.9| D[1]
+    A[2] --&amp;gt;|5.0| E[0]
+    A[2] --&amp;gt;|5.1| F[0]
+    A[2] --&amp;gt;|5.2| G[2]
+    A[2] --&amp;gt;|5.3| G[2]
+    A[2] --&amp;gt;|5.4| G[2]
+    A[2] --&amp;gt;|5.5| G[2]
+    A[2] --&amp;gt;|5.6| G[2]
+    A[2] --&amp;gt;|5.7| G[2]
+    A[2] --&amp;gt;|5.8| G[2]
+    A[2] --&amp;gt;|5.9| G[2]
+    A[2] --&amp;gt;|6.0| G[2]
+    A[2] --&amp;gt;|6.1| G[2]
+    A[2] --&amp;gt;|6.2| G[2]
+    A[2] --&amp;gt;|6.3| G[2]
+    A[2] --&amp;gt;|6.4| G[2]
+    A[2] --&amp;gt;|6.5| G[2]
+    A[2] --&amp;gt;|6.6| G[2]
+    A[2] --&amp;gt;|6.7| G[2]
+    A[2] --&amp;gt;|6.8| G[2]
+    A[2] --&amp;gt;|6.9| G[2]
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
+   2[sepal width in cm] --&amp;gt; 3[petal length in cm]
+   2[sepal width in cm] --&amp;gt; 0[sepal length in cm]
+   3[petal length in cm] --&amp;gt; 1[petal width in cm]
+   3[petal length in cm] --&amp;gt; 1[petal width in cm]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;H(S)=−i=1∑npi⋅log2(pi)&lt;/p&gt;
 </description>
     </item>
       

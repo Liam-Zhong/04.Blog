@@ -1,0 +1,92 @@
+baseURL = "https://liam-zhong.github.io/"
+# title = "Hugo Themes"
+author = "Steve Francia"
+copyright = "© 2024, liam"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# ------------------------------
+theme = "paper"
+title = "Liam's Blog"
+
+[params]
+  color = 'linen'
+
+# twitter = 'nanxiaobei'
+  github = 'Liam-Zhong'
+  rss = true
+# instagram = 'nan.xiaobei'
+
+avatar = 'https://pica.zhimg.com/v2-5fe3afc9c57d74165650721e7a38c045_l.jpg?source=32738c0c'
+  name = 'Liam'
+  bio = '骋我径寸翰，流藻垂华芬'
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+#  [markup.highlight]
+#    lineNos = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
+
+[params.cusdis]
+  enable = true
+  app_id = "6c8fd496-b686-4bb1-aac6-8276c867aa7a"
+  host = "https://cusdis.com"
+  lang = "zh-cn"
