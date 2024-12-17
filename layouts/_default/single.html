@@ -3,6 +3,13 @@
 <article class="post {{ if or (eq .File.BaseFileName "about") (eq .File.BaseFileName "contact") (eq .Type "post") }}special-page{{ end }}">
   <header class="mb-14">
     <h1 class="!my-0 pb-2.5">{{ .Title }}</h1>
+    
+    {{ if .Params.alert }}
+  <div class="alert-box">
+    <strong>提示：</strong> {{ .Params.alert }}
+  </div>
+{{ end }}
+
 
     {{ if ne .Type "page" }}
     <div class="text-xs antialiased opacity-60">
