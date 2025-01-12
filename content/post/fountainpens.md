@@ -30,25 +30,33 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 德产瑞士奢侈品， **不买**。
 
-[145](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132464-meisterstueck-gold-coated-classique-fountain-pen-m.html)
+[大班 145 ](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132468-meisterstueck-platinum-coated-classique-fountain-pen-m.html)
 
-[146](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132460-meisterstueck-gold-coated-legrand-fountain-pen-m.html)
+[大班 146  ](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132443-meisterstueck-platinum-coated-legrand-fountain-pen-m.html)
 
-[149](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132113-meisterstueck-gold-coated-149-fountain-pen-m.html)
+[大班 149  ]( https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132104-meisterstueck-platinum-coated-149-fountain-pen-f.html)
+
+[ 星际行者](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/starwalker.html)
+
+[传承](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/heritage.html)
 
 
 
 4. #### 1838 [Pelikan](https://www.pelikan.com/)
 
-国内没有官网。德产法国钢笔，且邮件回太慢， **不买**。
+国内没有官网。德产法国钢笔，全系活塞不好洗，且邮件回太慢， **不买**。
 
-[400](https://detail.tmall.com/item.htm?id=656546423243&scene=taobao_shop&spm=a1z10.1-b.w5003-24574726500.2.4e49341eL0V4EQ&skuId=4730612692269)
+[SOUVERÄN 400 ]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-400-black.html)
 
-[800](https://detail.tmall.com/item.htm?abbucket=9&id=658939576087&pisk=fFXK4KO_bP4nUynt6bNMZpegxxqgoTIeCwSjEUYnNNQO4ZplxwVFw1IVWkJlrgTRyNYNKk8uY4QR2MdBA3MBCVtXD2TSdgiJVNvBa6Yk-UpR4ZEgo-2cYMJyhr40nTHLpGvBAUMBFuT62nSafHSfYMJyPc07i1sEyUnYObtWPlp62ntBFHOWClKJ439WRQg1f3T6FU_WOFw64nKBV3GB5lKvD4iBRXMs5nKSP2_WFlp6Vnl20JLzPEkRaPEbzbG5gYM5dJRpkv86bhXOuBTXTRD-e0-p9EsBWryYAUO14QBr4YdcAs7ycwgQyUWOf91flPcHRsKRm_QYhY-NOwB6wOqzHGJp2I9W60M5XdTWMOvbhVKN1Mf5Lwn-FHWhnQL26uMyZd6DGs_K4oS6d3_ygT4qLes50t5DHJ32v1svBglfntdOLqYvqXZTXblyOh7bkGPsvtQprhL0jFcraCQ2XEqTXblyOh-9olcmabROu&rn=b3318ebb22177bb7702bb0793b528cb5&spm=a1z10.5-b.w4011-23793798797.104.5eac5f3c0gu8SQ&skuId=4933259947901)
+[SOUVERÄN 600 ](https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-600-black.html)
 
-[600](https://detail.tmall.com/item.htm?abbucket=3&id=658934972285&pisk=fnymdOMeiSlbUPRoq_kf_fWAqo1JlnMsMPptWA3Na4uSWSUTMNDgr4ptMsaOj74aPj34Il9iblz1cVIfwoZjCA7dJwBLcowWbMC8nfrrauip3EPR2G2qCA7dSQpZG9D_Rq-wBqRr44iibdl474orb4o2_qzZzboEbKka7ASoacm27dkZgUrrPDd27Iuq4ToEXc8Z0PrPqcGqIEuxgfePkxVWiPPX98nmiVvxrd4UUpho8ogyQ62omegU04vwQqhM_SruDZvQ2xwT-DUAUK43bkNZZRYP-Vwu4-PaVEbinuUbKxyhoKn-FqGU_bjV3uDmof2iaHdSn5zbIjNDfMZr3zNIRj55P02Ypf0IZU742u0qt54APduYtuzo98LJpvPQrRcELg-2aB7TOdiPX8R61joSq2LURXmEiecc_gjkTPGqVmrRqgA61joSq2IlqByjg0i42&rn=c75603a2d14c373185642ca8e2b67789&spm=a1z10.3-b.w4011-23793968021.66.4e3a2a70sfaeiL&skuId=4759810725049)
+[SOUVERÄN 800 ]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-800-black.html)
 
-[1000](https://detail.tmall.com/item.htm?abbucket=3&id=647854657748&rn=82228ed996f89876f23d151a65b8b160&spm=a1z10.3-b.w4011-23793968021.52.5eb32a70auzNRD&skuId=4675288353651)
+[SOUVERÄN 1000 ]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-800-black.html)
+
+[TOLEDO M 700 ]( https://www.pelikan-passion.com/int/writing/premium/toledo/toledo-m-700-black.html)
+
+[TOLEDO M 900 ](https://www.pelikan-passion.com/int/writing/premium/toledo/toledo-m-900-black.html)
 
 
 
@@ -58,9 +66,11 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 [世纪经典](https://www.parkerpen.cn/duofold-pens-cn.html)
 
+[精英](https://www.parkerpen.cn/parker-ingenuity-pens.html)(有钢尖版本)
+
 [卓尔](https://www.parkerpen.cn/sonnet-pens-cn.html)(有钢尖版本)
 
-[51](https://www.parkerpen.cn/parker-51-pens-cn.html)(有刚尖版本)
+[ 51 ](https://www.parkerpen.cn/parker-51-pens-cn.html)(有刚尖版本)
 
 
 
