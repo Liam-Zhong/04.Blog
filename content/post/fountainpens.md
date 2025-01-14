@@ -36,7 +36,7 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 [大班 149  ]( https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132104-meisterstueck-platinum-coated-149-fountain-pen-f.html)
 
-[ 星际行者](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/starwalker.html)
+[星际行者](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/starwalker.html)
 
 [传承](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/heritage.html)
 
@@ -52,11 +52,11 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 [SOUVERÄN 800 ]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-800-black.html)
 
-[SOUVERÄN 1000 ]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-800-black.html)
+[SOUVERÄN 1000 ]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-1000-black.html)
 
-[TOLEDO M 700 ]( https://www.pelikan-passion.com/int/writing/premium/toledo/toledo-m-700-black.html)
+[TOLEDO 700 ]( https://www.pelikan-passion.com/int/writing/premium/toledo/toledo-m-700-black.html)
 
-[TOLEDO M 900 ](https://www.pelikan-passion.com/int/writing/premium/toledo/toledo-m-900-black.html)
+[TOLEDO 900 ](https://www.pelikan-passion.com/int/writing/premium/toledo/toledo-m-900-black.html)
 
 
 
@@ -85,11 +85,23 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 国内约等于没有官网（算上 1993 [伯爵](http://www.graf-von-faber-castell.com.cn/)）。密恐笔尖， **不买**。
 
+[classic](https://www.graf-von-faber-castell.com/products/classic/24-24-11-fountain-pen#)
+
+[Guilloche](https://www.graf-von-faber-castell.com/products/guilloche/24-24-11-fountain-pen#)
+
+[Magnum](https://www.graf-von-faber-castell.com/products/magnum/24-24-11-fountain-pen#)
+
+[Classic Anello](https://www.graf-von-faber-castell.com/products/classic-anello/24-24-11-fountain-pen#)
+
+[Bentley](https://www.graf-von-faber-castell.com/products/bentley/24-24-11-fountain-pen#)
+
 
 
 8. #### 1883 [Kaweco](https://www.kaweco-pen.com/)
 
 国内没有官网。短钢做得好看，但是旋帽 ， **不买**
+
+[STERLING SPORT](https://www.kaweco-pen.com/schreibgeraete/fuellhalter/691/kaweco-sterling-sport-fuellhalter?c=207)
 
 
 
@@ -117,9 +129,56 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 1918 <a href="https://www.pilotpen.com.cn/" style="color:red;">百乐</a> 球型笔夹丑，造型太日常， **不买**
 
+Costom : 
+[urushi](https://www.pilot.co.jp/products/pen/fountain/fountain/custom_urushi/) 
+、[845](https://www.pilot.co.jp/products/pen/fountain/fountain/custom845/) 
+、[槐](https://www.pilot.co.jp/products/pen/fountain/fountain/custom_enjyu/)  、[823](https://www.pilot.co.jp/products/pen/fountain/fountain/custom823/) 
+、[743](https://www.pilot.co.jp/products/pen/fountain/fountain/custom743/)
+、[MAPLE](https://www.pilot.co.jp/products/pen/fountain/fountain/kaede/) 
+、[SE](https://www.pilot.co.jp/products/pen/fountain/fountain/heritage_se/)
+、[742](https://www.pilot.co.jp/products/pen/fountain/fountain/custom742/)
+、[912](https://www.pilot.co.jp/products/pen/fountain/fountain/custom_heritage912/)
+、[92](https://www.pilot.co.jp/products/pen/fountain/fountain/custom_heritage92/)
+、[74](https://www.pilot.co.jp/products/pen/fountain/fountain/custom74/)
+、[91](https://www.pilot.co.jp/products/pen/fountain/fountain/customheritage91/)
+<br>
+
+Capless：
+[螺鈿](https://www.pilot.co.jp/products/pen/fountain/fountain/capless_raden/)
+、[LS](https://www.pilot.co.jp/products/pen/fountain/fountain/capless_ls/)
+、[Stripe](https://www.pilot.co.jp/products/pen/fountain/fountain/capless_stripe/)
+、[木軸](https://www.pilot.co.jp/products/pen/fountain/fountain/capless_wood/)
+、[SE](https://www.pilot.co.jp/products/pen/fountain/fountain/capless_se/)
+、[絣](https://www.pilot.co.jp/products/pen/fountain/fountain/capless_kasuri/)
+、[九](https://www.pilot.co.jp/products/pen/fountain/fountain/capless/)
+、[Decimo](https://www.pilot.co.jp/products/pen/fountain/fountain/caplessdecimo/)
+
+[Silver](https://www.pilot.co.jp/products/pen/fountain/fountain/silver/)
+
+[Justus 95](https://www.pilot.co.jp/products/pen/fountain/fountain/justus95/)
+
+[Elabo](https://www.pilot.co.jp/products/pen/fountain/fountain/elabo/)
+
+[Grance](https://www.pilot.co.jp/products/pen/fountain/fountain/grance_2/)
+
+[Elite 95 S](https://www.pilot.co.jp/products/pen/fountain/fountain/elite95s/)
+
+
+
 1925 [并木](https://www.pilot-namiki.com/en/) 国内没有官网。不喜欢莳绘， **不买**
 
 1919 <a href="https://www.platinum-pen.co.jp/" style="color:red;">白金</a> 港独钢笔。国内没有官网。老 3776 丑得别致，鱼雷造型乏善可陈， **不买**
+
+[# 3776 CENTURY](https://www.platinum-pen.co.jp/brands/3776-century/)
+
+[美巧](https://www.platinum-pen.co.jp/brands/bikoh/)
+
+[出云](https://www.platinum-pen.co.jp/brands/izumo/)
+
+[直纹银](https://www.platinum-pen.co.jp/products/fountain-pen/2129/)
+
+[锤纹银](https://www.platinum-pen.co.jp/products/fountain-pen/2126/)
+
 
 1999 [中屋](https://www.nakaya.org/) 国内没有官网。背鳍和十角好看，笔尖 3776 同款， **不买**
 
