@@ -38,7 +38,7 @@ description = "第8版计算机网络课后习题解答"
 - 首先，主机 A 将一个 ```x (bit)``` 大小的报文发送到信道上，所花费的时间是 $\frac{x}{b}$。此时最后一个Bit刚刚上路~
 - 虽然最后一个Bit出发的很晚，但是，它依然需要走 ```k``` 段链路，每段花费的时间都是 ```d```，所以在路上就花费了 $k \cdot d$ 这么多的时间
 - 不光在路上要花费时间,最后一个 Bit 还要过 ```k-1``` 道安检(路由器)。每次安检(路由器存储转发)，要花费 $\frac{p}{b}$ 这么多的时间(存储转发的时间，不计排队和处理的时间))
-- 算下来的话，一共需要花费  $\frac{x}{b} + k c\cdot d + (k-1) \cdot \frac{p}{b}$ 这么多的时间
+- 算下来的话，一共需要花费  $\frac{x}{b} + k \cdot d + (k-1) \cdot \frac{p}{b}$ 这么多的时间
 
 #### 求解电路交换的时延 `t电路交换`
 
@@ -126,6 +126,75 @@ $
 
 
 >二、在 4800 m 长的总线上，数据传输率为 10 Mbps，信号传播速率为 200 m/μs，采用 CSMA/CD 进行数据通信。（1）争用期是多少？（2）最小帧长应该为多少？（3）若 A 向 B 发送 1200 字节的数据，A 是否必须在数据发送期间一直进行冲突检测？为什么？
+
+
+
+### 已知参数：
+
+- 总线长度 L=4800 mL = 4800 \, \text{m}L=4800m
+- 数据传输率 R=10 MbpsR = 10 \, \text{Mbps}R=10Mbps
+- 信号传播速率 v=200 m/μsv = 200 \, \text{m/μs}v=200m/μs
+- 使用 CSMA/CD 协议。
+
+### 解题步骤：
+
+#### （1）争用期（tcollisiont_{collision}tcollision）
+
+争用期定义为信号在总线两端传播一次（往返一次）的总时间。传播延迟为：
+
+tpropagation=Lv=4800200=24 μst_{propagation} = \frac{L}{v} = \frac{4800}{200} = 24 \, \mu \text{s}tpropagation=vL=2004800=24μs
+
+争用期是传播延迟的两倍：
+
+tcollision=2×tpropagation=2×24=48 μst_{collision} = 2 \times t_{propagation} = 2 \times 24 = 48 \, \mu \text{s}tcollision=2×tpropagation=2×24=48μs
+
+**答案：争用期为 48 μs48 \, \mu \text{s}48μs。**
+
+------
+
+#### （2）最小帧长
+
+CSMA/CD 协议要求发送数据的时间（帧传输时间）应大于或等于争用期的时间，以保证在发生冲突时，发送方能够检测到冲突。
+
+帧传输时间：
+
+tframe=帧长度 (bit)数据传输率 (bit/s)≥tcollisiont_{frame} = \frac{\text{帧长度 (bit)}}{\text{数据传输率 (bit/s)}} \geq t_{collision}tframe=数据传输率 (bit/s)帧长度 (bit)≥tcollision
+
+最小帧长（bit 数）为：
+
+帧长度≥tcollision×R\text{帧长度} \geq t_{collision} \times R帧长度≥tcollision×R
+
+代入 tcollision=48 μs=48×10−6 st_{collision} = 48 \, \mu\text{s} = 48 \times 10^{-6} \, \text{s}tcollision=48μs=48×10−6s，R=10 Mbps=10×106 bpsR = 10 \, \text{Mbps} = 10 \times 10^6 \, \text{bps}R=10Mbps=10×106bps：
+
+帧长度≥48×10−6×10×106=480 bit\text{帧长度} \geq 48 \times 10^{-6} \times 10 \times 10^6 = 480 \, \text{bit}帧长度≥48×10−6×10×106=480bit
+
+将其转化为字节：
+
+最小帧长度=4808=60 字节\text{最小帧长度} = \frac{480}{8} = 60 \, \text{字节}最小帧长度=8480=60字节
+
+**答案：最小帧长为 480 bit480 \, \text{bit}480bit 或 60 字节60 \, \text{字节}60字节。**
+
+------
+
+#### （3）A 是否必须在数据发送期间一直进行冲突检测？
+
+**分析：**
+
+在 CSMA/CD 协议中，发送方需要在争用期内进行冲突检测。如果在争用期结束后未检测到冲突，则可以认为发送成功。争用期为 48 μs48 \, \mu\text{s}48μs，而发送 1200 字节的数据所需的时间为：
+
+tsend=帧长度 (bit)数据传输率 (bit/s)=1200×810×106=0.96 mst_{send} = \frac{\text{帧长度 (bit)}}{\text{数据传输率 (bit/s)}} = \frac{1200 \times 8}{10 \times 10^6} = 0.96 \, \text{ms}tsend=数据传输率 (bit/s)帧长度 (bit)=10×1061200×8=0.96ms
+
+由于数据发送时间远大于争用期（0.96 ms > 48 μs），A **只需要在争用期内检测冲突**，之后无需继续检测。
+
+**答案：A 不需要在整个数据发送期间进行冲突检测，仅需在争用期内进行检测，因为争用期后发生冲突的概率为 0。**
+
+------
+
+### 总结：
+
+1. **争用期**为 48 μs48 \, \mu\text{s}48μs。
+2. **最小帧长**为 480 bit480 \, \text{bit}480bit 或 60 字节60 \, \text{字节}60字节。
+3. A **无需**在数据发送期间一直进行冲突检测，仅需在争用期内检测。
 
 
 

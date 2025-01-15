@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index | Chlzhong</title>
-    <link>http://localhost:1313/tags/index/</link>
-      <atom:link href="http://localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://chlzhong.org/tags/index/</link>
+      <atom:link href="https://chlzhong.org/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <description>Index</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Tue, 17 Dec 2024 20:46:59 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Wed, 15 Jan 2025 16:31:50 +0800</lastBuildDate>
   </channel>
 </rss>
