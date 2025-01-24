@@ -36,6 +36,7 @@ description = "{朴素贝叶斯算法与垃圾短信识别}"
 
 <center>$P(Y=y_j|X=X_i)=\frac{P(X^1=x_i^{(1)}, \cdots ,X^m=x_i^{(m)}|Y=y_j)⋅P(Y=Y_j)}{P(X=X_i)}$</center>
 <br>
+
 <center>$\quad = \frac{\prod_{s=1}^m P(X^{(s)}=x_i^{(s)}|Y=y_j)⋅P(Y=Y_j)}{P(X=X_i)}$</center>
 
 此时的分类器显然只用关心那些分母最大的取值（$argmax$ 与 $max$ 区别在于前者关心输入即 $y_j$S）：
