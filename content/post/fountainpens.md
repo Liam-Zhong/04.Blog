@@ -173,6 +173,8 @@ Capless：
 
 [美巧](https://www.platinum-pen.co.jp/brands/bikoh/)
 
+[总统](https://www.platinum-pen.co.jp/brands/president/)
+
 [出云](https://www.platinum-pen.co.jp/brands/izumo/)
 
 [直纹银](https://www.platinum-pen.co.jp/products/fountain-pen/2129/)
