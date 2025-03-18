@@ -10,9 +10,9 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 +++
 
-1. #### 1883 [Waterman](https://www.waterman-zh.cn/)
+1. #### 1883 [威迪文](https://www.waterman-zh.cn/)
 
-~~梦中情笔，入坑起源。~~ 整天吹嘘法产的美国品牌， **不买**。
+~~梦中情笔，入坑起源。~~ 设计感强，笔夹做得很不错。整天吹嘘法产的美国品牌， **不买**。
 
 [智尊](https://www.waterman-zh.cn/exception-pens-china.html)
 
@@ -26,15 +26,11 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 
 
-3. **1906** [Montblanc](https://www.montblanc.cn/cn/zh-cn/home.html)
+3. ####  **1906** [万宝龙](https://www.montblanc.cn/cn/zh-cn/home.html)
 
 德产瑞士奢侈品， **不买**。
 
-[大班 145](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132468-meisterstueck-platinum-coated-classique-fountain-pen-m.html)
-
-[大班 146](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132443-meisterstueck-platinum-coated-legrand-fountain-pen-m.html)
-
-[大班 149]( https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck/mb132104-meisterstueck-platinum-coated-149-fountain-pen-f.html)
+[大班](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/meisterstuck.html)
 
 [星际行者](https://www.montblanc.cn/cn/zh-cn/collection/writing-instruments/starwalker.html)
 
@@ -44,23 +40,15 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 4. #### 1838 [Pelikan](https://www.pelikan.com/)
 
-国内没有官网。德产法国钢笔，全系活塞不好洗，且邮件回太慢， **不买**。
+国内没有官网。德产法国钢笔，全系活塞， **不买**。
 
-[SOUVERÄN 400]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-400-black.html)
+[SOUVERÄN]( https://www.pelikan-passion.com/int/writing/premium/souveraen.html)
 
-[SOUVERÄN 600](https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-600-black.html)
-
-[SOUVERÄN 800]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-800-black.html)
-
-[SOUVERÄN 1000]( https://www.pelikan-passion.com/int/writing/premium/souveraen/souveran-1000-black.html)
-
-[TOLEDO 700]( https://www.pelikan-passion.com/int/writing/premium/toledo/toledo-m-700-black.html)
-
-[TOLEDO 900](https://www.pelikan-passion.com/int/writing/premium/toledo/toledo-m-900-black.html)
+[TOLEDO](https://www.pelikan-passion.com/int/writing/premium/toledo.html)
 
 
 
-5. #### 1888 [Parker](https://www.parkerpen.cn/)
+5. #### 1888 [派克](https://www.parkerpen.cn/)
 
 历史上最成功的钢笔厂，现产吃相难看， **不买**。
 
@@ -80,20 +68,20 @@ description = "{钢笔推荐，五大，龙鸟派犀牛水}"
 
 
 
-7. #### 1761 <a href="https://www.faber-castell.cn/" style="color:red;">Faber-Castell</a>
+7. #### 1761 <a href="https://www.faber-castell.cn/" style="color:red;">辉柏嘉</a>
 
 
-国内约等于没有官网（算上 1993 [伯爵](http://www.graf-von-faber-castell.com.cn/)）。密恐笔尖， **不买**。
+国内约等于没有官网（算上 1993 [GVFC](http://www.graf-von-faber-castell.com.cn/)）。金属细笔握， Bock 套着丑， **不买**。
 
-[Classic](https://www.graf-von-faber-castell.com/products/classic/24-24-11-fountain-pen#)
+[Magnum](https://www.graf-von-faber-castell.com/products/magnum)
 
-[Guilloche](https://www.graf-von-faber-castell.com/products/guilloche/24-24-11-fountain-pen#)
+[Classic](https://www.graf-von-faber-castell.com/products/classic)
 
-[Magnum](https://www.graf-von-faber-castell.com/products/magnum/24-24-11-fountain-pen#)
+[Guilloche](https://www.graf-von-faber-castell.com/products/guilloche)
 
-[Classic Anello](https://www.graf-von-faber-castell.com/products/classic-anello/24-24-11-fountain-pen#)
+[Classic Anello](https://www.graf-von-faber-castell.com/products/classic-anello)
 
-[Bentley](https://www.graf-von-faber-castell.com/products/bentley/24-24-11-fountain-pen#)
+[Bentley](https://www.graf-von-faber-castell.com/products/bentley)
 
 
 
@@ -169,16 +157,17 @@ Capless：
 
 1919 <a href="https://www.platinum-pen.co.jp/" style="color:red;">白金</a> 港独钢笔。国内没有官网。老 3776 丑得别致，鱼雷造型乏善可陈， **不买**
 
+[出云](https://www.platinum-pen.co.jp/brands/izumo/)
+
 [# 3776 CENTURY](https://www.platinum-pen.co.jp/brands/3776-century/)
 
-[美巧](https://www.platinum-pen.co.jp/brands/bikoh/)
+[总统](https://www.platinum-pen.co.jp/brands/president/)
 
-[出云](https://www.platinum-pen.co.jp/brands/izumo/)
+[美巧](https://www.platinum-pen.co.jp/brands/bikoh/)
 
 [直纹银](https://www.platinum-pen.co.jp/products/fountain-pen/2129/)
 
 [锤纹银](https://www.platinum-pen.co.jp/products/fountain-pen/2126/)
-
 
 1999 [中屋](https://www.nakaya.org/) 国内没有官网。背鳍和十角好看，笔尖 3776 同款， **不买**
 
@@ -197,10 +186,6 @@ Capless：
 1919 [Aurora](https://www.aurorapen.it/) 国内没有官网， **不买**
 
 1925 [OMAS](https://omasofficial.com/) 国内没有官网。台湾有店大陆没有， **不买**
-
-
-
-
 
 
 
