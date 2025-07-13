@@ -5,7 +5,7 @@
     <link>https://chlzhong.org/</link>
       <atom:link href="https://chlzhong.org/index.xml" rel="self" type="application/rss+xml" />
     <description>Chlzhong</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Mon, 07 Jul 2025 21:32:24 +0800</lastBuildDate>  
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en</language><copyright>© 2024, liam</copyright><lastBuildDate>Sun, 13 Jul 2025 19:07:02 +0800</lastBuildDate>  
     <item>
       <title>印象中的钢笔们</title>
       <link>https://chlzhong.org/post/fountainpens/</link>
@@ -96,6 +96,15 @@
     </item>
       
     <item>
+      <title>Test</title>
+      <link>https://chlzhong.org/post/test/</link>
+      <pubDate>Sun, 13 Jul 2025 19:07:02 +0800</pubDate>
+      <guid>https://chlzhong.org/post/test/</guid>
+      <description>&lt;p&gt;测试&lt;/p&gt;
+</description>
+    </item>
+      
+    <item>
       <title> Eudemonia - 不良人！</title>
       <link>https://chlzhong.org/post/buliangren/</link>
       <pubDate>Mon, 07 Jul 2025 21:32:24 +0800</pubDate>
@@ -164,7 +173,7 @@
 &lt;hr&gt;
 &lt;p&gt;对我个人而言，可以安全地假设国家的大手可以在任何商用手机上提取他们想要的任何信息，这可以被认为没有任何危险。毕竟在某些国家他们甚至连买卖大麻都不管，而且机构们受法律管辖，很多事情不能做，至少还得盖一个红泥图章。&lt;/p&gt;
 &lt;p&gt;而 Google、Apple、Meta、WeChat 之类的企业收集用户数据卖广告则是无法无天的，能干的事比党还多。很难去相信诸如抖音小红书微信谷歌这些广告收入占一半的公司回去保护用户隐私。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;即 big bro 受到法律监管，big tech 基本没人管。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;big bro 受到法律监管，big tech 基本没人管。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;但我提他们也不是完全逃离（对我自己也只是微信实在逃不过）你只需要少用。&lt;br&gt;
 比如留一个备机 Windows，日常换成 Linux&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;br&gt;
 比如用 GrapheneOS 代替 Stock Android 和 iOS&lt;br&gt;比如少刷甚至不刷知乎、B站、微博、抖音。&lt;br&gt;
